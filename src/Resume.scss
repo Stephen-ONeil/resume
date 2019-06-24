@@ -1,0 +1,51 @@
+$page_width: 8.5in;
+$page_height: 11in;
+
+$gutter: 0.025in;
+$border: 0.02in;
+
+.resume {
+  /* A4 paper dimensions */
+  width: $page_width;
+  height: $page_height;
+
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0px;
+
+  padding: $gutter;
+
+  background-color: white;
+
+  & section {
+    margin: $gutter;
+    padding: $gutter;
+    border: $border solid black;
+  }
+
+  
+  & h1, & h2, & h3, & h3 {
+    margin: 0px;
+  }
+}
+
+.fcol {
+  display: flex;
+  flex-direction: column;
+
+  &.fcol__1-3rd {
+    flex-basis: 33%;
+  }
+  &.fcol__1-half {
+    flex-basis: 50%;
+  }
+  &.fcol__2-3rd {
+    flex-basis:66%;
+  }
+}
+
+.frow {
+  display: flex;
+  flex-direction: row;
+}
