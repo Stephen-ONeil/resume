@@ -1,0 +1,12 @@
+.resume {
+  /* A4 paper dimensions */
+  width: 8.5in;
+  height: 11in;
+
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0px;
+
+  background-color: white
+}
