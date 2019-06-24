@@ -10,3 +10,19 @@
 
   background-color: white
 }
+
+.fcol {
+  display: flex;
+  flex-direction: column;
+}
+.fcol__1-3rd-page {
+  width: 2.8333in;
+}
+.fcol__2-3rd-page {
+  width: 5.6666in;
+}
+
+.frow {
+  display: flex;
+  flex-direction: row;
+}
