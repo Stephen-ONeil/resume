@@ -47,11 +47,22 @@ $border: 0.02in;
     flex-basis: 50%;
   }
   &.fcol__2-3rd {
-    flex-basis:66%;
+    flex-basis: 66%;
   }
 }
 
 .frow {
   display: flex;
   flex-direction: row;
+}
+
+.two-column-list {
+  & > ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    & > li {
+      flex: 1 0 50%;
+    }
+  }
 }

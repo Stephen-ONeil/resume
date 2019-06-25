@@ -47,8 +47,9 @@ TODO
 `;
 
 const extracurricular = `
-## Extracurricular
-TODO
+- a
+- b
+- c
 `;
 
 
@@ -83,7 +84,12 @@ function Resume(){
             <ReactMarkdown source={curriculum_vitae}/>
           </section>
           <section className="fcol" style={{height: "100%"}}>
-            <ReactMarkdown source={extracurricular}/>
+            <h2>
+              {"Extracurricular"}
+            </h2>
+            <div className="two-column-list">
+              <ReactMarkdown source={extracurricular}/>
+            </div>
           </section>
         </div>
       </div>
