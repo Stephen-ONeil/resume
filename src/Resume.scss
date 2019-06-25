@@ -60,9 +60,10 @@ $border: 0.02in;
   & > ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 
     & > li {
-      flex: 1 0 50%;
+      flex: 0 0 47%;
     }
   }
 }

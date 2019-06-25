@@ -47,9 +47,9 @@ TODO
 `;
 
 const extracurricular = `
-- a
-- b
-- c
+- Founding president of the uOttawa Computational Physics Club
+- Burgeoning GNU+Linux nerd
+- Regular attendee of Ottawa Civic Tech events
 `;
 
 
