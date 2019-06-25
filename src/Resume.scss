@@ -24,9 +24,15 @@ $border: 0.02in;
     border: $border solid black;
   }
 
-  
+  & h1 {
+    font-size: 2.5em;
+  }
   & h1, & h2, & h3, & h3 {
     margin: 0px;
+  }
+
+  & p, & :not(li) > ul{
+    margin: 0.5em 0em;
   }
 }
 
