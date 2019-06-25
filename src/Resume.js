@@ -3,9 +3,10 @@ import './Resume.scss';
 
 import ReactMarkdown from 'react-markdown';
 
-const lorem_ipsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
 
 const contact_info = `
+# Stephen O'Neil
+## Full-stack Web App Dev
 (613) 867-7727  
 [github.com/Stephen-ONeil](https://github.com/Stephen-ONeil)  
 [Stephen.Levi.ONeil@gmail.com](mailto:Stephen.Levi.ONeil@gmail.com)  
@@ -21,17 +22,41 @@ Treasury Board of Canada Secretariat
   - E.g. [canada.ca/gcinfobase](https://canada.ca/gcinfobase)
 `;
 
+const developer = `
+## Developer
+### Front End
+TODO
+
+### Back End
+TODO
+`;
+
+const operations = `
+## Operations
+TODO
+`;
+
+const security = `
+## Security
+TODO
+`;
+
+const curriculum_vitae = `
+## Curriculum Vitae
+TODO
+`;
+
+const extracurricular = `
+## Extracurricular
+TODO
+`;
+
+
 function Resume(){
   return (
     <div className="resume fcol">
       <div className="frow">
         <section className="fcol fcol__1-half" style={{textAlign: "center"}}>
-          <h1>
-            {"Stephen O'Neil"}
-          </h1>
-          <h2>
-            {"Full-stack Web App Dev"}
-          </h2>
           <ReactMarkdown source={contact_info}/>
         </section>
         <section className="fcol fcol__1-half">
@@ -43,31 +68,22 @@ function Resume(){
       </div>
       <div className="frow" style={{flexGrow: 1}}>
         <section className="fcol fcol__1-3rd">
-          <h2>
-            {"Developer"}
-          </h2>
-          {lorem_ipsum}
+          <ReactMarkdown source={developer}/>
         </section>
         <div className="fcol fcol__2-3rd">
           <div className="frow">
             <section className="fcol fcol__1-half">
-              <h2>
-                {"Operations"}
-              </h2>
-              {lorem_ipsum}
+              <ReactMarkdown source={operations}/>
             </section>
             <section className="fcol fcol__1-half">
-              <h2>
-                {"Security"}
-              </h2>
-              {lorem_ipsum}
+              <ReactMarkdown source={security}/>
             </section>
           </div>
           <section className="fcol" style={{height: "100%"}}>
-            <h2>
-              {"CV"}
-            </h2>
-            {lorem_ipsum}
+            <ReactMarkdown source={curriculum_vitae}/>
+          </section>
+          <section className="fcol" style={{height: "100%"}}>
+            <ReactMarkdown source={extracurricular}/>
           </section>
         </div>
       </div>
