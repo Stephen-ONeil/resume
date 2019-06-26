@@ -38,13 +38,17 @@ TODO
 
 const security = `
 ## Security
-TODO
+- Pushing _from_ the left, bringing security by design to the design stages of Dev and DevOps tasks
+- Staying up-to-date with SecOps news through RSS, podcasts, and regular attendance at local OWASP meet-ups
 `;
 
 const curriculum_vitae = `
 ## Curriculum Vitae
 - **09/2017 - Ongoing** – Senior JavaScript Developer, Expenditure Management Sector (EMS), TBS
-  - TODO
+  - TODO front end Dev stuff I've done
+  - TODO back end Dev stuff I've done
+  - TODO Ops stuff I've done
+  - TODO Sec stuff I've done
   - Hiring, supervising, and mentoring of 7+ CO-OP student developers
   
 - **01/2015 - 09/2017** – Junior Analyst/Developer, Office of the Chief Human Resources Officer (OCHRO), TBS
