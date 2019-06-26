@@ -48,10 +48,10 @@ const curriculum_vitae = `
   - Hiring, supervising, and mentoring of 7+ CO-OP student developers
   
 - **01/2015 - 09/2017** – Junior Analyst/Developer, Office of the Chief Human Resources Officer (OCHRO), TBS
-  - Development and maintenancne for OCHRO's portions of the GC InfoBase tool, in partnership with EMS colleagues
+  - Development and maintenance for OCHRO's portions of the GC InfoBase tool, in partnership with EMS colleagues
   - SQL, SAS, Java. Responding to ad-hoc data requests and automating periodic data extracts
 
-- **09/2012 - 04/2017** – Honours Bachelour of Science, Physics-Mathematics with CO-OP option, Univeristy of Ottawa
+- **09/2012 - 04/2017** – Honours Bachelour of Science, Physics-Mathematics with CO-OP option, University of Ottawa
   - Dean's Honour List 2014-2015 (for an annual GPA of 8.5+)
   - Founding president of uOttawa Computational Physics Club
 `;
@@ -67,37 +67,37 @@ function Resume(){
     <div className="resume fcol">
       <div className="frow">
         <section className="fcol fcol__1-half" style={{textAlign: "center"}}>
-          <ReactMarkdown source={contact_info}/>
+          <ReactMarkdown source={contact_info} />
         </section>
         <section className="fcol fcol__1-half">
           <h2 style={{height: "0em", width: "0em", fontSize: "0em"}}>
             {"Overview"}
           </h2>
-          <ReactMarkdown source={brief}/>
+          <ReactMarkdown source={brief} />
         </section>
       </div>
       <div className="frow" style={{flexGrow: 1}}>
         <section className="fcol fcol__1-3rd">
-          <ReactMarkdown source={developer}/>
+          <ReactMarkdown source={developer} />
         </section>
         <div className="fcol fcol__2-3rd">
           <div className="frow">
             <section className="fcol fcol__1-half">
-              <ReactMarkdown source={operations}/>
+              <ReactMarkdown source={operations} />
             </section>
             <section className="fcol fcol__1-half">
-              <ReactMarkdown source={security}/>
+              <ReactMarkdown source={security} />
             </section>
           </div>
           <section className="fcol" style={{height: "100%"}}>
-            <ReactMarkdown source={curriculum_vitae}/>
+            <ReactMarkdown source={curriculum_vitae} />
           </section>
           <section className="fcol" style={{height: "100%"}}>
             <h2>
               {"Extracurricular"}
             </h2>
             <div className="two-column-list">
-              <ReactMarkdown source={extracurricular}/>
+              <ReactMarkdown source={extracurricular} />
             </div>
           </section>
         </div>
