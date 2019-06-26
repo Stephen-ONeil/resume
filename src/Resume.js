@@ -39,7 +39,7 @@ TODO
 const security = `
 ## Security
 - Pushing _from_ the left, bringing security by design to the design stages of Dev and DevOps tasks
-- Staying up-to-date with SecOps news through RSS, podcasts, and regular attendance at local OWASP meet-ups
+- Staying up-to-date with SecOps news/topics through blogs, mailing lists, podcasts, and local OWASP meet-ups
 `;
 
 const curriculum_vitae = `
