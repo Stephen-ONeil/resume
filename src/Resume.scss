@@ -34,6 +34,25 @@ $border: 0.02in;
   & p, & :not(li) > ul{
     margin: 0.5em 0em;
   }
+
+  & li {
+    list-style: none;
+  }
+
+  & :not(li) > ul > li:before {
+    content: "⮞ ";
+    float: left;
+  }
+
+  & li > ul {
+    display: flex;
+    flex-direction: column;
+
+    & > li:before{
+      content: "⮚";
+      float: left;
+    }
+  }
 }
 
 .fcol {
