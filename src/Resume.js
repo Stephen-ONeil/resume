@@ -64,8 +64,11 @@ const curriculum_vitae = `
 
 const extracurricular = `
 ## Extracurricular
-- Regular attendee of Ottawa Civic Tech meet-ups
+- Regular attendee ar Ottawa Civic Tech meet-ups
 - GNU+Linux nerd
+- Listening to music (misc.) & podcasts (comedy, tech)
+- Reading novels (Sci-fi, fantasy) & comics (web, indy)
+- Night-time walking
 `;
 
 
