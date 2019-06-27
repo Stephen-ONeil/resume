@@ -17,9 +17,9 @@ const brief = `
 - Honours B.Sc. Physics-Mathematics, uOttawa
 - **Senior JavaScript developer, full stack** at 
 Treasury Board of Canada Secretariat (TBS)
-  - **4+ years front end** experience. Single page web applications. **React, Lodash, Sass, D3**
-  - **1.5+ years back end** experience, DevOps. **Node, GraphQL, MongoDB, Google Cloud**
-  - E.g. **GC InfoBase** ([canada.ca/gcinfobase](https://canada.ca/gcinfobase))
+  - **4+ years front end**. **React, Lodash, Sass, D3**
+  - **1.5+ years back end**, DevOps. **Node, GraphQL, MongoDB, Google Cloud**
+  - E.g. **GC InfoBase** ([canada.ca/gcinfobase](https://canada.ca/gcinfobase)), a React SPA backed by a serverless GraphQL API
 `;
 
 const developer = `
@@ -46,25 +46,26 @@ const security = `
 const curriculum_vitae = `
 ## Curriculum Vitae
 - **09/2017 - Ongoing** – Senior JavaScript Developer, Expenditure Management Sector (EMS), TBS
-  - TODO front end Dev stuff I've done
-  - TODO back end Dev stuff I've done
-  - TODO Ops stuff I've done
-  - TODO Sec stuff I've done
-  - Hiring, supervising, and mentoring of 7+ CO-OP student developers
+  - Maintaining the GC InfoBase front end source code, at ~50,000 lines of JS. Implementing, and guiding junior Devs implementing, new features while ensuring continued maintainability
+  - Building more backend components for the main SPA, including the GraphQL data API and a email backend to obviate mailto links
+  - Transitioned the GC InfoBase hosting from a static file server administered by a separate team to a self-administered cloud hosting setup, bringing the deployment process from days to minutes, gaining more flexible and faster hosting with a real backend, and doing it all for negligible hosting costs 
+  - Providing a security audit function, identifying more relevant risks and bugs than IT commissioned scans
+  - Hiring, supervising, and mentoring of 7+ CO-OP students
   - Championing for code standards, code reviews, testing, CI/CD, and Open Sourcing/working in the open
   
 - **01/2015 - 09/2017** – Junior Analyst/Developer, Office of the Chief Human Resources Officer (OCHRO), TBS
-  - Developing and maintaining OCHRO's portions of the GC InfoBase web app, in partnership with EMS colleagues
-  - SQL, SAS, Java. Responding to ad-hoc data requests and automating periodic ones
-
+  - Developed and maintained OCHRO's portions of the GC InfoBase web app, in partnership with EMS colleagues
+  - SQL, SAS, Java. Responded to ad-hoc data requests and automated periodic ones
+  
 - **09/2012 - 04/2017** – Honours Bachelour of Science, Physics-Mathematics with CO-OP, University of Ottawa
   - Dean's Honour List 2014-2015 (for an annual GPA of 8.5+)
   - Founding president of uOttawa Computational Physics Club
 `;
 
 const extracurricular = `
+## Extracurricular
 - Regular attendee of Ottawa Civic Tech meet-ups
-- Burgeoning GNU+Linux nerd
+- GNU+Linux nerd
 `;
 
 
@@ -83,10 +84,15 @@ function Resume(){
         </section>
       </div>
       <div className="frow" style={{flexGrow: 1}}>
-        <section className="fcol fcol__1-3rd">
-          <ReactMarkdown source={developer} />
-        </section>
-        <div className="fcol fcol__2-3rd">
+        <div className="fcol fcol__1-3rd">
+          <section className="fcol" style={{height: "100%"}}>
+            <ReactMarkdown source={developer} />
+          </section>
+          <section className="fcol">
+            <ReactMarkdown source={extracurricular} />
+          </section>
+        </div>
+        <div className="fcol fcol__2-3rd" style={{flexGrow: 1}}>
           <div className="frow">
             <section className="fcol fcol__1-half">
               <ReactMarkdown source={operations} />
@@ -97,14 +103,6 @@ function Resume(){
           </div>
           <section className="fcol" style={{height: "100%"}}>
             <ReactMarkdown source={curriculum_vitae} />
-          </section>
-          <section className="fcol" style={{height: "100%"}}>
-            <h2>
-              {"Extracurricular"}
-            </h2>
-            <div className="two-column-list">
-              <ReactMarkdown source={extracurricular} />
-            </div>
           </section>
         </div>
       </div>
