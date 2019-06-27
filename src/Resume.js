@@ -33,7 +33,8 @@ TODO
 
 const operations = `
 ## Operations
-TODO
+- Strong believer in DevOps, bringing both the "Dev" and the "Ops" to the table in all projects with space at the table
+- Automation! Logging! Serverless microservices! Actually reading logs! Making deployments easy and safe!
 `;
 
 const security = `
@@ -62,8 +63,8 @@ const curriculum_vitae = `
 `;
 
 const extracurricular = `
-- Burgeoning GNU+Linux nerd
 - Regular attendee of Ottawa Civic Tech meet-ups
+- Burgeoning GNU+Linux nerd
 `;
 
 

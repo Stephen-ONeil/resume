@@ -21,7 +21,7 @@ $border: 0.02in;
   & section {
     margin: $gutter;
     padding: $gutter;
-    border: $border solid black;
+    border: $border solid black; /* Consider having no borders? */
   }
 
   & h1 {
