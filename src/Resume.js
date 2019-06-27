@@ -40,7 +40,7 @@ const operations = `
 const security = `
 ## Security
 - Pushing _from_ the left, bringing security-by-design to the design stages of Dev and DevOps tasks
-- Staying up-to-date with SecOps news/topics through blogs, mailing lists, podcasts, and local OWASP meet-ups
+- Staying up-to-date with SecOps news and best practices through blogs, mailing lists, podcasts, and the local OWASP meet-up
 `;
 
 const curriculum_vitae = `
@@ -64,7 +64,7 @@ const curriculum_vitae = `
 
 const extracurricular = `
 ## Extracurricular
-- Regular attendee ar Ottawa Civic Tech meet-ups
+- Regular attendee at the Ottawa Civic Tech meet-up
 - GNU+Linux nerd
 - Listening to music (misc.) & podcasts (comedy, tech)
 - Reading novels (Sci-fi, fantasy) & comics (web, indy)
