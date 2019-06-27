@@ -18,7 +18,7 @@ const brief = `
 - **Senior JavaScript developer, full stack** at 
 Treasury Board of Canada Secretariat (TBS)
   - **4+ years front end**. **React, Lodash, Sass, D3**
-  - **1.5+ years back end**, DevOps. **Node, GraphQL, MongoDB, Google Cloud**
+  - **1.5+ years back end, DevOps. Node, GraphQL, MongoDB, Google Cloud**
   - E.g. **GC InfoBase** ([canada.ca/gcinfobase](https://canada.ca/gcinfobase)), a React SPA backed by a serverless GraphQL API
 `;
 
@@ -34,7 +34,7 @@ TODO
 const operations = `
 ## Operations
 - Strong believer in DevOps, bringing both the "Dev" and the "Ops" to the table in all projects with space at the table
-- Automation! Logging! Serverless microservices! Actually reading logs! Making deployments easy and safe!
+- Automation and Bash scripts! Serverless microservices! Logging! Actually reading logs! Making deployments easy & safe!
 `;
 
 const security = `
@@ -49,7 +49,7 @@ const curriculum_vitae = `
   - Maintaining the GC InfoBase front end source code, at ~50,000 lines of JS. Implementing, and guiding junior Devs implementing, new features while ensuring continued maintainability
   - Building more backend components for the main SPA, including the GraphQL data API and a email backend to obviate mailto links
   - Transitioned the GC InfoBase hosting from a static file server administered by a separate team to a self-administered cloud hosting setup, bringing the deployment process from days to minutes, gaining more flexible and faster hosting with a real backend, and doing it all for negligible hosting costs 
-  - Providing a security audit function, identifying more relevant risks and bugs than IT commissioned scans
+  - Providing a security audit function within my team, identifying more relevant risks and bugs than IT commissioned scans
   - Hiring, supervising, and mentoring of 7+ CO-OP students
   - Championing for code standards, code reviews, testing, CI/CD, and Open Sourcing/working in the open
   
