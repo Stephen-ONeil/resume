@@ -38,7 +38,7 @@ TODO
 
 const security = `
 ## Security
-- Pushing _from_ the left, bringing security by design to the design stages of Dev and DevOps tasks
+- Pushing _from_ the left, bringing security-by-design to the design stages of Dev and DevOps tasks
 - Staying up-to-date with SecOps news/topics through blogs, mailing lists, podcasts, and local OWASP meet-ups
 `;
 
@@ -53,8 +53,8 @@ const curriculum_vitae = `
   - Championing for code standards, code reviews, testing, CI/CD, and Open Sourcing/working in the open
   
 - **01/2015 - 09/2017** – Junior Analyst/Developer, Office of the Chief Human Resources Officer (OCHRO), TBS
-  - Development and maintenance for OCHRO's portions of the GC InfoBase tool, in partnership with EMS colleagues
-  - SQL, SAS, Java. Responding to ad-hoc data requests and automating periodic data extracts
+  - Developing and maintaining OCHRO's portions of the GC InfoBase web app, in partnership with EMS colleagues
+  - SQL, SAS, Java. Responding to ad-hoc data requests and automating periodic ones
 
 - **09/2012 - 04/2017** – Honours Bachelour of Science, Physics-Mathematics with CO-OP, University of Ottawa
   - Dean's Honour List 2014-2015 (for an annual GPA of 8.5+)
