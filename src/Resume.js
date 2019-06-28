@@ -25,7 +25,7 @@ Treasury Board of Canada Secretariat (TBS)
 const developer = `
 ## Developer
 - _Code cleanly-ness is next to goodly-ness. "Done yesterday" is the enemy of "still works tomorrow". Aim for done right, right now._ – Stephen O'Neil
-- JS expert, HTML & CSS proficient. Framework of choice is React. Ever aware of A11y, and strives to make ethical and user-first decisions
+- JS expert, HTML & CSS proficient. Framework of choice is React. Ever aware of A11y, and strives to make ethical and user-first decisions always
 - ECMAScript proposal watcher, currently excited for the pipeline operator and optional chaining + nullish coalescing
 - Generally borrows heavily from the functional paradigm, favours declarative style for internal APIs
 - Perfectly at home with Linux and Posix (Mac OS) systems. Comfortable with Windows. Preference for VS Code and command line tools
