@@ -24,11 +24,12 @@ Treasury Board of Canada Secretariat (TBS)
 
 const developer = `
 ## Developer
-### Front End
-TODO
-
-### Back End
-TODO
+- _Code cleanly-ness is next to goodly-ness. "Done yesterday" is the enemy of "still works tomorrow". Aim for done right, right now._ – Stephen O'Neil
+- JS expert, HTML & CSS proficient. Framework of choice is React. Ever aware of A11y, and strives to make ethical and user-first decisions
+- ECMAScript proposal watcher, currently excited for the pipeline operator and optional chaining + nullish coalescing
+- Generally borrows heavily from the functional paradigm, favours declarative style for internal APIs
+- Perfectly at home with Linux and Posix (Mac OS) systems. Comfortable with Windows. Preference for VS Code and command line tools
+- Git and GitHub fan, with years of experience using and training others to make full use of the tool & service
 `;
 
 const operations = `
@@ -46,14 +47,14 @@ const security = `
 const curriculum_vitae = `
 ## Curriculum Vitae
 - **09/2017 - Ongoing** – Senior JavaScript Developer, Expenditure Management Sector (EMS), TBS
-  - Maintaining the GC InfoBase front end source code, at ~50,000 lines of JS. Implementing, and guiding junior Devs' implementation of, new features while ensuring continued maintainability
-  - Building backend components for the main SPA, including the GraphQL data API and an email backend to obviate mailto links
-  - Transitioned hosting from a static file server administered by a separate team to a self-administered cloud hosting setup, bringing the deployment process from days to minutes, gaining more flexible and faster hosting and a real backend, and doing it all for negligible hosting costs
-  - Providing a security audit function within my team, identifying more relevant risks and bugs than IT commissioned scans
+  - Maintaining the GC InfoBase front end source code, at ~50,000 lines of JS. Implementing, and guiding junior Devs' implementation of new features while ensuring continued maintainability
+  - Building backend components for the main SPA, including a GraphQL data-fetching API and an email backend (obviating mailto)
   - Hiring, supervising, and mentoring of 7+ CO-OP students
-  - Championing for code standards, code reviews, testing, CI/CD, and Open Sourcing/working in the open
+  - Championing for code standards, code review, testing, CI/CD, and Open Sourcing/working in the open
+  - Transitioned hosting from a static file server administered by a separate team to a self-administered cloud hosting setup, bringing the deployment process from days to minutes, gaining more flexible, faster hosting & a real backend, and doing it all for negligible hosting costs
+  - Providing a security audit function within my team, identifying more relevant risks and bugs than IT commissioned App scans
   
-- **01/2015 - 09/2017** – Junior Analyst/Developer, Office of the Chief Human Resources Officer (OCHRO), TBS
+- **01/2015 - 09/2017** – Developer/Junior Analyst, Office of the Chief Human Resources Officer (OCHRO), TBS
   - Developed and maintained OCHRO's portions of the GC InfoBase web app, in partnership with EMS colleagues
   - SQL, SAS, Java. Responded to ad-hoc data requests and automated periodic ones
   
@@ -66,8 +67,8 @@ const extracurricular = `
 ## Extracurricular
 - Regular attendee at the Ottawa Civic Tech meet-up
 - GNU+Linux nerd
-- Listening to music (misc.) & podcasts (comedy, tech)
-- Reading novels (Sci-fi, fantasy) & comics (web, indy)
+- Reading novels (Sci-fi, fantasy) & comics (web, indie)
+- Listening to music (misc) & podcasts (comedy, tech)
 - Night-time walking
 `;
 
