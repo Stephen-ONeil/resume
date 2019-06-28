@@ -32,23 +32,23 @@ TODO
 `;
 
 const operations = `
-## Operations
-- Strong believer in DevOps, bringing both the "Dev" and the "Ops" to the table in all projects with space at the table
-- Automation and Bash scripts! Serverless microservices! Logging! Actually reading logs! Making deployments easy & safe!
+## Operations                
+- Strong believer in DevOps, personally bringing both the "Dev" and the "Ops" to all projects within appropriate scale
+- Automation and Bash scripts! Serverless microservices! Logging! Actually using logs! Making deployments easy & safe!
 `;
 
 const security = `
 ## Security
 - Pushing _from_ the left, bringing security-by-design to the design stages of Dev and DevOps tasks
-- Staying up-to-date with SecOps news and best practices through blogs, mailing lists, podcasts, and the local OWASP meet-up
+- Staying up-to-date with SecOps and AppSec news and best practices through blogs, mailing lists, podcasts, and the local OWASP meet-up
 `;
 
 const curriculum_vitae = `
 ## Curriculum Vitae
 - **09/2017 - Ongoing** – Senior JavaScript Developer, Expenditure Management Sector (EMS), TBS
-  - Maintaining the GC InfoBase front end source code, at ~50,000 lines of JS. Implementing, and guiding junior Devs implementing, new features while ensuring continued maintainability
-  - Building more backend components for the main SPA, including the GraphQL data API and a email backend to obviate mailto links
-  - Transitioned the GC InfoBase hosting from a static file server administered by a separate team to a self-administered cloud hosting setup, bringing the deployment process from days to minutes, gaining more flexible and faster hosting with a real backend, and doing it all for negligible hosting costs 
+  - Maintaining the GC InfoBase front end source code, at ~50,000 lines of JS. Implementing, and guiding junior Devs' implementation of, new features while ensuring continued maintainability
+  - Building backend components for the main SPA, including the GraphQL data API and an email backend to obviate mailto links
+  - Transitioned hosting from a static file server administered by a separate team to a self-administered cloud hosting setup, bringing the deployment process from days to minutes, gaining more flexible and faster hosting and a real backend, and doing it all for negligible hosting costs
   - Providing a security audit function within my team, identifying more relevant risks and bugs than IT commissioned scans
   - Hiring, supervising, and mentoring of 7+ CO-OP students
   - Championing for code standards, code reviews, testing, CI/CD, and Open Sourcing/working in the open
