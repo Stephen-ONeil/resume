@@ -29,7 +29,7 @@ const developer = `
 - JS expert, HTML & CSS proficient. Framework of choice React. Strives to make ethical and user-centric design decisions, from speed to A11y
 - ECMAScript proposal watcher, excited for the pipeline operator and optional chaining + nullish coalescing. Ride the wave of JS progress!
 - Generally borrows heavily from the functional paradigm, favours declarative style for internal APIs
-- Most at home with Linux and Posix (MacOS) systems. Comfortable with Windows. Environment of choice is VS Code and command line tools
+- Most at home with Linux or Posix (MacOS) systems. Comfortable with Windows. Environment of choice is VS Code and command line tools
 - Git and GitHub fan, with years of experience using and helping others to make full use of the tool & service
 `;
 
