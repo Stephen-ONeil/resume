@@ -24,17 +24,18 @@ Treasury Board of Canada Secretariat (TBS)
 
 const developer = `
 ## Developer
-- _Code cleanly-ness is next to goodly-ness. "Done yesterday" is the enemy of still works tomorrow. Aim for done right, right now._ – Stephen O'Neil
-- JS expert, HTML & CSS proficient. Framework of choice React. Ever aware of A11y, and strives to make ethical and user-centric design decisions
-- ECMAScript proposal watcher, currently excited for the pipeline operator and optional chaining + nullish coalescing
+- _Prefer done right, right now over "done yesterday". Done yesterday is the enemy of still works tomorrow._  
+&nbsp;&nbsp;&nbsp;&nbsp;– Stephen O'Neil
+- JS expert, HTML & CSS proficient. Framework of choice React. Strives to make ethical and user-centric design decisions, from speed to A11y
+- ECMAScript proposal watcher, excited for the pipeline operator and optional chaining + nullish coalescing. Ride the wave of JS progress!
 - Generally borrows heavily from the functional paradigm, favours declarative style for internal APIs
-- Perfectly at home with Linux and Posix (Mac OS) systems. Comfortable with Windows. Preference for VS Code and command line tools over IDEs
+- Most at home with Linux and Posix (MacOS) systems. Comfortable with Windows. Environment of choice is VS Code and command line tools
 - Git and GitHub fan, with years of experience using and helping others to make full use of the tool & service
 `;
 
 const operations = `
 ## Operations                
-- Strong believer in DevOps, personally bringing both the "Dev" and the "Ops" to all projects within appropriate scale
+- Strong believer in DevOps, personally bringing both the "Dev" and the "Ops" to all projects where feasible
 - Automation and Bash scripts! Serverless microservices! Logging! Actually using logs! Making deployments easy & safe!
 `;
 
@@ -49,7 +50,7 @@ const curriculum_vitae = `
 - **09/2017 - Ongoing** – Senior JavaScript Developer, Expenditure Management Sector (EMS), TBS
   - Maintaining the GC InfoBase front end source code, at ~50,000 lines of JS. Implementing, and guiding junior Devs' implementation of new features while ensuring continued maintainability
   - Building backend components for the main SPA, including a GraphQL data-fetching API and an email backend (obviating mailto)
-  - Hiring, supervising, and mentoring of 7+ CO-OP students
+  - Hiring, supervising, and mentoring of CO-OP students; 7+ to date
   - Championing for code standards, code review, testing, CI/CD, and Open Sourcing/working in the open
   - Transitioned hosting from a static file server administered by a separate team to a self-administered cloud hosting setup, bringing the deployment process from days to minutes, gaining more flexible, faster hosting & a real backend, and doing it all for negligible hosting costs
   - Providing a security audit function within my team, identifying more relevant risks and bugs than IT commissioned App scans
@@ -66,7 +67,7 @@ const curriculum_vitae = `
 const extracurricular = `
 ## Extracurricular
 - Regular attendee at the Ottawa Civic Tech meet-up
-- GNU+Linux nerd
+- GNU+Linux/unix nerd
 - Reading novels (Sci-fi, fantasy) & comics (web, indie)
 - Listening to music (misc) & podcasts (comedy, tech)
 - Night-time walking
