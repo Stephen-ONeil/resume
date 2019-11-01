@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/resume/static/css/main.d1f71ee6.chunk.css",
-    "main.js": "/resume/static/js/main.08e98709.chunk.js",
-    "main.js.map": "/resume/static/js/main.08e98709.chunk.js.map",
-    "runtime~main.js": "/resume/static/js/runtime~main.30522d0f.js",
-    "runtime~main.js.map": "/resume/static/js/runtime~main.30522d0f.js.map",
-    "static/js/2.981592be.chunk.js": "/resume/static/js/2.981592be.chunk.js",
-    "static/js/2.981592be.chunk.js.map": "/resume/static/js/2.981592be.chunk.js.map",
-    "index.html": "/resume/index.html",
-    "precache-manifest.25d3a514ad136de929ba1c789121e5b0.js": "/resume/precache-manifest.25d3a514ad136de929ba1c789121e5b0.js",
-    "service-worker.js": "/resume/service-worker.js",
-    "static/css/main.d1f71ee6.chunk.css.map": "/resume/static/css/main.d1f71ee6.chunk.css.map"
+    "main.css": "resume.oneil.online/static/css/main.d1f71ee6.chunk.css",
+    "main.js": "resume.oneil.online/static/js/main.08e98709.chunk.js",
+    "main.js.map": "resume.oneil.online/static/js/main.08e98709.chunk.js.map",
+    "runtime~main.js": "resume.oneil.online/static/js/runtime~main.cb5ebf42.js",
+    "runtime~main.js.map": "resume.oneil.online/static/js/runtime~main.cb5ebf42.js.map",
+    "static/js/2.981592be.chunk.js": "resume.oneil.online/static/js/2.981592be.chunk.js",
+    "static/js/2.981592be.chunk.js.map": "resume.oneil.online/static/js/2.981592be.chunk.js.map",
+    "index.html": "resume.oneil.online/index.html",
+    "precache-manifest.47285f33f46c9516d562ee4ead534e78.js": "resume.oneil.online/precache-manifest.47285f33f46c9516d562ee4ead534e78.js",
+    "service-worker.js": "resume.oneil.online/service-worker.js",
+    "static/css/main.d1f71ee6.chunk.css.map": "resume.oneil.online/static/css/main.d1f71ee6.chunk.css.map"
   }
 }
