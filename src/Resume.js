@@ -20,12 +20,12 @@ const brief = `
 Treasury Board of Canada Secretariat (TBS)
   - **4+ years front end**. **React, Lodash, Sass, D3**
   - **1.5+ years back end, DevOps. Node, GraphQL, MongoDB, Google Cloud**
-- E.g. **GC InfoBase** ([canada.ca/gcinfobase](https://canada.ca/gcinfobase)),  a SPA React frontend backed by a serverless GraphQL API, data vizualization and data exploration
+- E.g. **GC InfoBase** ([canada.ca/gcinfobase](https://canada.ca/gcinfobase)), a SPA React frontend backed by a serverless GraphQL API, offering vizualization and exploration vectors for gov. data
 `;
 
 const developer = `
 ## Developer
-- _Prefer done right, now, over done yesterday. The "done yesterday" mindset is opposed to "still works tomorrow"._  
+- _Prefer done right, right now, over done yesterday. The "done yesterday" mindset is opposed to "still works tomorrow"._  
 &nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;– Me, on my resume
 - JS expert, HTML & CSS proficient. Framework of choice React. Strives to make ethical and user-centric design decisions, from speed to A11y
 - ECMAScript proposal watcher, excited for the pipeline operator and optional chaining + nullish coalescing. Ride the wave of JS progress!
@@ -52,9 +52,9 @@ const curriculum_vitae = `
   - Maintaining the GC InfoBase front end source code, at ~50,000 lines of JS. Implementing, and guiding junior Devs' implementation of new features while ensuring continued maintainability
   - Building backend components for the main SPA, including a GraphQL data-fetching API and an email backend (obviating mailto:)
   - Hiring, supervising, and mentoring of CO-OP students; 7+ to date
-  - Championing for code standards, code review, testing, CI/CD, and Open Sourcing/working in the open. Recent success: finally OS!
+  - Championing for code standards, code review, testing, CI/CD, and Open Sourcing/working in the open
   - Transitioned hosting from a static file server administered by a separate team to a self-administered cloud hosting setup, bringing the deployment process from days to minutes, gaining more flexible, faster hosting & a real backend, and doing it all for negligible hosting costs
-  - Providing a security audit function within my team, identifying more relevant risks and bugs than IT commissioned App scans
+  - Providing a security audit function within my team, identifying more, and more relevant, risks and sensitive bugs than our IT security's commissioned App scans
   
 - **01/2015 - 09/2017** – Developer/Junior Analyst/CO-OP Student, Office of the Chief Human Resources Officer (OCHRO), TBS
   - Developed and maintained OCHRO's portions of the GC InfoBase
