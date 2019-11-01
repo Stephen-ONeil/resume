@@ -1,6 +1,6 @@
 # Resume, Stephen O'Neil
 
-[stephen-oneil.github.io/resume/](https://stephen-oneil.github.io/resume/)
+[resume.oneil.online](https://resume.oneil.online/)
 
 Nothing fancy, my resume in over-wrought React app form. Constrained to the exact size of a standard sheet of paper because I enjoy a challenge.
 
