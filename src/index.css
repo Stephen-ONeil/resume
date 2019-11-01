@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: "Cantarell";
+  font-display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
