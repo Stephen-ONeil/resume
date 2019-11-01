@@ -20,7 +20,7 @@ const brief = `
 Treasury Board of Canada Secretariat (TBS)
   - **4+ years front end**. **React, Lodash, Sass, D3**
   - **1.5+ years back end, DevOps. Node, GraphQL, MongoDB, Google Cloud**
-- E.g. **GC InfoBase** ([canada.ca/gcinfobase](https://canada.ca/gcinfobase)), a SPA React frontend backed by a serverless GraphQL API, offering vizualization and exploration vectors for gov. data
+- E.g. **GC InfoBase** ([canada.ca/gcinfobase](https://canada.ca/gcinfobase)), a SPA React frontend backed by a serverless GraphQL API, offering data vizualization and exploration vectors
 `;
 
 const developer = `
