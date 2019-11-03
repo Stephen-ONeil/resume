@@ -13,7 +13,7 @@ const serve_build_dir = async (port) => http
 
 const get_resume_pdf = async () => {
   if ( !fs.existsSync(`${build_dir}/index.html`) ){
-    throw "Error generating pdf: build dir doesn't contain an index.html file");
+    throw new Error("Error generating pdf: build dir doesn't contain an index.html file");
   }
 
   const free_port = await getPort();
