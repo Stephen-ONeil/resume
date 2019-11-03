@@ -15,7 +15,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "generate_pdf": "node scripts/generate_pdf.js",
-    "test_page_count": "node scripts/test_page_count.js",
+    "test_pdf_page_count": "node scripts/test_pdf_page_count.js",
     "predeploy": "npm run build && npm run generate_pdf",
     "deploy": "gh-pages -d build"
   },
