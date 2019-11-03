@@ -16,5 +16,4 @@ const pdf_path = `${build_dir}/${pdf_name}`;
   if ( fs.existsSync(pdf_path) ){
     console.log(`Generating pdf successful`);
   }
-  // not logging the inverse as, pretty sure, anything going wrong before this would have thrown its own error. Confirm that some time?
 })();

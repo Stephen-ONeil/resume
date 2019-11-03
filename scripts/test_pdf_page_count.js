@@ -1,6 +1,6 @@
 const { get_resume_pdf } = require('./script_utils');
 
-const expected_page_count = 1
+const expected_page_count = 1;
 
 (async () => {
   const pdf = await get_resume_pdf();
@@ -9,7 +9,6 @@ const expected_page_count = 1
   const pdf_page_count = pdf.toString().match(/\/Type[\s]*\/Page[^s]/g).length; 
 
   if (pdf_page_count !== expected_page_count){
-    console.log(`Page count failed: PDF page count of ${pdf_page_count}, expected ${expected_page_count}`);
-    process.exit(1);
+    throw new Error(`Page count failed: PDF page count of ${pdf_page_count}, expected ${expected_page_count}`);
   }
 })();
