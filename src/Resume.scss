@@ -1,10 +1,13 @@
-$page_width: 8.5in;
-$page_height: 11in;
+@import './common-variables';
 
 $gutter: 0.025in;
 $border: 0.02in;
 
 .resume {
+  font-family: "Cabin", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
   /* A4 paper dimensions */
   width: $page_width;
   height: $page_height;

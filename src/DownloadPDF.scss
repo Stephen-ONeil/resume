@@ -1,0 +1,35 @@
+@import './common-variables';
+
+$icon-dimension: 0.35in;
+
+.download-pdf-link {
+  @media print {
+    display: none;
+  }
+
+  position: fixed;
+  top: $icon-dimension/4;
+  width: $icon-dimension;
+  height: $icon-dimension;
+  
+  @media (min-width: $page_width) {
+    background-color: white;
+    border-radius: 33%;
+  }
+  @media (min-width: $page_width+($icon-dimension*2)) {
+    left: 50%;
+    margin-left: $page_width/2+($icon-dimension*0.3);
+  }
+  @media (max-width: $page_width+($icon-dimension*2)) {
+    right: $icon-dimension/4;
+  }
+
+  & > svg {
+    width: $icon-dimension;
+    height: $icon-dimension;
+    fill: rgba(27, 27, 117, 0.6);
+  }
+  &:hover > svg, &:focus > svg {
+    transform: scale(1.1);
+  }
+}
