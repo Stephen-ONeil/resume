@@ -6,12 +6,20 @@ const dictionary = SpellChecker.getDictionarySync("en-GB");
 
 const content = require('../src/content.js');
 
-const whitelist = ["Dev", "com", "TBS", "Sass", "Google", "AP", "VS", "CI", "mentoring", "setup", "hoc", "HR", "GPA", "tech", "Sci"];
+const whitelist = [
+  "app", "dev", "github", "com", "oneil", "tbs", "eacpd", "infobase", "gmail", "uottawa", "lodash",
+  "sass", "devops", "graphql", "mongodb", "google", "gc", "gcinfobase", "frontend", "serverless", "api",
+  "vizualization", "nbsp", "js", "css", "ecmascript", "nullish", "apis", "vs", "posix", "macos", "ci",
+  "microservices", "secops", "appsec", "blogs", "podcasts", "owasp", "devs", "backend", "mailto",
+  "mentoring", "setup", "ochro", "ochro's", "sql", "sas", "hoc", "hr", "bachelour", "gpa", "dotfiles",
+  "tech", "sci", "indie",
+];
 
 
 const spelling_mistakes_by_section = _.chain(content)
   .mapValues( (section_content, section_key) => _.chain(section_content)
     .thru(remove_markdown)
+    .toLower()
     .words()
     .uniq()
     .filter( (word) => _.isNaN(+word) && !_.includes(whitelist, word) )
