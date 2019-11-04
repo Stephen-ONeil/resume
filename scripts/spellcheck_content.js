@@ -2,17 +2,11 @@ const _ = require('lodash');
 const remove_markdown = require('remove-markdown');
 const SpellChecker = require('simple-spellchecker');
 
-const dictionary = SpellChecker.getDictionarySync("en-US");
+const dictionary = SpellChecker.getDictionarySync("en-GB");
 
 const content = require('../src/content.js');
 
-const whitelist = [
-  "App", "github", "EACPD", "infobase", "gmail", "Honours", "Lodash", "QL", "Mongo", "GC", "gcinfobase", 
-  "frontend", "serverless", "API", "vizualization", "nbsp", "JS", "CSS", "ECMA", "nullish", "favours", 
-  "Posix", "Serverless", "microservices", "App", "blogs", "podcasts", "OWASP", "GC", "JS", "Devs", 
-  "backend", "QL", "API", "mailto", "App", "OCHRO", "SQL", "SAS", "Honours", "Bachelour", "Honour", 
-  "github", "dotfiles", "fi", "indie", "podcasts",
-];
+const whitelist = ["Dev", "com", "TBS", "Sass", "Google", "AP", "VS", "CI", "mentoring", "setup", "hoc", "HR", "GPA", "tech", "Sci"];
 
 
 const spelling_mistakes_by_section = _.chain(content)
