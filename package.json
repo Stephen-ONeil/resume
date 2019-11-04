@@ -18,7 +18,7 @@
     "test_pdf_page_count": "node scripts/test_pdf_page_count.js",
     "spellcheck": "node scripts/spellcheck_content.js",
     "predeploy": "npm run build && npm run generate_pdf",
-    "deploy": "npm run test_pdf_page_count && npm run test_pdf_page_count && gh-pages -d build"
+    "deploy": "npm run test_pdf_page_count && npm run spellcheck && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
