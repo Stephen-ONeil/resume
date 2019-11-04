@@ -68,7 +68,7 @@ const extracurricular = `
 - Night-time walking
 `;
 
-export {
+module.exports = {
   contact_info,
   brief,
   developer,
