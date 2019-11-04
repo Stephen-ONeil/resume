@@ -23,7 +23,7 @@ const developer = `
 &nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;– Me, on my resume
 - JS expert, HTML & CSS proficient. Framework of choice React. Strives to make ethical and user-centric design decisions, from speed to A11y
 - ECMAScript proposal watcher, excited for the pipeline operator and optional chaining + nullish coalescing. Ride the wave of JS progress!
-- Generally borrows heavily from the functional paradigm, favours declarative APIs internally, and loves formulating robust data-driven control-flow  
+- Generally borrows heavily from the functional paradigm, prefers declarative APIs (internally), and loves formulating robust data-driven control-flow  
 - Environment of choice is VS Code and command line tools. Most at home with Linux or Posix (macOS) systems.
 - Git and GitHub fan, with years of experience using and helping others to learn the tool & service
 `;
@@ -61,7 +61,7 @@ const curriculum_vitae = `
 
 const extracurricular = `
 ## Extracurricular
-- *nix nerd, [github.com/ Stephen-ONeil/.dotfiles](https://github.com/Stephen-ONeil/.dotfiles)
+- Unix nerd, [github.com/ Stephen-ONeil/.dotfiles](https://github.com/Stephen-ONeil/.dotfiles)
 - Local tech meet-ups
 - Reading novels (Sci-fi, fantasy) & comics (web, indie)
 - Listening to music (misc) & podcasts (comedy, tech)
