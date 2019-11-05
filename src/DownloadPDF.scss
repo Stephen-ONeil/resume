@@ -8,21 +8,22 @@ $icon-dimension: 0.35in;
   }
 
   position: fixed;
-  top: $icon-dimension/4;
   width: $icon-dimension;
   height: $icon-dimension;
 
-  @media (min-width: $page_width) {
+  @media (min-width: $page_width+($icon-dimension*0.75)) {
     background-color: white;
     border: $border solid black;
     outline: $gutter*2 solid white;
   }
   @media (min-width: $page_width+($icon-dimension*2)) {
     left: 50%;
-    margin-left: $page_width/2+($icon-dimension*0.3);
+    margin-left: $page_width/2+($icon-dimension*0.19);
+    top: $icon-dimension;
   }
   @media (max-width: $page_width+($icon-dimension*2)) {
-    right: $icon-dimension/4;
+    right: $gutter+$border;
+    top: $gutter+$border;
   }
 
   & > svg {
