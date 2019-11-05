@@ -58,16 +58,16 @@ $border: 0.02in;
     }
   }
   & li:before {
-    margin-right: 2px;
-    line-height: 1em;
-    font-size: 1.2em;
     float: left;
+    width: 1em;
+    height: 1em;
+    transform: scale(0.2) translate(-2.1em, -1.2em);
   }
   & :not(li) > ul > li:before {
-    content: "⮞ ";
+    content: url('./svgs/arrow-full.svg');
   }
   & li > ul > li:before{
-    content: "⮚";
+    content: url('./svgs/arrow-half.svg');
   }
 }
 
