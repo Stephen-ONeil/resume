@@ -11,10 +11,11 @@ $icon-dimension: 0.35in;
   top: $icon-dimension/4;
   width: $icon-dimension;
   height: $icon-dimension;
-  
+
   @media (min-width: $page_width) {
     background-color: white;
-    border-radius: 33%;
+    border: $border solid black;
+    outline: $gutter*2 solid white;
   }
   @media (min-width: $page_width+($icon-dimension*2)) {
     left: 50%;
@@ -27,9 +28,9 @@ $icon-dimension: 0.35in;
   & > svg {
     width: $icon-dimension;
     height: $icon-dimension;
-    fill: rgba(27, 27, 117, 0.6);
+    fill: rgba(0, 0, 0, 0.6);
   }
   &:hover > svg, &:focus > svg {
-    fill: rgba(27, 27, 117, 1);
+    fill: rgba(0, 0, 0, 1);
   }
 }
