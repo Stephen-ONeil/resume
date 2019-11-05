@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.4c4fc485.chunk.css",
+    "main.css": "/static/css/main.aad540c9.chunk.css",
     "main.js": "/static/js/main.2d1d84cd.chunk.js",
     "main.js.map": "/static/js/main.2d1d84cd.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
@@ -8,9 +8,9 @@
     "static/js/2.95923214.chunk.js": "/static/js/2.95923214.chunk.js",
     "static/js/2.95923214.chunk.js.map": "/static/js/2.95923214.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.5e7a8a56a4cfaa1c5ea9a902b22c9adc.js": "/precache-manifest.5e7a8a56a4cfaa1c5ea9a902b22c9adc.js",
+    "precache-manifest.a36456e7f762464da68800730500997e.js": "/precache-manifest.a36456e7f762464da68800730500997e.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.4c4fc485.chunk.css.map": "/static/css/main.4c4fc485.chunk.css.map",
+    "static/css/main.aad540c9.chunk.css.map": "/static/css/main.aad540c9.chunk.css.map",
     "static/media/Resume.scss": "/static/media/arrow-half.1c18b17a.svg"
   }
 }
