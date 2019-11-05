@@ -30,6 +30,6 @@ $icon-dimension: 0.35in;
     fill: rgba(27, 27, 117, 0.6);
   }
   &:hover > svg, &:focus > svg {
-    transform: scale(1.1);
+    fill: rgba(27, 27, 117, 1);
   }
 }
