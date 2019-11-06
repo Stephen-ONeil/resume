@@ -10,17 +10,17 @@ $icon-dimension: 0.35in;
   position: fixed;
   width: $icon-dimension;
 
-  @media (min-width: $page_width+($icon-dimension*0.75)) {
+  @media (min-width: $page_width+($icon-dimension*0.45)) {
     background-color: white;
     border: $border solid black;
     outline: $gutter*2 solid white;
   }
-  @media (min-width: $page_width+($icon-dimension*2)) {
+  @media (min-width: $page_width+($icon-dimension*2)+$icon-dimension) {
     left: 50%;
     margin-left: $page_width/2+($icon-dimension*0.19);
     top: $icon-dimension;
   }
-  @media (max-width: $page_width+($icon-dimension*2)) {
+  @media (max-width: $page_width+($icon-dimension*2)+$icon-dimension) {
     right: $gutter+$border;
     top: $gutter+$border;
   }
