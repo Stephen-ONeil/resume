@@ -12,7 +12,7 @@ const whitelist = [
   "vizualization", "nbsp", "js", "css", "ecmascript", "nullish", "apis", "vs", "posix", "macos", "ci",
   "microservices", "secops", "appsec", "blogs", "podcasts", "owasp", "devs", "backend", "mailto",
   "mentoring", "setup", "ochro", "ochro's", "sql", "sas", "hoc", "hr", "bachelour", "gpa", "dotfiles",
-  "tech", "sci", "indie",
+  "tech", "sci", "indie", "esnext", "circleci"
 ];
 
 
