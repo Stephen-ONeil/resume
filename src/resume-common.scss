@@ -33,14 +33,14 @@
   }
 
   & p, & :not(li) > ul{
-    margin: 0.5em 0em;
+    margin: 0em;
   }
 
   & ul, & li {
-    padding-bottom: 0.215em;
+    padding-bottom: 0.33em;
   }
   & ul {
-    padding-left: 1.5em;
+    padding-left: 1em;
     display: flex;
     flex-direction: column;
   }
