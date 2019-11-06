@@ -5,6 +5,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+
   margin-top: 0px;
   margin-right: auto;
   margin-left: auto;
@@ -54,7 +55,7 @@
     float: left;
     width: 1em;
     height: 1em;
-    transform: scale(0.2) translate(-2.1em, -1.2em);
+    transform: translate(-0.05em, 0.15em);
   }
   & :not(li) > ul > li:before {
     content: url('./svgs/arrow-full.svg');
