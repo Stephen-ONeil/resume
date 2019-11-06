@@ -1,36 +1,43 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
 
+import { ResumeSection } from './resume-common.js';
 import './resume-common.scss';
-import * as content from './content.js';
+import * as sections from './sections.js';
 
 import './ResponsiveResume.scss';
 
 function ResponsiveResume(){
   return (
     <div className="resume responsive-resume">
-      <section style={{textAlign: "center"}}>
-        <ReactMarkdown source={content.contact_info} />
-      </section>
-      <section>
-        <h2>Overview</h2>
-        <ReactMarkdown source={content.brief} />
-      </section>
-      <section>
-        <ReactMarkdown source={content.developer} />
-      </section>
-      <section>
-        <ReactMarkdown source={content.operations} />
-      </section>
-      <section>
-        <ReactMarkdown source={content.security} />
-      </section>
-      <section>
-        <ReactMarkdown source={content.curriculum_vitae} />
-      </section>
-      <section>
-        <ReactMarkdown source={content.extracurricular} />
-      </section>
+      <ResumeSection
+        style={{textAlign: "center"}}
+        section={sections.contact_info}
+        heading_element='h1'
+      />
+      <ResumeSection
+        section={sections.brief}
+        heading_element='h2'
+      />
+      <ResumeSection
+        section={sections.developer}
+        heading_element='h2'
+      />
+      <ResumeSection
+        section={sections.operations}
+        heading_element='h2'
+      />
+      <ResumeSection
+        section={sections.security}
+        heading_element='h2'
+      />
+      <ResumeSection
+        section={sections.curriculum_vitae}
+        heading_element='h2'
+      />
+      <ResumeSection
+        section={sections.extracurricular}
+        heading_element='h2'
+      />
     </div>
   );
 }
