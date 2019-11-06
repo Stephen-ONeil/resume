@@ -5,10 +5,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /* A4 paper dimensions */
-  width: $page_width;
-  height: $page_height;
-
   margin-top: 0px;
   margin-right: auto;
   margin-left: auto;
@@ -65,38 +61,5 @@
   }
   & li > ul > li:before{
     content: url('./svgs/arrow-half.svg');
-  }
-}
-
-.fcol {
-  display: flex;
-  flex-direction: column;
-
-  &.fcol__1-3rd {
-    flex-basis: 33%;
-  }
-  &.fcol__1-half {
-    flex-basis: 50%;
-  }
-  &.fcol__2-3rd {
-    flex-basis: 66%;
-  }
-}
-
-.frow {
-  display: flex;
-  flex-direction: row;
-}
-
-.two-column-list {
-  & > ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    & > li {
-      flex: 0 0 47%;
-    }
   }
 }

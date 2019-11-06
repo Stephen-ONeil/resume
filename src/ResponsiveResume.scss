@@ -1,0 +1,9 @@
+@import './common-variables';
+
+.resume.responsive-resume {
+  // Hide if printing or screen width < paper width
+  @media print, (min-width: $page_width) {
+    display: none;
+  }
+}
+

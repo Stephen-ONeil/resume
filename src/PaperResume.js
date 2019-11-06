@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 
-import './Resume.scss';
-import * as content from './content.js'; 
+import './resume-common.scss';
+import * as content from './content.js';
 
-function Resume(){
+import './PaperResume.scss';
+
+function PaperResume(){
   return (
-    <div className="resume fcol">
+    <div className="resume paper-resume fcol">
       <div className="frow">
         <section className="fcol fcol__1-half" style={{textAlign: "center"}}>
           <ReactMarkdown source={content.contact_info} />
@@ -45,4 +47,4 @@ function Resume(){
   );
 }
 
-export { Resume };
+export { PaperResume };
