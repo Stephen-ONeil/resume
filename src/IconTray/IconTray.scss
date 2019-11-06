@@ -1,15 +1,14 @@
-@import './common-variables';
+@import '../common-variables';
 
 $icon-dimension: 0.35in;
 
-.download-pdf-link {
+.icon-tray {
   @media print {
     display: none;
   }
 
   position: fixed;
   width: $icon-dimension;
-  height: $icon-dimension;
 
   @media (min-width: $page_width+($icon-dimension*0.75)) {
     background-color: white;
@@ -26,12 +25,16 @@ $icon-dimension: 0.35in;
     top: $gutter+$border;
   }
 
-  & > svg {
+  & > {
+    width: $icon-dimension;
+    height: $icon-dimension;
+  }
+  & svg {
     width: $icon-dimension;
     height: $icon-dimension;
     fill: rgba(0, 0, 0, 0.6);
   }
-  &:hover > svg, &:focus > svg {
+  & > *:hover svg, & > *:focus svg {
     fill: rgba(0, 0, 0, 1);
   }
 }
