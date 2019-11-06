@@ -1,5 +1,7 @@
 import React from 'react';
+
 import './IconTray.scss';
+import github_icon from './GitHub-Mark-32px.png'
 
 
 const DownloadPDF = () => (
@@ -12,10 +14,25 @@ const DownloadPDF = () => (
   </a>
 );
 
+const GitHubLink = () => (
+  <a href='https://github.com/Stephen-ONeil/resume' rel="noopener noreferrer" target="_blank">
+    <img 
+      src={github_icon}
+      title={"View site source on GitHub"}
+      alt={"GitHub's logo"}
+      style={{
+        width: "80%",
+        paddingLeft: "10%",
+      }}
+    />
+  </a>
+);
+
 
 const IconTray = () => (
   <div className="icon-tray">
     <DownloadPDF />
+    <GitHubLink />
   </div>
 );
 

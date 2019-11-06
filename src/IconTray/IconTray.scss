@@ -25,16 +25,24 @@ $icon-dimension: 0.35in;
     top: $gutter+$border;
   }
 
-  & > {
+  & > * {
     width: $icon-dimension;
     height: $icon-dimension;
-  }
-  & svg {
-    width: $icon-dimension;
-    height: $icon-dimension;
-    fill: rgba(0, 0, 0, 0.6);
-  }
-  & > *:hover svg, & > *:focus svg {
-    fill: rgba(0, 0, 0, 1);
+
+    & > svg {
+      width: $icon-dimension;
+      height: $icon-dimension;
+      fill: rgba(0, 0, 0, 0.6);
+    }
+    &:hover > svg, &:focus > svg {
+      fill: rgba(0, 0, 0, 1);
+    }
+
+    & > img {
+      opacity: 60%;
+    }
+    &:hover > img, &:focus > img {
+      opacity: 100%;
+    }
   }
 }
