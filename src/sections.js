@@ -31,8 +31,8 @@ const brief = {
 - Honours B.Sc. Physics-Mathematics, uOttawa
 - **Senior JavaScript developer, full stack** at 
 Treasury Board of Canada Secretariat (TBS)
-  - **${front_end_years} years front end**. **React, Lodash, Sass, ESnext**
-  - **${back_end_years} years back end/DevOps. Node, GraphQL, MongoDB, Google Cloud, Docker, CircleCI**
+  - **${front_end_years} years front end — React, Lodash, Sass, ESnext**
+  - **${back_end_years} years back end/DevOps — Node, GraphQL, MongoDB, Google Cloud, Docker, CircleCI**
 - E.g. **GC InfoBase** ([canada.ca/gcinfobase](https://canada.ca/gcinfobase)), a SPA React frontend backed by a serverless GraphQL API, offering data vizualization and exploration vectors
 `,
 };
