@@ -4,7 +4,7 @@ const SpellChecker = require('simple-spellchecker');
 
 const dictionary = SpellChecker.getDictionarySync("en-GB");
 
-const content = require('../src/content.js');
+const sections = require('../src/sections.js');
 
 const whitelist = [
   "app", "dev", "github", "com", "oneil", "tbs", "eacpd", "infobase", "gmail", "uottawa", "lodash",
@@ -16,8 +16,9 @@ const whitelist = [
 ];
 
 
-const spelling_mistakes_by_section = _.chain(content)
-  .mapValues( (section_content, section_key) => _.chain(section_content)
+const spelling_mistakes_by_section = _.chain(sections)
+  .mapValues( (section, section_key) => _.chain(section)
+    .thru( ({header, content}) => `${header} ${content}`)
     .thru(remove_markdown)
     .toLower()
     .words()

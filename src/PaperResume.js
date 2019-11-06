@@ -1,8 +1,8 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
 
+import { ResumeSection } from './resume-common.js';
 import './resume-common.scss';
-import * as content from './content.js';
+import * as sections from './sections.js';
 
 import './PaperResume.scss';
 
@@ -10,37 +10,52 @@ function PaperResume(){
   return (
     <div className="resume paper-resume fcol">
       <div className="frow">
-        <section className="fcol fcol__1-half" style={{textAlign: "center"}}>
-          <ReactMarkdown source={content.contact_info} />
-        </section>
-        <section className="fcol fcol__1-half">
-          <h2 style={{height: "0em", width: "0em", fontSize: "0em"}}>
-            {"Overview"}
-          </h2>
-          <ReactMarkdown source={content.brief} />
-        </section>
+        <ResumeSection
+          className="fcol fcol__1-half"
+          style={{textAlign: "center"}}
+          section={sections.contact_info}
+          heading_element='h1'
+        />
+        <ResumeSection
+          className="fcol fcol__1-half"
+          section={sections.brief}
+          heading_element='h2'
+          heading_style={{height: "0em", width: "0em", fontSize: "0em"}}
+        />
       </div>
       <div className="frow" style={{flexGrow: 1}}>
         <div className="fcol fcol__1-3rd">
-          <section className="fcol" style={{height: "100%"}}>
-            <ReactMarkdown source={content.developer} />
-          </section>
-          <section className="fcol">
-            <ReactMarkdown source={content.extracurricular} />
-          </section>
+          <ResumeSection
+            className="fcol"
+            style={{height: "100%"}}
+            section={sections.developer}
+            heading_element='h2'
+          />
+          <ResumeSection
+            className="fcol"
+            section={sections.extracurricular}
+            heading_element='h2'
+          />
         </div>
         <div className="fcol fcol__2-3rd" style={{flexGrow: 1}}>
           <div className="frow">
-            <section className="fcol fcol__1-half">
-              <ReactMarkdown source={content.operations} />
-            </section>
-            <section className="fcol fcol__1-half">
-              <ReactMarkdown source={content.security} />
-            </section>
+            <ResumeSection
+              className="fcol fcol__1-half"
+              section={sections.operations}
+              heading_element='h2'
+            />
+            <ResumeSection
+              className="fcol fcol__1-half"
+              section={sections.security}
+              heading_element='h2'
+            />
           </div>
-          <section className="fcol" style={{height: "100%"}}>
-            <ReactMarkdown source={content.curriculum_vitae} />
-          </section>
+          <ResumeSection
+            className="fcol"
+            style={{height: "100%"}}
+            section={sections.curriculum_vitae}
+            heading_element='h2'
+          />
         </div>
       </div>
     </div>
