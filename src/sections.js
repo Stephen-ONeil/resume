@@ -1,3 +1,18 @@
+// using common.js module syntax in this file as it is also imported by some scripts, and I don't want to go around transpiling scripts
+
+const moment = require('moment');
+const _ = require('lodash');
+
+const now = moment();
+const approx_time_since_in_years = (date) => `~${_.round(moment.duration( now.diff(moment(date)) ).asYears(), 1)}`;
+
+// roughly since start of first CO-OP term
+const front_end_years = approx_time_since_in_years([2015, 0, 1]);
+
+// roughly since when I first set up CI for real, we were starting to experiment with GCloud/GraphQl and the InfoBase API
+const back_end_years = approx_time_since_in_years([2018, 2, 15]);
+
+
 const contact_info = {
   header: "Stephen O'Neil",
   content: `
@@ -16,8 +31,8 @@ const brief = {
 - Honours B.Sc. Physics-Mathematics, uOttawa
 - **Senior JavaScript developer, full stack** at 
 Treasury Board of Canada Secretariat (TBS)
-  - **4+ years front end**. **React, Lodash, Sass, D3**
-  - **1.5+ years back end, DevOps. Node, GraphQL, MongoDB, Google Cloud**
+  - **${front_end_years} years front end**. **React, Lodash, Sass, D3**
+  - **${back_end_years} years back end, DevOps. Node, GraphQL, MongoDB, Google Cloud**
 - E.g. **GC InfoBase** ([canada.ca/gcinfobase](https://canada.ca/gcinfobase)), a SPA React frontend backed by a serverless GraphQL API, offering data vizualization and exploration vectors
 `,
 };
