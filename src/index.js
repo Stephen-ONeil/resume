@@ -5,13 +5,13 @@ import './index.scss';
 
 import { PaperResume } from './PaperResume.js';
 import { ResponsiveResume } from './ResponsiveResume.js';
-import { DownloadPDF } from './DownloadPDF';
+import { IconTray } from './IconTray/IconTray.js';
 
 ReactDOM.render(
   <React.Fragment>
     <PaperResume />
     <ResponsiveResume />
-    <DownloadPDF />
+    <IconTray />
   </React.Fragment>, 
   document.getElementById('root')
 );
