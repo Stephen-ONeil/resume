@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import './index.css';
+import './index.scss';
 
-import { Resume } from './Resume.js';
-import { DownloadPDF } from './DownloadPDF'
+import { PaperResume } from './PaperResume.js';
+import { ResponsiveResume } from './ResponsiveResume.js';
+import { DownloadPDF } from './DownloadPDF';
 
 ReactDOM.render(
   <React.Fragment>
-    <Resume />
+    <PaperResume />
+    <ResponsiveResume />
     <DownloadPDF />
   </React.Fragment>, 
   document.getElementById('root')
