@@ -7,6 +7,11 @@
     display: block;
   }
 
+  @media not print {
+    // specifically to keep the animations contained to the "paper", overflowing outside of that would be a content/styling error
+    // let print overflow so the test_pdf_page_count.js script can detect when the output is overflowing (spills on to and prints > 1 page)
+    overflow: hidden;
+  }
   & * {
     @media not print {
       @include slide-in;
@@ -21,7 +26,6 @@
   /* A4 paper dimensions */
   width: $page_width;
   height: $page_height;
-  overflow: hidden;
 
   .fcol {
     display: flex;
