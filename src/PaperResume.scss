@@ -13,14 +13,10 @@
     overflow: hidden;
   }
   & * {
-    @media not print {
-      @include slide-in;
-    }
+    @include slide-in;
   }
   & section {
-    @media not print {
-      @include news-spin;
-    }
+    @include news-spin;
   }
 
   /* A4 paper dimensions */

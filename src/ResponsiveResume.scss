@@ -7,9 +7,7 @@
   }
 
   & section {
-    @media not print {
-      @include news-spin;
-    }
+    @include news-spin;
   }
 }
 
