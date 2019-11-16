@@ -54,6 +54,11 @@
       @include slide-in;
     }
   }
+  & section {
+    @media not print {
+      @include news-spin;
+    }
+  }
 
   /* A4 paper dimensions */
   width: $page_width;
