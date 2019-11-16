@@ -1,47 +1,5 @@
 @import './common-variables';
 
-@keyframes news-spin-frames {
-  0% {
-    transform: rotate(60deg) scale(0.05);
-    opacity: 0.05;
-  }
-  50% {
-    transform: rotate(360deg*(2*0.9)) scale(0.8);
-    opacity: 0.66;
-  }
-  100% {
-    transform: rotate(360deg*2) scale(1);
-    opacity: 1;
-  }
-}
-@mixin news-spin {
-  animation-name: news-spin-frames;
-  animation-timing-function: linear;
-  animation-duration: 1s;
-  @media screen and (prefers-reduced-motion: reduce){
-    animation: none;
-  }
-}
-
-@keyframes slide-in-frames {
-  0% {
-    width: 0%;
-    opacity: 0;
-  }
-  100% {
-    width: 97%;
-    opacity: 1;
-  }
-}
-@mixin slide-in {
-  animation-name: slide-in-frames;
-  animation-timing-function: ease-out;
-  animation-duration: 1s;
-  @media screen and (prefers-reduced-motion: reduce){
-    animation: none;
-  }
-}
-
 .resume.paper-resume {
   // Hide unless printing or screen width > paper width
   display: none;
