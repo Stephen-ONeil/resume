@@ -1,10 +1,37 @@
 @import './common-variables';
 
+@keyframes news-spin-frames {
+  0% {
+    transform: rotate(60deg) scale(0.05);
+    opacity: 0.05;
+  }
+  50% {
+    transform: rotate(360deg*(2*0.9)) scale(0.8);
+    opacity: 0.3;
+  }
+  100% {
+    transform: rotate(360deg*2) scale(1);
+    opacity: 1;
+  }
+}
+@mixin news-spin {
+  animation-name: news-spin-frames;
+  animation-timing-function: linear;
+  animation-duration: 1.5s;
+  @media screen and (prefers-reduced-motion: reduce){
+    animation: none;
+  }
+}
+
 .resume.paper-resume {
   // Hide unless printing or screen width > paper width
   display: none;
   @media print, (min-width: $page_width) {
     display: block;
+  }
+
+  @media not print {
+    @include news-spin;
   }
 
   /* A4 paper dimensions */
@@ -14,7 +41,7 @@
   .fcol {
     display: flex;
     flex-direction: column;
-  
+    
     &.fcol__1-3rd {
       flex-basis: 33%;
     }
