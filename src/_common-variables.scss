@@ -25,7 +25,11 @@ $animation_length: 1s;
   animation-name: news-spin-frames;
   animation-timing-function: linear;
   animation-duration: $animation_length;
+  
   @media screen and (prefers-reduced-motion: reduce){
+    animation: none;
+  }
+  @media print {
     animation: none;
   }
 }
@@ -45,7 +49,11 @@ $animation_length: 1s;
   animation-name: slide-in-frames;
   animation-timing-function: ease-out;
   animation-duration: $animation_length;
+
   @media screen and (prefers-reduced-motion: reduce){
+    animation: none;
+  }
+  @media print {
     animation: none;
   }
 }
