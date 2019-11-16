@@ -25,6 +25,7 @@ $animation_length: 1s;
   animation-name: news-spin-frames;
   animation-timing-function: linear;
   animation-duration: $animation_length;
+  background-color: white; // so overlapping corners look better (still a bit transparent because of the opacity animating)
   
   @media screen and (prefers-reduced-motion: reduce){
     animation: none;
