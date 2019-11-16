@@ -20,7 +20,7 @@ const contact_info = {
 (613) 867-7727  
 [github.com/Stephen-ONeil](https://github.com/Stephen-ONeil)  
 [github.com/TBS-EACPD/infobase](https://github.com/TBS-EACPD/infobase)  
-[Stephen.Levi.ONeil@gmail.com](mailto:Stephen.Levi.ONeil@gmail.com)  
+[Stephen.Levi.ONeil<span style="font-family: Times, serif;">@</span>gmail.com](mailto:Stephen.Levi.ONeil@gmail.com)  
 Apt. 7 - 45 Somerset Street, Ottawa, Ontario, K2P 0H3 
 `,
 };

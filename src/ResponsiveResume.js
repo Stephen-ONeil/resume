@@ -13,6 +13,7 @@ function ResponsiveResume(){
         style={{textAlign: "center"}}
         section={sections.contact_info}
         heading_element='h1'
+        escape_html={false}
       />
       <ResumeSection
         section={sections.brief}

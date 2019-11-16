@@ -15,6 +15,7 @@ function PaperResume(){
           style={{textAlign: "center"}}
           section={sections.contact_info}
           heading_element='h1'
+          escape_html={false}
         />
         <ResumeSection
           className="fcol fcol__1-half"
