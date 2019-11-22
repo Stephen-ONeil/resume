@@ -54,7 +54,7 @@ const operations = {
   header: 'Operations',
   content: `
 - Strong believer in DevOps, personally bringing both the "Dev" and the "Ops" to bear whenever able (and fighting for it when not)
-- Automation and Bash scripts! Getting fancy with CI! Dev tooling! Easy & safe deploys! It's gratifying to build _and_ a solid project investment
+- Automation and Bash scripts! Getting fancy with CI! Dev tooling! Easy & safe deploys! It's fun to build _and_ a solid project investment
 `
 };
 
@@ -94,7 +94,7 @@ const extracurricular = {
 - Unix nerd, [github.com/ Stephen-ONeil/.dotfiles](https://github.com/Stephen-ONeil/.dotfiles)
 - Local tech meet-ups
 - Reading novels (Sci-fi, fantasy) & comics (web, indie)
-- Listening to music (misc, often synth-y) & podcasts (comedy, tech)
+- Listening to music (all sorts) & podcasts (comedy, tech)
 - Night-time walking
 `
 };
