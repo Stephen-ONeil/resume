@@ -10,6 +10,7 @@ function ResponsiveResume(){
   return (
     <div className="resume responsive-resume">
       <ResumeSection
+        className="primary-section"
         style={{textAlign: "center"}}
         section={sections.contact_info}
         heading_element='h1'

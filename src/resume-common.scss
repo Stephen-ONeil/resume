@@ -20,10 +20,10 @@
     // but still let print overflow so the test_pdf_page_count.js script can detect when the output is overflowing (spills on to and prints > 1 page)
     overflow: hidden;
   }
-  & section:nth-child(odd) {
+  & section:not(.primary-section):nth-child(odd) {
     @include slide-in-from-right;
   }
-  & section:nth-child(even) {
+  & section:not(.primary-section):nth-child(even) {
     @include slide-in-from-left;
   }
 

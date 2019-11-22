@@ -11,7 +11,7 @@ function PaperResume(){
     <div className="resume paper-resume fcol">
       <div className="frow">
         <ResumeSection
-          className="fcol fcol__1-half"
+          className="fcol fcol__1-half primary-section"
           style={{textAlign: "center"}}
           section={sections.contact_info}
           heading_element='h1'
