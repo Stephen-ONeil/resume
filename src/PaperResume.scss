@@ -9,7 +9,7 @@
 
   @media not print {
     // specifically to keep the animations contained to the "paper", overflowing outside of that would be a content/styling error
-    // let print overflow so the test_pdf_page_count.js script can detect when the output is overflowing (spills on to and prints > 1 page)
+    // but still let print overflow so the test_pdf_page_count.js script can detect when the output is overflowing (spills on to and prints > 1 page)
     overflow: hidden;
   }
   & * {

@@ -1,5 +1,7 @@
 @import './common-variables';
 
+// lots of descendant selectors... don't follow my example kids, descendant selectors are evil
+
 .resume {
   font-family: "Cabin", sans-serif;
 
@@ -47,6 +49,10 @@
     & > p {
       margin: 0em;
     }
+
+    & li li, & li ul {
+      padding-bottom: 0em;
+    }
   }
   & li:before {
     float: left;
@@ -59,5 +65,8 @@
   }
   & li > ul > li:before{
     content: url('./svgs/arrow-half.svg');
+  }
+  & li > ul > li > ul > li:before{
+    content: url('./svgs/arrow-empty.svg');
   }
 }

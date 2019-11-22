@@ -21,7 +21,7 @@ const contact_info = {
 [github.com/Stephen-ONeil](https://github.com/Stephen-ONeil)  
 [github.com/TBS-EACPD/infobase](https://github.com/TBS-EACPD/infobase)  
 [Stephen.Levi.ONeil<span style="font-family: Times, serif;">@</span>gmail.com](mailto:Stephen.Levi.ONeil@gmail.com)  
-Apt. 7 - 45 Somerset Street, Ottawa, Ontario, K2P 0H3 
+Ottawa, Ontario
 `,
 };
 
@@ -42,19 +42,19 @@ const developer = {
   content: `
 - _Prefer done right, right now, over done yesterday. The "done yesterday" mindset is opposed to "still works tomorrow"._  
 &nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;– Me, on my resume
-- JS expert, HTML & CSS proficient. Framework of choice React. Strives to make ethical and user-centric design decisions, from speed to A11y
+- JS expert, HTML & CSS proficient. Framework of choice React. Strives to make ethical and user-centric design decisions, from performance to A11y
 - ECMAScript proposal watcher, excited for the pipeline operator and optional chaining + nullish coalescing. Ride the wave of JS progress!
 - Generally borrows heavily from the functional paradigm, prefers declarative APIs (internally), and loves formulating robust data-driven control-flow  
-- Environment of choice is VS Code and command line tools. Most at home with Linux or Posix (macOS) systems.
-- Git and GitHub fan, with years of experience using and helping others to learn the tool & service
+- Environment of choice is VS Code and command line tools. Most at home with Linux or Posix (macOS) systems
+- Git and GitHub fan, with years of experience using, and helping others to learn, the tool & service ${/* TODO: this line's not necessary, plenty of links to my GitHub show this. Think about something more useful to replace it with */''}
 `
 };
 
 const operations = {
   header: 'Operations',
   content: `
-- Strong believer in DevOps, personally bringing both the "Dev" and the "Ops" to bare whenever able (and fighting for it when not)
-- Automation and Bash scripts! Getting fancy with CI! Serverless microservices! Easy & safe deploys! It's rewarding and fun.
+- Strong believer in DevOps, personally bringing both the "Dev" and the "Ops" to bear whenever able (and fighting for it when not)
+- Automation and Bash scripts! Getting fancy with CI! Dev tooling! Easy & safe deploys! It's gratifying to build _and_ a solid project investment
 `
 };
 
@@ -70,20 +70,21 @@ const curriculum_vitae = {
   header: 'Curriculum Vitae',
   content: `
 - **09/2017 - Ongoing** – Senior JavaScript Developer, Expenditure Management Sector (EMS), TBS
-  - Maintaining the GC InfoBase front end source code, at ~50,000 lines of JS. Implementing, and guiding junior Devs' implementation of new features while ensuring continued maintainability
+  - Responsible for the GC InfoBase source code, at ~57,000 lines of JS. Implementing new features and guiding junior devs' while ensuring continued maintainability. Constantly oiling the machine
   - Building backend components for the main SPA, including a GraphQL data-fetching API and an email backend (obviating mailto:)
   - Hiring, supervising, and mentoring of CO-OP students; 7+ to date
+  - Architecting and administering project DevOps
+    - E.g. transitioned hosting from a static file server administered by a separate team to a self-administered cloud hosting setup, bringing the deployment process from days to minutes and providing a real backend + flexible & faster hosting. All for negligible operating costs!
   - Championing for code standards, code review, testing, CI/CD, and Open Sourcing/working in the open
-  - Transitioned hosting from a static file server administered by a separate team to a self-administered cloud hosting setup, bringing the deployment process from days to minutes, gaining more flexible, faster hosting & a real backend, and doing it all for negligible hosting costs
-  - Providing a security audit function within my team, identifying more, and more relevant, risks and sensitive bugs than our IT security's commissioned App scans
+  - Providing a security audit function within the team, identifying more real risks and sensitive bugs than our IT security's commissioned App scans
   
 - **01/2015 - 09/2017** – Developer/Junior Analyst/CO-OP Student, Office of the Chief Human Resources Officer (OCHRO), TBS
-  - Developed and maintained OCHRO's portions of the GC InfoBase
+  - Developed and maintained HR portions of the GC InfoBase
   - SQL, SAS, Java. Responded to ad-hoc requests for government-wide HR data, automated the periodic ones
   
 - **09/2012 - 04/2017** – Honours Bachelour of Science, Physics-Mathematics with CO-OP, University of Ottawa
-  - Dean's Honour List 2014-2015 (for an annual GPA of 8.5+)
   - Founding president of uOttawa Computational Physics Club
+  - Dean's Honour List 2014-2015 (for an annual GPA of 8.5+)
 `
 };
 
@@ -93,7 +94,7 @@ const extracurricular = {
 - Unix nerd, [github.com/ Stephen-ONeil/.dotfiles](https://github.com/Stephen-ONeil/.dotfiles)
 - Local tech meet-ups
 - Reading novels (Sci-fi, fantasy) & comics (web, indie)
-- Listening to music (misc) & podcasts (comedy, tech)
+- Listening to music (misc, often synth-y) & podcasts (comedy, tech)
 - Night-time walking
 `
 };
