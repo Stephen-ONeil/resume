@@ -12,12 +12,25 @@
 
   padding: $gutter;
 
-  background-color: white;
+  background-color: $background_color;
+  color: $text_color;
+
+  @media not print {
+    // specifically to keep the animations contained to the "paper", overflowing outside of that would be a content/styling error
+    // but still let print overflow so the test_pdf_page_count.js script can detect when the output is overflowing (spills on to and prints > 1 page)
+    overflow: hidden;
+  }
+  & section:nth-child(odd) {
+    @include slide-in-from-right;
+  }
+  & section:nth-child(even) {
+    @include slide-in-from-left;
+  }
 
   & section {
     margin: $gutter;
     padding: $gutter;
-    border: $border solid black; /* Consider having no borders? */
+    border: $border solid $text_color; /* Consider having no borders? */
   }
 
   & h1 {

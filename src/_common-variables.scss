@@ -4,52 +4,61 @@ $page_height: 11in;
 $gutter: 0.025in;
 $border: 0.02in;
 
+$background_color: white;
+$text_color: black;
 
-$animation_length: 1s;
 
-@keyframes news-spin-frames {
-  0% {
-    transform: rotate(60deg) scale(0.05);
-    opacity: 0.05;
+@media (min-width: $page_width) {
+  @keyframes slide-in-from-left-frames {
+    0% {
+      margin-left: $page_width;
+      margin-right: -$page_width;
+    }
+    100% {
+      margin-left: $gutter;
+      margin-right: $gutter;
+    }
   }
-  50% {
-    transform: rotate(360deg*(2*0.9)) scale(0.8);
-    opacity: 0.66;
-  }
-  100% {
-    transform: rotate(360deg*2) scale(1);
-    opacity: 1;
+  @keyframes slide-in-from-right-frames {
+    0% {
+      margin-left: -$page_width;
+      margin-right: $page_width;
+    }
+    100% {
+      margin-left: $gutter;
+      margin-right: $gutter;
+    }
   }
 }
-@mixin news-spin {
-  animation-name: news-spin-frames;
-  animation-timing-function: linear;
-  animation-duration: $animation_length;
-  background-color: white; // so overlapping corners look better (still a bit transparent because of the opacity animating)
-  
-  @media screen and (prefers-reduced-motion: reduce){
-    animation: none;
+@media (max-width: $page_width) {
+  @keyframes slide-in-from-left-frames {
+    0% {
+      margin-left: 100vw;
+      margin-right: -100vw;
+    }
+    100% {
+      margin-left: $gutter;
+      margin-right: $gutter;
+    }
   }
-  @media print {
-    animation: none;
-  }
-}
-
-
-@keyframes slide-in-frames {
-  0% {
-    width: 0%;
-    opacity: 0;
-  }
-  100% {
-    width: 97%;
-    opacity: 1;
+  @keyframes slide-in-from-right-frames {
+    0% {
+      margin-left: -100vw;
+      margin-right: 100vw;
+    }
+    100% {
+      margin-left: $gutter;
+      margin-right: $gutter;
+    }
   }
 }
 @mixin slide-in {
-  animation-name: slide-in-frames;
   animation-timing-function: ease-out;
-  animation-duration: $animation_length;
+  animation-duration: 1.5s;
+  @media (max-width: $page_width) {
+    animation-timing-function: linear;
+    animation-duration: 0.8s;
+  }
 
   @media screen and (prefers-reduced-motion: reduce){
     animation: none;
@@ -57,4 +66,12 @@ $animation_length: 1s;
   @media print {
     animation: none;
   }
+}
+@mixin slide-in-from-left {
+  animation-name: slide-in-from-left-frames;
+  @include slide-in;
+}
+@mixin slide-in-from-right {
+  animation-name: slide-in-from-right-frames;
+  @include slide-in;
 }

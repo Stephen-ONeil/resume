@@ -5,9 +5,5 @@
   @media print, (min-width: $page_width) {
     display: none;
   }
-
-  & section {
-    @include news-spin;
-  }
 }
 
