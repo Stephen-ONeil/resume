@@ -11,4 +11,7 @@ const expected_page_count = 1;
   if (pdf_page_count !== expected_page_count){
     throw new Error(`Page count failed: PDF page count of ${pdf_page_count}, expected ${expected_page_count}`);
   }
-})();
+})().catch( error => {
+  console.log(error);
+  process.exit(1);
+});
