@@ -7,8 +7,8 @@ const dictionary = SpellChecker.getDictionarySync("en-GB");
 const sections = require('../src/sections.js');
 
 const whitelist = [
-  "app", "dev", "github", "com", "oneil", "tbs", "eacpd", "infobase", "gmail", "uottawa", "lodash",
-  "sass", "devops", "graphql", "mongodb", "google", "gc", "gcinfobase", "frontend", "serverless", "api",
+  "app", "dev", "github", "com", "oneil", "tbs", "eacpd", "infobase", "infobase's", "gcinfobase", "gmail", "uottawa", "lodash",
+  "sass", "devops", "graphql", "mongodb", "google", "gc", "frontend", "serverless", "api",
   "vizualization", "nbsp", "js", "css", "ecmascript", "nullish", "apis", "vs", "posix", "macos", "ci",
   "microservices", "secops", "appsec", "blogs", "podcasts", "owasp", "devs", "backend", "mailto",
   "mentoring", "setup", "ochro", "ochro's", "sql", "sas", "hoc", "hr", "bachelour", "gpa", "dotfiles",
