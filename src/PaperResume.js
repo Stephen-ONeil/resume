@@ -22,6 +22,7 @@ function PaperResume(){
           section={sections.brief}
           heading_element='h2'
           heading_style={{height: "0em", width: "0em", fontSize: "0em"}}
+          escape_html={false}
         />
       </div>
       <div className="frow" style={{flexGrow: 1}}>
@@ -36,6 +37,7 @@ function PaperResume(){
             className="fcol"
             section={sections.extracurricular}
             heading_element='h2'
+            escape_html={false}
           />
         </div>
         <div className="fcol fcol__2-3rd" style={{flexGrow: 1}}>

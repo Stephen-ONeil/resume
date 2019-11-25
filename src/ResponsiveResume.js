@@ -19,6 +19,7 @@ function ResponsiveResume(){
       <ResumeSection
         section={sections.brief}
         heading_element='h2'
+        escape_html={false}
       />
       <ResumeSection
         section={sections.developer}
@@ -39,6 +40,7 @@ function ResponsiveResume(){
       <ResumeSection
         section={sections.extracurricular}
         heading_element='h2'
+        escape_html={false}
       />
     </div>
   );
