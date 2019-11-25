@@ -13,7 +13,7 @@ const whitelist = [
   "microservices", "secops", "appsec", "blogs", "podcasts", "owasp", "devs", "backend", "mailto",
   "mentoring", "setup", "ochro", "ochro's", "sql", "sas", "hoc", "hr", "bachelour", "gpa", "dotfiles",
   "tech", "sci", "indie", "esnext", "circleci", "architecting", "ux", "gcloud", "microservice", 
-  "laude","analog", "synth", "synths"
+  "laude","analog", "synth", "synths", "instills"
 ];
 
 

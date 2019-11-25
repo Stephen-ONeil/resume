@@ -48,15 +48,15 @@ const developer = {
 - JS expert, HTML & CSS proficient. Framework of choice React. Strives to make ethical and user-centric design decisions, from performance to A11y
 - ECMAScript proposal watcher, excited for the pipeline operator and optional chaining + nullish coalescing. Ride the wave of JS progress!
 - Generally borrows heavily from the functional paradigm, prefers declarative APIs (internally), and loves formulating robust data-driven control-flow  
-- Always keen to invest in skills, both tech _and_ soft. Current focus: provide higher quality PR feedback 
-- Environment of choice is VS Code and command line tools. Most at home with Linux or Posix (macOS) systems
+- Always keen to invest in skills, both tech & soft. Currently focused on refining code review style to weigh long-term recipient growth over short-term shipped code
+- Environment of choice is VS Code and command line tools on a Linux or Posix (macOS) system
 `
 };
 
 const operations = {
   header: 'Operations',
   content: `
-- Strong believer in DevOps, with a current position combining both the lead Dev and Ops roles
+- DevOps proponent, it's a powerful combination and, vitally, instills ownership in both directions
 - Automation and Bash scripts! Getting fancy with CI! Dev tooling! Easy & safe deploys! It's fun to build _and_ a solid project investment
 `
 };
@@ -75,9 +75,9 @@ const curriculum_vitae = {
 - **09/2017 - Ongoing** – Senior JavaScript Developer, Expenditure Management Sector, Treasury Board of Canada Secretariat (TBS)
   - Responsible for the GC InfoBase source code, at ~57,000 lines of JS. Implementing new features and guiding junior devs' while ensuring continued maintainability. Constantly oiling the machine
   - Building backend components for the main SPA, E.g.
-    - a GraphQL data-fetching API using GCloud functions and MongoDB
-    - an email form microservice providing and validating templates, brokering to keep sender/receiver emails anonymous, and mitigating spam. Keeps :mailto links and their inconsistent UX out of the front-end while ensuring that received communications are of high quality
-  - Architecting and administering project DevOps, E.g.
+    - a GraphQL data-fetching API using GCloud Functions and MongoDB
+    - an email microservice for cataloguing and validating templates, brokering to keep sender/receiver emails anonymous, and mitigating spam. Keeps :mailto links and their inconsistent UX out of the front-end while ensuring that received communications are of high quality
+  - Architecting and administering the GC InfoBase's Ops, E.g.
     - transitioned hosting from a static file server administered by a separate team to a self-administered cloud hosting setup, bringing the deployment process from days to minutes and providing a real backend + flexible & faster hosting. All for negligible operating costs!
   - Acting as champion for code standards, code review, testing, CI/CD, and Open Sourcing/working in the open
   - Hiring, supervising, and mentoring of CO-OP students; 7+ to date
@@ -86,7 +86,7 @@ const curriculum_vitae = {
 - **01/2015 - 09/2017** – Developer/Junior Analyst/CO-OP Student, Office of the Chief Human Resources Officer, TBS
   - Developed and maintained HR portions of the GC InfoBase. Built tooling to automate, and handled, data requests using SQL, SAS, and Java
   
-- **09/2012 - 04/2017** – Honours Bachelour of Science in Physics-Mathematics with CO-OP, Cum Laude, University of Ottawa
+- **09/2012 - 04/2017** – Honours Bachelour of Science in Physics-Mathematics with CO-OP, University of Ottawa
   - Founding president of uOttawa Computational Physics Club
 `
 };
@@ -97,7 +97,7 @@ const extracurricular = {
 - Unix nerd, ${link_out("github.com/ Stephen-ONeil/.dotfiles","https://github.com/Stephen-ONeil/.dotfiles")}
 - Reading novels (Sci-fi, fantasy) & comics (web, indie)
 - Listening to music (all sorts) & podcasts (comedy, tech)
-- Collecting and playing analog synths (beginner)
+- Analog synthesizers
 - Night-time walking
 `
 };
