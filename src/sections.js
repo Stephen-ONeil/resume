@@ -53,7 +53,7 @@ const developer = {
 const operations = {
   header: 'Operations',
   content: `
-- Strong believer in DevOps, personally bringing both the "Dev" and the "Ops" to bear whenever able (and fighting for it when not)
+- Strong believer in DevOps, with a current position combining both the lead Dev and Ops roles
 - Automation and Bash scripts! Getting fancy with CI! Dev tooling! Easy & safe deploys! It's fun to build _and_ a solid project investment
 `
 };
@@ -62,29 +62,29 @@ const security = {
   header: 'Security',
   content: `
 - Pushing _from_ the left, bringing security-by-design to the design stages of Dev and DevOps tasks
-- Staying up-to-date with SecOps and AppSec news and best practices through blogs, mailing lists, podcasts, and the local OWASP meet-up
+- Staying up-to-date with SecOps and AppSec news and best practices through blogs, mailing lists, podcasts, and local groups
 `
 };
 
 const curriculum_vitae = {
   header: 'Curriculum Vitae',
   content: `
-- **09/2017 - Ongoing** – Senior JavaScript Developer, Expenditure Management Sector (EMS), TBS
+- **09/2017 - Ongoing** – Senior JavaScript Developer, Expenditure Management Sector, TBS
   - Responsible for the GC InfoBase source code, at ~57,000 lines of JS. Implementing new features and guiding junior devs' while ensuring continued maintainability. Constantly oiling the machine
-  - Building backend components for the main SPA, including a GraphQL data-fetching API and an email backend (obviating mailto:)
+  - Building backend components for the main SPA, E.g.
+    - a GraphQL data-fetching API using GCloud functions and MongoDB
+    - an email form microservice providing and validating templates, brokering to keep sender/receiver emails anonymous, and mitigating spam. Keeps :mailto links and their inconsistent UX out of the front-end while ensuring that received communications are of high quality
+  - Architecting and administering project DevOps, E.g.
+    - transitioned hosting from a static file server administered by a separate team to a self-administered cloud hosting setup, bringing the deployment process from days to minutes and providing a real backend + flexible & faster hosting. All for negligible operating costs!
+  - Acting as champion for code standards, code review, testing, CI/CD, and Open Sourcing/working in the open
   - Hiring, supervising, and mentoring of CO-OP students; 7+ to date
-  - Architecting and administering project DevOps
-    - E.g. transitioned hosting from a static file server administered by a separate team to a self-administered cloud hosting setup, bringing the deployment process from days to minutes and providing a real backend + flexible & faster hosting. All for negligible operating costs!
-  - Championing for code standards, code review, testing, CI/CD, and Open Sourcing/working in the open
   - Providing a security audit function within the team, identifying more real risks and sensitive bugs than our IT security's commissioned App scans
   
-- **01/2015 - 09/2017** – Developer/Junior Analyst/CO-OP Student, Office of the Chief Human Resources Officer (OCHRO), TBS
-  - Developed and maintained HR portions of the GC InfoBase
-  - SQL, SAS, Java. Responded to ad-hoc requests for government-wide HR data, automated the periodic ones
+- **01/2015 - 09/2017** – Developer/Junior Analyst/CO-OP Student, Office of the Chief Human Resources Officer, TBS
+  - Developed and maintained HR portions of the GC InfoBase. Responded to and built tooling to automate data requests using SQL, SAS, and Java
   
-- **09/2012 - 04/2017** – Honours Bachelour of Science, Physics-Mathematics with CO-OP, University of Ottawa
+- **09/2012 - 04/2017** – Honours Bachelour of Science in Physics-Mathematics with CO-OP, Cum Laude, University of Ottawa
   - Founding president of uOttawa Computational Physics Club
-  - Dean's Honour List 2014-2015 (for an annual GPA of 8.5+)
 `
 };
 
