@@ -45,8 +45,8 @@ const developer = {
 - JS expert, HTML & CSS proficient. Framework of choice React. Strives to make ethical and user-centric design decisions, from performance to A11y
 - ECMAScript proposal watcher, excited for the pipeline operator and optional chaining + nullish coalescing. Ride the wave of JS progress!
 - Generally borrows heavily from the functional paradigm, prefers declarative APIs (internally), and loves formulating robust data-driven control-flow  
+- Always keen to invest in skills, both tech _and_ soft. Current focus: provide higher quality PR feedback 
 - Environment of choice is VS Code and command line tools. Most at home with Linux or Posix (macOS) systems
-- Git and GitHub fan, with years of experience using, and helping others to learn, the tool & service ${/* TODO: this line's not necessary, plenty of links to my GitHub show this. Think about something more useful to replace it with */''}
 `
 };
 
@@ -62,7 +62,7 @@ const security = {
   header: 'Security',
   content: `
 - Pushing _from_ the left, bringing security-by-design to the design stages of Dev and DevOps tasks
-- Staying up-to-date with SecOps and AppSec news and best practices through blogs, mailing lists, podcasts, and local groups
+- Staying up-to-date with SecOps and AppSec news and best practices through blogs, mailing lists, podcasts, and local meet-ups
 `
 };
 
@@ -92,9 +92,9 @@ const extracurricular = {
   header: 'Extracurricular',
   content: `
 - Unix nerd, [github.com/ Stephen-ONeil/.dotfiles](https://github.com/Stephen-ONeil/.dotfiles)
-- Local tech meet-ups
 - Reading novels (Sci-fi, fantasy) & comics (web, indie)
 - Listening to music (all sorts) & podcasts (comedy, tech)
+- Collecting and playing analog synths (beginner)
 - Night-time walking
 `
 };
