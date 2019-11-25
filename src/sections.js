@@ -13,13 +13,16 @@ const front_end_years = approx_time_since_in_years([2015, 0, 1]);
 const back_end_years = approx_time_since_in_years([2018, 2, 15]);
 
 
+const link_out = (text, href) => `<a target='_blank' rel='noopener noreferrer' href='${href}'>${text}</a>`;
+
+
 const contact_info = {
   header: "Stephen O'Neil",
   content: `
 ## Full Stack Web App Dev
 (613) 867-7727  
-[github.com/Stephen-ONeil](https://github.com/Stephen-ONeil)  
-[github.com/TBS-EACPD/infobase](https://github.com/TBS-EACPD/infobase)  
+${link_out("github.com/Stephen-ONeil","https://github.com/Stephen-ONeil")}  
+${link_out("github.com/TBS-EACPD/infobase","https://github.com/TBS-EACPD/infobase")}  
 [Stephen.Levi.ONeil<span style="font-family: Times, serif;">@</span>gmail.com](mailto:Stephen.Levi.ONeil@gmail.com)  
 Ottawa, Ontario
 `,
@@ -33,7 +36,7 @@ const brief = {
 Treasury Board of Canada Secretariat
   - **${front_end_years} years front end — React, Lodash, Sass, ESNext**
   - **${back_end_years} years back end/DevOps — Node, GraphQL, MongoDB, Google Cloud, Docker, CircleCI**
-- E.g. **GC InfoBase** ([canada.ca/gcinfobase](https://canada.ca/gcinfobase)), a SPA React frontend backed by a serverless GraphQL API, offering data vizualization and exploration vectors
+- E.g. **GC InfoBase** (${link_out("canada.ca/gcinfobase","https://canada.ca/gcinfobase")}), a SPA React frontend backed by a serverless GraphQL API, offering data vizualization and exploration vectors
 `,
 };
 
@@ -91,7 +94,7 @@ const curriculum_vitae = {
 const extracurricular = {
   header: 'Extracurricular',
   content: `
-- Unix nerd, [github.com/ Stephen-ONeil/.dotfiles](https://github.com/Stephen-ONeil/.dotfiles)
+- Unix nerd, ${link_out("github.com/ Stephen-ONeil/.dotfiles","https://github.com/Stephen-ONeil/.dotfiles")}
 - Reading novels (Sci-fi, fantasy) & comics (web, indie)
 - Listening to music (all sorts) & podcasts (comedy, tech)
 - Collecting and playing analog synths (beginner)
