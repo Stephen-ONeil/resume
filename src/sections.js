@@ -81,7 +81,7 @@ const curriculum_vitae = {
   - Providing a security audit function within the team, identifying more real risks and sensitive bugs than our IT security's commissioned App scans
   
 - **01/2015 - 09/2017** – Developer/Junior Analyst/CO-OP Student, Office of the Chief Human Resources Officer, TBS
-  - Developed and maintained HR portions of the GC InfoBase. Responded to and built tooling to automate data requests using SQL, SAS, and Java
+  - Developed and maintained HR portions of the GC InfoBase. Built tooling to automate, and handled, data requests using SQL, SAS, and Java
   
 - **09/2012 - 04/2017** – Honours Bachelour of Science in Physics-Mathematics with CO-OP, Cum Laude, University of Ottawa
   - Founding president of uOttawa Computational Physics Club
