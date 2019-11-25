@@ -30,7 +30,7 @@ const brief = {
   content: `
 - Honours B.Sc. Physics-Mathematics, uOttawa
 - **Senior JavaScript developer, full stack** at 
-Treasury Board of Canada Secretariat (TBS)
+Treasury Board of Canada Secretariat
   - **${front_end_years} years front end — React, Lodash, Sass, ESNext**
   - **${back_end_years} years back end/DevOps — Node, GraphQL, MongoDB, Google Cloud, Docker, CircleCI**
 - E.g. **GC InfoBase** ([canada.ca/gcinfobase](https://canada.ca/gcinfobase)), a SPA React frontend backed by a serverless GraphQL API, offering data vizualization and exploration vectors
@@ -69,7 +69,7 @@ const security = {
 const curriculum_vitae = {
   header: 'Curriculum Vitae',
   content: `
-- **09/2017 - Ongoing** – Senior JavaScript Developer, Expenditure Management Sector, TBS
+- **09/2017 - Ongoing** – Senior JavaScript Developer, Expenditure Management Sector, Treasury Board of Canada Secretariat (TBS)
   - Responsible for the GC InfoBase source code, at ~57,000 lines of JS. Implementing new features and guiding junior devs' while ensuring continued maintainability. Constantly oiling the machine
   - Building backend components for the main SPA, E.g.
     - a GraphQL data-fetching API using GCloud functions and MongoDB
