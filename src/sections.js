@@ -23,7 +23,7 @@ const contact_info = {
 (613) 867-7727  
 ${link_out("github.com/Stephen-ONeil","https://github.com/Stephen-ONeil")}  
 ${link_out("github.com/TBS-EACPD/infobase","https://github.com/TBS-EACPD/infobase")}  
-[Stephen.Levi.ONeil<span style="font-family: Times, serif;">@</span>gmail.com](mailto:Stephen.Levi.ONeil@gmail.com)  
+[Stephen.Levi.ONeil<span style="font-family: Times, serif;">@</span>gmail.com](mailto:StephenLeviONeil@gmail.com)  
 Ottawa, Ontario
 `,
 };
@@ -31,83 +31,72 @@ Ottawa, Ontario
 const brief = {
   header: 'Brief',
   content: `
+- **Senior developer, full stack**
+  - **${front_end_years} years front end**
+  - **${back_end_years} years back end & DevOps**
+- Currently lead on **GC InfoBase** (${link_out("canada.ca/gcinfobase","https://canada.ca/gcinfobase")}), a **React SPA** backed by a
+  **serverless GraphQL API**, presenting government data to the public through visualizations and exploration tools
 - Honours B.Sc. Physics-Mathematics, uOttawa
-- **Senior JavaScript developer, full stack** at 
-Treasury Board of Canada Secretariat
-  - **${front_end_years} years front end — React, Lodash, Sass, ESNext**
-  - **${back_end_years} years back end/DevOps — Node, GraphQL, MongoDB, Google Cloud, Docker, CircleCI**
-- E.g. **GC InfoBase** (${link_out("canada.ca/gcinfobase","https://canada.ca/gcinfobase")}), a SPA React frontend backed by a serverless GraphQL API, offering data vizualization and exploration vectors
 `,
 };
 
-const developer = {
-  header: 'Developer',
+const skills = {
+  header: 'Skill Highlights',
+  content: `
+- **Languages**
+  - JavaScript & TypeScript – HTML5 – CSS & Sass – sh & Bash – Python 3  
+- **Libraries & Frameworks**
+  - React – GraphQL (E.g. Apollo) – Lodash – Webpack – Jest – Express.js – Mongoose – Django 
+- **Tools, Platforms, & Environments**
+  - git – VSCode – Docker – CircleCI – Google Cloud – MongoDB Atlas – Unix & POSIX systems
+- **Other**
+  - Architecture – UI/UX – A11y – Hiring, supervising, and mentoring – Interfacing with management and partners
+`,
+};
+
+const qualities = {
+  header: 'As a Developer, I',
   content: `
 - _Prefer done right, right now, over done yesterday. The "done yesterday" mindset is opposed to "still works tomorrow"._  
-&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;– Me, on my resume
-- JS expert, HTML & CSS proficient. Framework of choice React. Strives to make ethical and user-centric design decisions, from performance to A11y
-- ECMAScript proposal watcher, excited for the pipeline operator and optional chaining + nullish coalescing. Ride the wave of JS progress!
-- Generally borrows heavily from the functional paradigm, prefers declarative APIs (internally), and loves formulating robust data-driven control-flow  
-- Always keen to invest in skills, both tech & soft. Currently focused on refining code review style to weigh long-term recipient growth over short-term shipped code
-- Environment of choice is VS Code and command line tools on a Linux or Posix (macOS) system
-`
-};
-
-const operations = {
-  header: 'Operations',
-  content: `
-- DevOps proponent, it's a powerful combination and, vitally, instills ownership in both directions
-- Automation and Bash scripts! Getting fancy with CI! Dev tooling! Easy & safe deploys! It's fun to build _and_ a solid project investment
-`
-};
-
-const security = {
-  header: 'Security',
-  content: `
-- Pushing _from_ the left, bringing security-by-design to the design stages of Dev and DevOps tasks
-- Staying up-to-date with SecOps and AppSec news and best practices through blogs, mailing lists, podcasts, and local meet-ups
+&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;– Me, here, on my resume
+- Strive to make ethical and user-centric design decisions, from performance to accessibility
+- Value developer experience and project velocity, but not when it compromises maintainability or user experience
+- Continuously seek to invest in my skills, both tech & soft
+  - I keep up with 60+ web dev blogs and news letters; I'm a nerd for web news _and_ web history!
 `
 };
 
 const curriculum_vitae = {
   header: 'Curriculum Vitae',
   content: `
-- **09/2017 - Ongoing** – Senior JavaScript Developer, Expenditure Management Sector, Treasury Board of Canada Secretariat (TBS)
-  - Responsible for the GC InfoBase source code, at ~57,000 lines of JS. Implementing new features and guiding junior devs' while ensuring continued maintainability. Constantly oiling the machine
+- **09/2017 - Ongoing** – **Senior Developer**, Expenditure Management Sector (EMS), Treasury Board of Canada Secretariat (TBS)
+  - Lead GC InfoBase developer since Summer 2018, responsible for the project's 57K+ lines of JS/TS (and everything else InfoBase)
+  - ** TODO** section mentioning some recent wins on the client
   - Building backend components for the main SPA, E.g.
-    - a GraphQL data-fetching API using GCloud Functions and MongoDB
-    - an email microservice for cataloguing and validating templates, brokering to keep sender/receiver emails anonymous, and mitigating spam. Keeps :mailto links and their inconsistent UX out of the front-end while ensuring that received communications are of high quality
-  - Architecting and administering the GC InfoBase's Ops, E.g.
-    - transitioned hosting from a static file server administered by a separate team to a self-administered cloud hosting setup, bringing the deployment process from days to minutes and providing a real backend + flexible & faster hosting. All for negligible operating costs!
+    - a Node based GraphQL API leveraging serverless hosting and MongoDB, tuned to allow for more optimal data serving for the front end
+    - a flexible form microservice, used to collect, validate, store, and alert the team across multiple lines of user feedback
+  - Architecting and administering the GC InfoBase's operations, E.g.
+    - transitioned hosting from a static file server administered by a separate team to a self-administered cloud hosting setup, bringing the
+    deployment process from days to minutes and providing a real backend + flexible & faster hosting. An extreme boost to development velocity!
+    - **TODO** CI wins, the dev link system and it's practical usefulness. Recent slicicng of CI run time in roughly half (best case)
+  - **TODO** something about time on Titan, maybe include the post-Titan OT on the InfoBase side of covid. Mention cash award for this
   - Acting as champion for code standards, code review, testing, CI/CD, and Open Sourcing/working in the open
-  - Hiring, supervising, and mentoring of CO-OP students; 7+ to date
-  - Providing a security audit function within the team, identifying more real risks and sensitive bugs than our IT security's commissioned App scans
-  
-- **01/2015 - 09/2017** – Developer/Junior Analyst/CO-OP Student, Office of the Chief Human Resources Officer, TBS
-  - Developed and maintained HR portions of the GC InfoBase. Built tooling to automate, and handled, data requests using SQL, SAS, and Java
-  
-- **09/2012 - 04/2017** – Honours Bachelour of Science in Physics-Mathematics with CO-OP, University of Ottawa
-  - Founding president of uOttawa Computational Physics Club
-`
-};
+    - **TODO** some concrete examples? Maybe the fight to open source the repository, eventually receiving a cash award for it (what are those formally called?)
+  - Hiring, supervising, and mentoring of juniour developers and CO-OP students; as many as two juniors and three CO-OPs concurrently
+  - **TODO** notes on number of, success with, students
+  - **TODO** mention of hiring multiple former CO-OPs as juniours, as well as training more seasoned hires with non-developer backgrounds
 
-const extracurricular = {
-  header: 'Extracurricular',
-  content: `
-- Unix nerd, ${link_out("github.com/ Stephen-ONeil/.dotfiles","https://github.com/Stephen-ONeil/.dotfiles")}
-- Reading novels (Sci-fi, fantasy) & comics (web, indie)
-- Listening to music (all sorts) & podcasts (comedy, tech)
-- Analog synthesizers
-- Night-time walking
+- **01/2015 - 09/2017** – **Student**, Office of the Chief Human Resources Officer, TBS (alternating full time CO-OP terms and part-time contracts)
+  - Developed early HR portions of GC InfoBase. Self-taught JS/HTML/CSS, git, and the code base itself to do so, isolated from the core dev team
+  
+- **09/2012 - 04/2017** – Honours Bachelour of Science in Physics-Mathematics, University of Ottawa
 `
 };
 
 module.exports = {
   contact_info,
   brief,
-  developer,
-  operations,
-  security,
+  skills,
+  qualities,
   curriculum_vitae,
-  extracurricular,
 };

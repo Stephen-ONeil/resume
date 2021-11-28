@@ -22,25 +22,12 @@ function ResponsiveResume(){
         escape_html={false}
       />
       <ResumeSection
-        section={sections.developer}
-        heading_element='h2'
-      />
-      <ResumeSection
-        section={sections.operations}
-        heading_element='h2'
-      />
-      <ResumeSection
-        section={sections.security}
+        section={sections.qualities}
         heading_element='h2'
       />
       <ResumeSection
         section={sections.curriculum_vitae}
         heading_element='h2'
-      />
-      <ResumeSection
-        section={sections.extracurricular}
-        heading_element='h2'
-        escape_html={false}
       />
     </div>
   );

@@ -6,14 +6,14 @@ const dictionary = SpellChecker.getDictionarySync("en-GB");
 
 const sections = require('../src/sections.js');
 
-const whitelist = [
+const allow_list = [
   "app", "dev", "github", "com", "oneil", "tbs", "eacpd", "infobase", "infobase's", "gcinfobase", "gmail", "uottawa", "lodash",
   "sass", "devops", "graphql", "mongodb", "google", "gc", "frontend", "serverless", "api",
   "vizualization", "nbsp", "js", "css", "ecmascript", "nullish", "apis", "vs", "posix", "macos", "ci",
   "microservices", "secops", "appsec", "blogs", "podcasts", "owasp", "devs", "backend", "mailto",
   "mentoring", "setup", "ochro", "ochro's", "sql", "sas", "hoc", "hr", "bachelour", "gpa", "dotfiles",
-  "tech", "sci", "indie", "esnext", "circleci", "architecting", "ux", "gcloud", "microservice", 
-  "laude","analog", "synth", "synths", "instills"
+  "tech", "esnext", "circleci", "architecting", "ux", "gcloud", "microservice",  "laude", "instills",
+  "monorepo", "ts", "juniour", "juniours", "django", "sh", "webpack", "vscode", "ui"
 ];
 
 
@@ -24,7 +24,7 @@ const spelling_mistakes_by_section = _.chain(sections)
     .toLower()
     .words()
     .uniq()
-    .filter( (word) => _.isNaN(+word) && !_.includes(whitelist, word) )
+    .filter( (word) => _.isNaN(+word) && !_.includes(allow_list, word) )
     .map( (word) => !dictionary.spellCheck(word) && word )
     .filter()
     .value()

@@ -30,29 +30,11 @@ function PaperResume(){
           <ResumeSection
             className="fcol"
             style={{height: "100%"}}
-            section={sections.developer}
+            section={sections.qualities}
             heading_element='h2'
-          />
-          <ResumeSection
-            className="fcol"
-            section={sections.extracurricular}
-            heading_element='h2'
-            escape_html={false}
           />
         </div>
         <div className="fcol fcol__2-3rd" style={{flexGrow: 1}}>
-          <div className="frow">
-            <ResumeSection
-              className="fcol fcol__1-half"
-              section={sections.operations}
-              heading_element='h2'
-            />
-            <ResumeSection
-              className="fcol fcol__1-half"
-              section={sections.security}
-              heading_element='h2'
-            />
-          </div>
           <ResumeSection
             className="fcol"
             style={{height: "100%"}}
