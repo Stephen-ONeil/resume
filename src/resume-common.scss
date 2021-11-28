@@ -20,17 +20,24 @@
     // but still let print overflow so the test_pdf_page_count.js script can detect when the output is overflowing (spills on to and prints > 1 page)
     overflow: hidden;
   }
-  & section:not(.primary-section):nth-child(odd) {
-    @include slide-in-from-right;
-  }
-  & section:not(.primary-section):nth-child(even) {
-    @include slide-in-from-left;
-  }
 
   & section {
     margin: $gutter;
     padding: $gutter;
     border: $border solid $text_color; /* Consider having no borders? */
+
+    &.enter-from-left {
+      @include slide-in-from-left;
+    }
+    &.enter-from-right {
+      @include slide-in-from-right;
+    }
+    &.enter-from-top {
+      @include slide-in-from-top;
+    }
+    &.enter-from-bottom {
+      @include slide-in-from-bottom;
+    }
   }
 
   & h1 {

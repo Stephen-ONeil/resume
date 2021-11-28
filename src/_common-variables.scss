@@ -9,7 +9,7 @@ $text_color: black;
 
 
 @media (min-width: $page_width) {
-  @keyframes slide-in-from-left-frames {
+  @keyframes slide-in-from-right-frames {
     0% {
       margin-left: $page_width;
       margin-right: -$page_width;
@@ -19,7 +19,7 @@ $text_color: black;
       margin-right: $gutter;
     }
   }
-  @keyframes slide-in-from-right-frames {
+  @keyframes slide-in-from-left-frames {
     0% {
       margin-left: -$page_width;
       margin-right: $page_width;
@@ -29,9 +29,30 @@ $text_color: black;
       margin-right: $gutter;
     }
   }
+  @keyframes slide-in-from-top-frames {
+    0% {
+      margin-top: -$page_height;
+      margin-bottom: $page_height;
+    }
+    100% {
+      margin-top: $gutter;
+      margin-bottom: $gutter;
+    }
+  }
+  @keyframes slide-in-from-bottom-frames {
+    0% {
+      margin-top: $page_height;
+      margin-bottom: -$page_height;
+    }
+    100% {
+      margin-top: $gutter;
+      margin-bottom: $gutter;
+    }
+  }
 }
+
 @media (max-width: $page_width) {
-  @keyframes slide-in-from-left-frames {
+  @keyframes slide-in-from-right-frames {
     0% {
       margin-left: 100%;
       margin-right: -100%;
@@ -41,7 +62,7 @@ $text_color: black;
       margin-right: $gutter;
     }
   }
-  @keyframes slide-in-from-right-frames {
+  @keyframes slide-in-from-left-frames {
     0% {
       margin-left: -100%;
       margin-right: 100%;
@@ -51,10 +72,17 @@ $text_color: black;
       margin-right: 0px;
     }
   }
+  @keyframes slide-in-from-top-frames {
+    // noop
+  }
+  @keyframes slide-in-from-bottom-frames {
+    // noop
+  }
 }
+
 @mixin slide-in {
-  animation-timing-function: linear;
-  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-duration: 1.25s;
 
   @media screen and (prefers-reduced-motion: reduce){
     animation: none;
@@ -63,11 +91,20 @@ $text_color: black;
     animation: none;
   }
 }
+
+@mixin slide-in-from-right {
+  animation-name: slide-in-from-right-frames;
+  @include slide-in;
+}
 @mixin slide-in-from-left {
   animation-name: slide-in-from-left-frames;
   @include slide-in;
 }
-@mixin slide-in-from-right {
-  animation-name: slide-in-from-right-frames;
+@mixin slide-in-from-top {
+  animation-name: slide-in-from-top-frames;
+  @include slide-in;
+}
+@mixin slide-in-from-bottom {
+  animation-name: slide-in-from-bottom-frames;
   @include slide-in;
 }
