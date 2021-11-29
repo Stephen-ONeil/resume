@@ -101,7 +101,7 @@ const curriculum_vitae = {
     - Hiring, supervising, and mentoring of juniour developers and students 
       - Supervised 10 students to date, 5 of which have returned for subsequent terms with 2 joining the team upon graduation
   
-**01/2015 - 09/2017** – **Student**, Office of the Chief Human Resources Officer, TBS (alternating full time CO-OP terms and part-time contracts)
+**01/2015 - 09/2017** – **Student**, Office of the Chief Human Resources Officer, TBS (alternating full-time CO-OP terms and part-time contracts)
   - Developed early HR portions of GC InfoBase. Self-taught JS/HTML/CSS, git, and the code base itself to do so, despite isolation from core dev team
   
 **09/2012 - 04/2017** – Honours Bachelour of Science in Physics-Mathematics, University of Ottawa
