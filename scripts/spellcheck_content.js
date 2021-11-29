@@ -13,7 +13,8 @@ const allow_list = [
   "microservices", "secops", "appsec", "blogs", "podcasts", "owasp", "devs", "backend", "mailto",
   "mentoring", "setup", "ochro", "ochro's", "sql", "sas", "hoc", "hr", "bachelour", "gpa", "dotfiles",
   "tech", "esnext", "circleci", "architecting", "ux", "gcloud", "microservice",  "laude", "instills",
-  "monorepo", "ts", "juniour", "juniours", "django", "sh", "webpack", "vscode", "ui"
+  "monorepo", "ts", "juniour", "juniours", "django", "sh", "webpack", "vscode", "ui", "covid", "workflows",
+  "admin", "async", "typeahead"
 ];
 
 
