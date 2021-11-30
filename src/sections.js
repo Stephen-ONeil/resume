@@ -20,10 +20,10 @@ const contact_info = {
   header: "Stephen O'Neil",
   content: `
 ## Full Stack Web App Dev
-(613) 867-7727  
 ${link_out("github.com/Stephen-ONeil","https://github.com/Stephen-ONeil")}  
 ${link_out("github.com/TBS-EACPD/infobase","https://github.com/TBS-EACPD/infobase")}  
-[Stephen.Levi.ONeil<span style="font-family: Times, serif;">@</span>gmail.com](mailto:StephenLeviONeil@gmail.com)  
+[stephen.levi.oneil<span style="font-family: Times, serif;">@</span>gmail.com](mailto:stephen.levi.oneil@gmail.com)  
+(613) 867-7727  
 Ottawa, Ontario
 `,
 };
@@ -42,32 +42,43 @@ const brief = {
 `,
 };
 
-const skills = {
-  header: 'Skill Highlights',
+const languages = {
+  header: 'Languages',
   content: `
-- **Languages**
-  - JavaScript & TypeScript – HTML5 – CSS & Sass – sh & Bash – Python 3  
-
-- **Libraries & Frameworks**
-  - React – GraphQL (E.g. Apollo) – Lodash – Webpack – Jest – Express.js – Mongoose – Django
-
-- **Tools, Platforms, & Environments**
-  - git – VSCode – Docker – CircleCI – Google Cloud – MongoDB Atlas – Unix & POSIX systems
-
-- **Other**
-  - Architecture – UI/UX – A11y – Hiring, supervising, and mentoring – Interfacing with management and partners
-`,
+- JavaScript & TypeScript
+- HTML5
+- CSS & Sass
+- sh & Bash
+- Python 3  
+`
 };
-
-const qualities = {
-  header: 'As a Developer, I...',
+const libraries = {
+  header: 'Libraries & Frameworks',
   content: `
-- _Prefer done right, right now, over done yesterday. The "done yesterday" mindset is opposed to "still works tomorrow"._  
-&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;– Me, here, on my resume
-- Strive to make ethical and user-centric design decisions, from performance to accessibility
-- Value developer experience and project velocity, but not at the compromise of maintainability or user experience
-- Continuously seek to invest in my skills, both tech & soft
-  - I keep up with 60+ web dev blogs & news letters in my free time. Sunday morning habit
+- React
+- GraphQL (E.g. Apollo)
+- Lodash
+- Webpack
+- Jest
+- Express.js
+- Mongoose
+- Django
+`
+};
+const tools = {
+  header: 'Tools',
+  content: `
+- git
+- VSCode
+- Docker 
+`
+};
+const platforms = {
+  header: 'Platforms',
+  content: `
+- CircleCI
+- Google Cloud
+- MongoDB Atlas
 `
 };
 
@@ -75,15 +86,10 @@ const curriculum_vitae = {
   header: 'Curriculum Vitae',
   content: `
 **09/2017 - Ongoing** – **Senior Developer**, Expenditure Management Sector (EMS), Treasury Board of Canada Secretariat (TBS)
-  - Emergency developer loan, built the tool used for centralized tracking of COVID-19 related expenditures across all government departments
-    - Quickly learnt Python, Django, an existing internal platform's code & environment, and the business needs; began implementation by day 6
-    - Individually developed the new collection tool off the existing platform, with robust user and admin workflows, meeting a tight 3 month target
-    - Contributed refinements to the existing platform's testing patterns
-
   - Lead GC InfoBase developer since Summer 2018, responsible for the project's technical direction, overall design, and developer talent
 
-    - Iterating on and maintaining the large React frontend
-      - E.g. wrote an accessible search typeahead capable of displaying mixed local/async results, replacing an unmaintained and less flexible library  
+    - Iterating on and maintaining the project's large React frontend
+      - E.g. wrote an accessible typeahead search capable of displaying mixed local & async results, replacing an unmaintained and less flexible external library  
 
     - Building backend microservices to support the main application
       - E.g. built a flexible form template service, used to collect, validate, store, and alert the team across multiple lines of user feedback
@@ -100,6 +106,11 @@ const curriculum_vitae = {
 
     - Hiring, supervising, and mentoring of juniour developers and students 
       - Supervised 10 students to date, 5 of which have returned for subsequent terms with 2 joining the team upon graduation
+
+  - On an emergency placement, built the tool used for centralized tracking of COVID-19 related expenditures across all government departments
+    - Quickly learnt Python, Django, an existing internal platform's code & environment, and the business needs; began implementation by day 6
+    - Individually developed the new collection tool off the existing platform, with robust user and admin workflows, meeting a tight 3 month target
+    - Contributed refinements to the existing platform's testing patterns
   
 **01/2015 - 09/2017** – **Student**, Office of the Chief Human Resources Officer, TBS (alternating full-time CO-OP terms and part-time contracts)
   - Developed early HR portions of GC InfoBase. Self-taught JS/HTML/CSS, git, and the code base itself to do so, despite isolation from core dev team
@@ -111,7 +122,9 @@ const curriculum_vitae = {
 module.exports = {
   contact_info,
   brief,
-  skills,
-  qualities,
+  languages,
+  libraries,
+  tools,
+  platforms,
   curriculum_vitae,
 };

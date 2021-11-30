@@ -5,6 +5,9 @@
 .resume {
   font-family: "Cabin", sans-serif;
 
+  font-size: 15px;
+  line-height: 1.32;
+
   margin-top: 0px;
   margin-right: auto;
   margin-left: auto;
@@ -24,7 +27,6 @@
   & section {
     margin: $gutter;
     padding: $gutter;
-    border: $border solid $text_color; /* Consider having no borders? */
 
     &.enter-from-left {
       @include slide-in-from-left;

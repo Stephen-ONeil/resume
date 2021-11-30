@@ -2,7 +2,16 @@ import React from 'react';
 
 import { ResumeSection } from './resume-common.js';
 import './resume-common.scss';
-import * as sections from './sections.js';
+
+import {
+  contact_info,
+  brief,
+  languages,
+  libraries,
+  tools,
+  platforms,
+  curriculum_vitae,
+} from './sections.js';
 
 import './ResponsiveResume.scss';
 
@@ -10,31 +19,38 @@ function ResponsiveResume(){
   return (
     <div className="resume responsive-resume">
       <ResumeSection
-        section={sections.contact_info}
-        heading_element='h1'
+        section={contact_info}
         className="primary-section"
         style={{textAlign: "center"}}
-        escape_html={false}
+        header_level={1}
       />
       <ResumeSection
-        section={sections.brief}
-        heading_element='h2'
-        escape_html={false}
+        section={brief}
+        show_header={false}
         enter_from="left"
       />
       <ResumeSection
-        section={sections.skills}
-        heading_element='h2'
+        section={languages}
+        className="two-column-list"
         enter_from="right"
       />
       <ResumeSection
-        section={sections.qualities}
-        heading_element='h2'
+        section={libraries}
+        className="two-column-list"
         enter_from="left"
       />
       <ResumeSection
-        section={sections.curriculum_vitae}
-        heading_element='h2'
+        section={tools}
+        className="two-column-list"
+        enter_from="right"
+      />
+      <ResumeSection
+        section={platforms}
+        className="two-column-list"
+        enter_from="left"
+      />
+      <ResumeSection
+        section={curriculum_vitae}
         enter_from="right"
       />
     </div>

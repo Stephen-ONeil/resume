@@ -2,10 +2,10 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown/with-html';
 import _ from 'lodash';
 
-export const ResumeSection = ({className, style, section, heading_element, heading_style, enter_from = false, escape_html = true}) => {
+export const ResumeSection = ({section, className, style, header_level = 2, show_header = true, enter_from = false }) => {
   const {header, content} = section
 
-  const HeadingElement = /^h[1-9]$/.test(heading_element) ? heading_element : 'h1';
+  const HeadingElement = `h${_.clamp(header_level, 1, 9)}`;
 
   const section_class = _.chain(className)
     .concat(enter_from && `enter-from-${enter_from}`)
@@ -15,10 +15,10 @@ export const ResumeSection = ({className, style, section, heading_element, headi
   
   return (
     <section className={section_class} style={style}>
-      <HeadingElement style={heading_style}>
+      <HeadingElement style={show_header ? {} : {height: "0em", width: "0em", fontSize: "0em"}}>
         {header}
       </HeadingElement>
-      <ReactMarkdown source={content} escapeHtml={escape_html}/>
+      <ReactMarkdown source={content} escapeHtml={false}/>
     </section>
   );
 };
