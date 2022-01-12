@@ -35,7 +35,7 @@ const brief = {
   - **${front_end_years} years frontend**
   - **${back_end_years} years backend & DevOps**
 
-- Currently lead on **GC InfoBase** (${link_out("canada.ca/gcinfobase","https://canada.ca/gcinfobase")}), a **React client** backed by a
+- Lead developer on **GC InfoBase** (${link_out("canada.ca/gcinfobase","https://canada.ca/gcinfobase")}), a **React SPA client** backed by a
   **serverless GraphQL API**, presenting government data to the public through visualizations and exploration tools
 
 - Honours B.Sc. Physics-Mathematics, uOttawa (2017)
@@ -60,6 +60,7 @@ const libraries = {
 - Lodash
 - Webpack
 - Jest
+- React Testing Library
 - Express.js
 - Mongoose
 - Django
@@ -76,9 +77,9 @@ const tools = {
 const platforms = {
   header: 'Platforms',
   content: `
-- CircleCI
 - Google Cloud
 - MongoDB Atlas
+- CircleCI
 `
 };
 
@@ -113,7 +114,7 @@ const curriculum_vitae = {
     - Contributed refinements to the existing platform's testing patterns
   
 **01/2015 - 09/2017** – **Student**, Office of the Chief Human Resources Officer, TBS (alternating full-time CO-OP terms and part-time contracts)
-  - Developed early HR portions of GC InfoBase. Self-taught JS/HTML/CSS, git, and the code base itself to do so, despite isolation from core dev team
+  - Developed early HR portions of GC InfoBase. Self-taught JS/HTML/CSS, git, and the existing code base to do so
   
 **09/2012 - 04/2017** – Honours Bachelour of Science in Physics-Mathematics, University of Ottawa
 `
