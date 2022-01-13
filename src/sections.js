@@ -116,7 +116,7 @@ const curriculum_vitae = {
 **01/2015 - 09/2017** – **Student**, Office of the Chief Human Resources Officer, TBS (alternating full-time CO-OP terms and part-time contracts)
   - Developed early HR portions of GC InfoBase. Self-taught JS/HTML/CSS, git, and the existing code base to do so
   
-**09/2012 - 04/2017** – Honours Bachelour of Science in Physics-Mathematics, University of Ottawa
+**09/2012 - 04/2017** – Honours Bachelour of Science in Physics-Mathematics, Cum Laude, University of Ottawa
 `
 };
 
