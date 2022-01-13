@@ -1,7 +1,6 @@
 import React from 'react';
 import Markdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw'
-import rehypeSanitize from 'rehype-sanitize'
 import _ from 'lodash';
 
 export const ResumeSection = ({section, className, style, header_level = 2, show_header = true, enter_from = false }) => {
@@ -20,7 +19,7 @@ export const ResumeSection = ({section, className, style, header_level = 2, show
       <HeadingElement style={show_header ? {} : {height: "0em", width: "0em", fontSize: "0em"}}>
         {header}
       </HeadingElement>
-      <Markdown rehypePlugins={[rehypeRaw, rehypeSanitize]}>{content}</Markdown>
+      <Markdown rehypePlugins={[rehypeRaw]}>{content}</Markdown>
     </section>
   );
 };
