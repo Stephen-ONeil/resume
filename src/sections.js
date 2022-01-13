@@ -59,8 +59,8 @@ const libraries = {
 - GraphQL (E.g. Apollo)
 - Lodash
 - Webpack
-- Jest
-- React Testing Library
+- Jest & React Testing Library
+- Cypress
 - Express.js
 - Mongoose
 - Django
@@ -90,7 +90,7 @@ const curriculum_vitae = {
   - Lead GC InfoBase developer since Summer 2018, responsible for the project's technical direction, overall design, and developer talent
 
     - Iterating on and maintaining the project's large React frontend
-      - E.g. wrote an accessible typeahead search capable of displaying mixed local & async results, replacing an unmaintained and less flexible external library  
+      - E.g. wrote an accessible typeahead search component capable of displaying mixed local & async results, replacing an unmaintained and less flexible external library  
 
     - Building backend microservices to support the main application
       - E.g. built a flexible form template service, used to collect, validate, store, and alert the team across multiple lines of user feedback
