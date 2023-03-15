@@ -19,7 +19,11 @@ const get_resume_pdf = async () => {
   const free_port = await getPort();
   const server = await serve_build_dir(free_port);
 
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({
+    // see https://github.com/puppeteer/puppeteer/issues/4039
+    // TODO: this fix is system dependent, find something more portable later
+    executablePath: '/usr/bin/chromium',
+  });
   const page = await browser.newPage();
   await page.goto(`http://localhost:${free_port}/`); 
 
