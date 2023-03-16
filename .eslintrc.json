@@ -21,16 +21,16 @@
   },
   "plugins": ["@typescript-eslint"],
   "rules": {
-    "react/react-in-jsx-scope": "off",
-    "react/no-find-dom-node": "warn",
-    "prefer-const": "warn",
     "no-case-declarations": "off",
     "no-undef": "error",
+    "no-debugger": "warn",
+    "prefer-const": "warn",
+    "react/no-find-dom-node": "warn",
     "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-key": ["warn"],
     "@typescript-eslint/explicit-module-boundary-types": ["off"],
     "@typescript-eslint/no-empty-interface": ["off"],
-    "react/jsx-key": ["warn"],
-    "no-debugger": "warn",
     "import/order": [
       "warn",
       {
