@@ -14,9 +14,10 @@
   },
   "scripts": {
     "dev": "next dev",
+    "build": "next build && next export && node scripts/generate_pdf.js && node scripts/test_pdf_page_count.js",
+    "prestart": "npm run build",
     "start": "next start",
     "spellcheck": "node scripts/spellcheck_content.js",
-    "build": "next build && next export && node scripts/generate_pdf.js && node scripts/test_pdf_page_count.js",
     "predeploy": "npm run spellcheck && npm run build",
     "deploy": "gh-pages -d out"
   },
