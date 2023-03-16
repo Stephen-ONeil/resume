@@ -15,8 +15,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export && node scripts/generate_pdf.js && node scripts/test_pdf_page_count.js",
-    "prestart": "npm run build",
-    "start": "next start",
+    "preprod": "npm run build",
+    "prod": "http-server out -c-1 -a 127.0.0.1 -p 3000 -s",
     "spellcheck": "node scripts/spellcheck_content.js",
     "predeploy": "npm run spellcheck && npm run build",
     "deploy": "gh-pages -d out"
@@ -46,6 +46,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "get-port": "^5.0.0",
     "gh-pages": "^2.1.1",
+    "http-server": "^14.1.1",
     "next": "^13.2.4",
     "prettier": "^2.8.4",
     "puppeteer": "^2.0.0",
