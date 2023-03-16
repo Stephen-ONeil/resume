@@ -105,8 +105,11 @@ if (!_.isEmpty(spelling_mistakes_by_section)) {
   const spelling_error_log = _.map(
     spelling_mistakes_by_section,
     (spelling_mistakes, section_key) =>
-      `\n In '${section_key}': ${spelling_mistakes.toString()}`
+      `\n In section "${section_key}": "${spelling_mistakes.toString()}"`
   );
 
-  throw new Error(`Alert: spelling mistakes detected!${spelling_error_log}`);
+  console.log(`Spelling mistakes detected!${spelling_error_log}`);
+  process.exit(1);
 }
+
+console.log(`No spelling mistakes detected, all good!`);

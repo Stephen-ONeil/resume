@@ -14,14 +14,11 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint",
-    "generate_pdf": "node scripts/generate_pdf.js",
-    "test_pdf_page_count": "node scripts/test_pdf_page_count.js",
     "spellcheck": "node scripts/spellcheck_content.js",
-    "predeploy": "npm run build && npm run generate_pdf",
-    "deploy": "npm run test_pdf_page_count && npm run spellcheck && gh-pages -d build"
+    "build": "next build && next export && node scripts/generate_pdf.js && node scripts/test_pdf_page_count.js",
+    "predeploy": "npm run spellcheck && npm run build",
+    "deploy": "gh-pages -d out"
   },
   "browserslist": {
     "production": [
