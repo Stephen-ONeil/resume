@@ -19,7 +19,7 @@
     "prod": "http-server out -c-1 -a 127.0.0.1 -p 3000 -s",
     "spellcheck": "node scripts/spellcheck_content.js",
     "predeploy": "npm run spellcheck && npm run build",
-    "deploy": "gh-pages -d out"
+    "deploy": "touch out/.nojekyll && gh-pages -t -d out"
   },
   "browserslist": {
     "production": [
