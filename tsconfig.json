@@ -26,6 +26,7 @@
   },
   "include": [
     "./src/",
+    "./scripts/",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",

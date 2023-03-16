@@ -1,20 +1,20 @@
-const fs = require("fs");
-const http = require("http");
+import fs from "fs";
+import http from "http";
 
-const getPort = require("get-port");
-const puppeteer = require("puppeteer");
-const handler = require("serve-handler");
+import getPort from "get-port";
+import puppeteer from "puppeteer";
+import handler from "serve-handler";
 
-const { build_dir } = require("./script_consts.js");
+import { build_dir } from "./script_consts.js";
 
-const serve_build_dir = async port =>
+export const serve_build_dir = async port =>
   http
     .createServer((request, response) =>
       handler(request, response, { public: build_dir })
     )
     .listen(port);
 
-const get_resume_pdf = async () => {
+export const get_resume_pdf = async () => {
   if (!fs.existsSync(`${build_dir}/index.html`)) {
     throw new Error(
       "Error generating pdf: build dir doesn't contain an index.html file"
@@ -38,9 +38,4 @@ const get_resume_pdf = async () => {
   server.close();
 
   return pdf;
-};
-
-module.exports = {
-  serve_build_dir,
-  get_resume_pdf,
 };

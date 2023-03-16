@@ -49,7 +49,7 @@
         // We can group imports further by adding rules here, the order they're defined in breaks ties when group and position are equal
         "pathGroups": [
           {
-            "pattern": "src/**/*.(js|jsx|ts|tsx)",
+            "pattern": "(src|scripts)/**/*.(js|jsx|ts|tsx)",
             "group": "internal",
             "position": "before"
           }

@@ -1,4 +1,4 @@
-const { get_resume_pdf } = require("./script_utils");
+import { get_resume_pdf } from "./script_utils.js";
 
 const expected_page_count = 1;
 

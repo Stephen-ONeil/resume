@@ -1,10 +1,8 @@
-const path = require("path");
+import path from "path";
+import { fileURLToPath } from "url";
 
-const build_dir = path.resolve(__dirname, "../build");
+const __dirname = fileURLToPath(new URL(".", import.meta.url));
 
-const pdf_name = "stephen-oneil-resume.pdf";
+export const build_dir = path.resolve(__dirname, "../out");
 
-module.exports = {
-  pdf_name,
-  build_dir,
-};
+export const pdf_name = "stephen-oneil-resume.pdf";

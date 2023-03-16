@@ -1,7 +1,7 @@
-const fs = require("fs");
+import fs from "fs";
 
-const { build_dir, pdf_name } = require("./script_consts");
-const { get_resume_pdf } = require("./script_utils");
+import { build_dir, pdf_name } from "./script_consts.js";
+import { get_resume_pdf } from "./script_utils.js";
 
 const pdf_path = `${build_dir}/${pdf_name}`;
 

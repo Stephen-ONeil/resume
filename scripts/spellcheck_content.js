@@ -1,10 +1,10 @@
-const _ = require("lodash");
-const remove_markdown = require("remove-markdown");
-const SpellChecker = require("simple-spellchecker");
+import _ from "lodash";
+import remove_markdown from "remove-markdown";
+import SpellChecker from "simple-spellchecker";
 
 const dictionary = SpellChecker.getDictionarySync("en-GB");
 
-const sections = require("../src/resume_content.js");
+import * as sections from "../src/resume_content.js";
 
 const allow_list = [
   "app",
