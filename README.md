@@ -2,6 +2,6 @@
 
 [resume.oneil.online](https://resume.oneil.online/)
 
-Nothing fancy, my resume in over-wrought React app form. Constrained to the exact size of a standard sheet of paper because I enjoy a challenge.
+Leveraging some slightly obscure NextJS configuration options, exports to a pure no-JS static page. Now that's what I call SSG :+1:.
 
-Go ahead, print it to .pdf! Or, if you hate trees and like manually typing in links, physical paper.
+Responsive layout primarily crafted for display as/printing to standard A4 paper (save some trees though, it makes a handsome PDF too),
