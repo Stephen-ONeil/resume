@@ -1,7 +1,7 @@
 {
-  "name": "resume",
-  "version": "1.0.0",
-  "homepage": "",
+  "name": "stephen-oneil-resume",
+  "version": "2.0.0",
+  "homepage": "https://resume.oneil.online",
   "type": "module",
   "dependencies": {
     "classnames": "^2.3.2",
