@@ -25,6 +25,7 @@
     "no-undef": "error",
     "no-debugger": "warn",
     "prefer-const": "warn",
+    "@next/next/no-img-element": "off", // the suggested fix requires runtime JS
     "react/no-find-dom-node": "warn",
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
