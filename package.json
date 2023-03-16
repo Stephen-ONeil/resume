@@ -3,27 +3,24 @@
   "version": "1.0.0",
   "homepage": "",
   "dependencies": {
+    "classnames": "^2.3.2",
+    "lodash": "^4.17.15",
     "moment": "^2.24.0",
-    "node-sass": "^7.0.0",
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "react-markdown": "^7.0.0",
-    "react-scripts": "^5.0.0",
     "rehype-raw": "^4.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start",
+    "lint": "next lint",
     "generate_pdf": "node scripts/generate_pdf.js",
     "test_pdf_page_count": "node scripts/test_pdf_page_count.js",
     "spellcheck": "node scripts/spellcheck_content.js",
     "predeploy": "npm run build && npm run generate_pdf",
     "deploy": "npm run test_pdf_page_count && npm run spellcheck && gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": {
     "production": [
@@ -38,12 +35,24 @@
     ]
   },
   "devDependencies": {
+    "@types/node": "18.15.3",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "eslint": "8.36.0",
+    "eslint-config-next": "13.2.4",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
     "get-port": "^5.0.0",
     "gh-pages": "^2.1.1",
-    "lodash": "^4.17.15",
+    "next": "^13.2.4",
+    "prettier": "^2.8.4",
     "puppeteer": "^2.0.0",
     "remove-markdown": "^0.3.0",
-    "serve": "^13.0.2",
-    "simple-spellchecker": "^1.0.0"
+    "sass": "^1.59.3",
+    "simple-spellchecker": "^1.0.0",
+    "typescript": "4.9.5"
   }
 }

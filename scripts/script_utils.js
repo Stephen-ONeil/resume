@@ -1,19 +1,24 @@
-const http = require('http');
-const fs = require('fs');
-const handler = require('serve-handler');
-const puppeteer = require('puppeteer');
-const getPort = require('get-port');
+const fs = require("fs");
+const http = require("http");
 
-const { build_dir } = require('./script_consts.js')
+const getPort = require("get-port");
+const puppeteer = require("puppeteer");
+const handler = require("serve-handler");
 
+const { build_dir } = require("./script_consts.js");
 
-const serve_build_dir = async (port) => http
-  .createServer( (request, response) => handler(request, response, {public: build_dir}) )
-  .listen(port);
+const serve_build_dir = async port =>
+  http
+    .createServer((request, response) =>
+      handler(request, response, { public: build_dir })
+    )
+    .listen(port);
 
 const get_resume_pdf = async () => {
-  if ( !fs.existsSync(`${build_dir}/index.html`) ){
-    throw new Error("Error generating pdf: build dir doesn't contain an index.html file");
+  if (!fs.existsSync(`${build_dir}/index.html`)) {
+    throw new Error(
+      "Error generating pdf: build dir doesn't contain an index.html file"
+    );
   }
 
   const free_port = await getPort();
@@ -22,15 +27,15 @@ const get_resume_pdf = async () => {
   const browser = await puppeteer.launch({
     // see https://github.com/puppeteer/puppeteer/issues/4039
     // TODO: this fix is system dependent, find something more portable later
-    executablePath: '/usr/bin/chromium',
+    executablePath: "/usr/bin/chromium",
   });
   const page = await browser.newPage();
-  await page.goto(`http://localhost:${free_port}/`); 
+  await page.goto(`http://localhost:${free_port}/`);
 
   const pdf = await page.pdf();
 
   await browser.close();
-  server.close(); 
+  server.close();
 
   return pdf;
 };

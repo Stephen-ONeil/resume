@@ -1,0 +1,39 @@
+@import "src/common-variables";
+
+.paper-resume {
+  // Hide unless printing or screen width > paper width
+  display: none;
+  @media print, (min-width: $page_width) {
+    display: grid;
+  }
+
+  /* A4 paper dimensions */
+  width: $page_width;
+  height: $page_height;
+}
+
+.fcol {
+  display: flex;
+  flex-direction: column;
+
+  &.fcol__1-4th {
+    flex-basis: 25%;
+  }
+  &.fcol__1-half {
+    flex-basis: 50%;
+  }
+  &.fcol__3-4th {
+    flex-basis: 75%;
+  }
+  &.fcol__1-3rd {
+    flex-basis: 33%;
+  }
+  &.fcol__2-3rd {
+    flex-basis: 66%;
+  }
+}
+
+.frow {
+  display: flex;
+  flex-direction: row;
+}

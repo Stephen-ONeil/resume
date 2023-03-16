@@ -1,0 +1,21 @@
+@import "src/common-variables";
+
+.responsive-resume {
+  // Hide if printing or screen width < paper width
+  @media print, (min-width: $page_width) {
+    display: none;
+  }
+}
+
+.two-column-list {
+  & ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    & > li {
+      flex: 0 0 47%;
+    }
+  }
+}

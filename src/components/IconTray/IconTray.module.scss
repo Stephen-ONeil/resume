@@ -1,4 +1,4 @@
-@import '../common-variables';
+@import "src/common-variables";
 
 $icon-dimension: 0.35in;
 $border: 0.02in;
@@ -14,16 +14,16 @@ $border: 0.02in;
   @media (min-width: $page_width+($icon-dimension*0.45)) {
     background-color: white;
     border: $border solid black;
-    outline: $gutter*2 solid white;
+    outline: $gutter * 2 solid white;
   }
   @media (min-width: $page_width+($icon-dimension*2)+$icon-dimension) {
     left: 50%;
-    margin-left: $page_width/2+($icon-dimension*0.19);
+    margin-left: $page_width/2 + ($icon-dimension * 0.19);
     top: $icon-dimension;
   }
   @media (max-width: $page_width+($icon-dimension*2)+$icon-dimension) {
-    right: $gutter+$border;
-    top: $gutter+$border;
+    right: $gutter + $border;
+    top: $gutter + $border;
   }
 
   & > * {
@@ -35,14 +35,16 @@ $border: 0.02in;
       height: $icon-dimension;
       fill: rgba(0, 0, 0, 0.6);
     }
-    &:hover > svg, &:focus > svg {
+    &:hover > svg,
+    &:focus > svg {
       fill: rgba(0, 0, 0, 1);
     }
 
     & > img {
       opacity: 0.6;
     }
-    &:hover > img, &:focus > img {
+    &:hover > img,
+    &:focus > img {
       opacity: 1;
     }
   }

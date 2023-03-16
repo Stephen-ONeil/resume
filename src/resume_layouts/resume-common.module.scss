@@ -1,4 +1,4 @@
-@import './common-variables';
+@import "src/common-variables";
 
 // lots of descendant selectors... don't follow my example kids, descendant selectors are evil
 
@@ -24,40 +24,27 @@
     overflow: hidden;
   }
 
-  & section {
-    margin: $gutter;
-    padding: $gutter;
-
-    &.enter-from-left {
-      @include slide-in-from-left;
-    }
-    &.enter-from-right {
-      @include slide-in-from-right;
-    }
-    &.enter-from-top {
-      @include slide-in-from-top;
-    }
-    &.enter-from-bottom {
-      @include slide-in-from-bottom;
-    }
-  }
-
   & h1 {
     font-size: 2.8em;
 
-    &~h2 {
+    & ~ h2 {
       font-size: 1.8em;
     }
   }
-  & h1, & h2, & h3, & h3 {
+  & h1,
+  & h2,
+  & h3,
+  & h3 {
     margin: 0px;
   }
 
-  & p, & :not(li) > ul{
+  & p,
+  & :not(li) > ul {
     margin: 0.25em 0em 0em 0em;
   }
 
-  & ul, & li {
+  & ul,
+  & li {
     padding-bottom: 0.27em;
   }
   & ul {
@@ -72,7 +59,8 @@
       margin: 0em;
     }
 
-    & li li, & li ul {
+    & li li,
+    & li ul {
       padding-bottom: 0em;
     }
   }
@@ -83,12 +71,12 @@
     transform: translate(-0.2em, 0.1em);
   }
   & :not(li) > ul > li:before {
-    content: url('./svgs/arrow-full.svg');
+    content: url("/svgs/arrow-full.svg");
   }
-  & li > ul > li:before{
-    content: url('./svgs/arrow-half.svg');
+  & li > ul > li:before {
+    content: url("/svgs/arrow-half.svg");
   }
-  & li > ul > li > ul > li:before{
-    content: url('./svgs/arrow-empty.svg');
+  & li > ul > li > ul > li:before {
+    content: url("/svgs/arrow-empty.svg");
   }
 }

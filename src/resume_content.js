@@ -1,10 +1,11 @@
 // using common.js module syntax in this file as it is also imported by some scripts, and I don't want to go around transpiling scripts
 
-const moment = require('moment');
-const _ = require('lodash');
+import _ from "lodash";
+import moment from "moment";
 
 const now = moment();
-const approx_time_since_in_years = (date) => `~${_.round(moment.duration( now.diff(moment(date)) ).asYears(), 1)}`;
+const approx_time_since_in_years = date =>
+  `~${_.round(moment.duration(now.diff(moment(date))).asYears(), 1)}`;
 
 // roughly since start of first CO-OP term
 const front_end_years = approx_time_since_in_years([2015, 0, 1]);
@@ -12,48 +13,53 @@ const front_end_years = approx_time_since_in_years([2015, 0, 1]);
 // roughly since when I first set up CI for real, we were starting to experiment with GCloud/GraphQl and the InfoBase API
 const back_end_years = approx_time_since_in_years([2018, 2, 15]);
 
+const link_out = (text, href) =>
+  `<a target='_blank' rel='noopener noreferrer' href='${href}'>${text}</a>`;
 
-const link_out = (text, href) => `<a target='_blank' rel='noopener noreferrer' href='${href}'>${text}</a>`;
-
-
-const contact_info = {
+export const contact_info = {
   header: "Stephen O'Neil",
   content: `
 ## Full Stack Web App Dev
-${link_out("github.com/Stephen-ONeil","https://github.com/Stephen-ONeil")}  
-${link_out("github.com/TBS-EACPD/infobase","https://github.com/TBS-EACPD/infobase")}  
+${link_out("github.com/Stephen-ONeil", "https://github.com/Stephen-ONeil")}  
+${link_out(
+  "github.com/TBS-EACPD/infobase",
+  "https://github.com/TBS-EACPD/infobase"
+)}  
 [stephen.levi.oneil<span style="font-family: Times, serif;">@</span>gmail.com](mailto:stephen.levi.oneil@gmail.com)  
 (613) 867-7727  
 Ottawa, Ontario
 `,
 };
 
-const brief = {
-  header: 'Brief',
+export const brief = {
+  header: "Brief",
   content: `
 - **Senior developer, full stack**
   - **${front_end_years} years frontend**
   - **${back_end_years} years backend & DevOps**
 
-- Lead developer on **GC InfoBase** (${link_out("canada.ca/gcinfobase","https://canada.ca/gcinfobase")}), a **React SPA client** backed by a
+- Lead developer on **GC InfoBase** (${link_out(
+    "canada.ca/gcinfobase",
+    "https://canada.ca/gcinfobase"
+  )}), a **React SPA client** backed by a
   **serverless GraphQL API**, presenting government data to the public through visualizations and exploration tools
 
 - Honours B.Sc. Physics-Mathematics, uOttawa (2017)
 `,
 };
 
-const languages = {
-  header: 'Languages',
+export const languages = {
+  header: "Languages",
   content: `
 - JavaScript & TypeScript
 - HTML5
 - CSS & Sass
 - sh & Bash
 - Python 3  
-`
+`,
 };
-const libraries = {
-  header: 'Libraries & Frameworks',
+export const libraries = {
+  header: "Libraries & Frameworks",
   content: `
 - React
 - GraphQL (E.g. Apollo)
@@ -64,27 +70,27 @@ const libraries = {
 - Express.js
 - Mongoose
 - Django
-`
+`,
 };
-const tools = {
-  header: 'Tools',
+export const tools = {
+  header: "Tools",
   content: `
 - git
 - VSCode
 - Docker 
-`
+`,
 };
-const platforms = {
-  header: 'Platforms',
+export const platforms = {
+  header: "Platforms",
   content: `
 - Google Cloud
 - MongoDB Atlas
 - CircleCI
-`
+`,
 };
 
-const curriculum_vitae = {
-  header: 'Curriculum Vitae',
+export const curriculum_vitae = {
+  header: "Curriculum Vitae",
   content: `
 **09/2017 - Ongoing** – **Senior Developer**, Expenditure Management Sector (EMS), Treasury Board of Canada Secretariat (TBS)
   - Lead GC InfoBase developer since Summer 2018, responsible for the project's technical direction, overall design, and developer talent
@@ -117,15 +123,5 @@ const curriculum_vitae = {
   - Developed early HR portions of GC InfoBase. Self-taught JS/HTML/CSS, git, and the existing code base to do so
   
 **09/2012 - 04/2017** – Honours Bachelour of Science in Physics-Mathematics, Cum Laude, University of Ottawa
-`
-};
-
-module.exports = {
-  contact_info,
-  brief,
-  languages,
-  libraries,
-  tools,
-  platforms,
-  curriculum_vitae,
+`,
 };

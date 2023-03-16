@@ -1,0 +1,19 @@
+@import "src/common-variables";
+
+.resume-section {
+  margin: $gutter;
+  padding: $gutter;
+
+  &.enter-from-left {
+    @include slide-in-from-left;
+  }
+  &.enter-from-right {
+    @include slide-in-from-right;
+  }
+  &.enter-from-top {
+    @include slide-in-from-top;
+  }
+  &.enter-from-bottom {
+    @include slide-in-from-bottom;
+  }
+}
