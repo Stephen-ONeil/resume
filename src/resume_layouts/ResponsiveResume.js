@@ -3,12 +3,13 @@ import React from "react";
 
 import { ResumeSection } from "../components/ResumeSection/ResumeSection.js";
 import {
-  contact_info,
+  main_header,
   brief,
   languages,
   libraries,
   tools,
   platforms,
+  education,
   curriculum_vitae,
 } from "../resume_content.js";
 
@@ -24,30 +25,50 @@ function ResponsiveResume() {
       )}
     >
       <ResumeSection
-        section={contact_info}
+        section={main_header}
         className={classNames(responsive_styles["primary-section"])}
         style={{ textAlign: "center" }}
         header_level={1}
       />
-      <ResumeSection section={brief} show_header={false} enter_from="left" />
+      <ResumeSection section={brief} enter_from="left" />
       <ResumeSection
         section={languages}
-        className={classNames(responsive_styles["two-column-list"])}
+        className={classNames(
+          common_styles["flex-list"],
+          common_styles["flex-list--two-column"]
+        )}
         enter_from="right"
       />
       <ResumeSection
         section={libraries}
-        className={classNames(responsive_styles["two-column-list"])}
+        className={classNames(
+          common_styles["flex-list"],
+          common_styles["flex-list--two-column"]
+        )}
         enter_from="left"
       />
       <ResumeSection
         section={tools}
-        className={classNames(responsive_styles["two-column-list"])}
+        className={classNames(
+          common_styles["flex-list"],
+          common_styles["flex-list--two-column"]
+        )}
         enter_from="right"
       />
       <ResumeSection
         section={platforms}
-        className={classNames(responsive_styles["two-column-list"])}
+        className={classNames(
+          common_styles["flex-list"],
+          common_styles["flex-list--two-column"]
+        )}
+        enter_from="left"
+      />
+      <ResumeSection
+        section={education}
+        className={classNames(
+          common_styles["flex-list"],
+          common_styles["flex-list--two-column"]
+        )}
         enter_from="left"
       />
       <ResumeSection section={curriculum_vitae} enter_from="right" />

@@ -1,11 +1,8 @@
-// using common.js module syntax in this file as it is also imported by some scripts, and I don't want to go around transpiling scripts
-
-import _ from "lodash";
 import moment from "moment";
 
 const now = moment();
 const approx_time_since_in_years = date =>
-  `~${_.round(moment.duration(now.diff(moment(date))).asYears(), 1)}`;
+  `${Math.floor(moment.duration(now.diff(moment(date))).asYears())}+`;
 
 // roughly since start of first CO-OP term
 const front_end_years = approx_time_since_in_years([2015, 0, 1]);
@@ -16,112 +13,127 @@ const back_end_years = approx_time_since_in_years([2018, 2, 15]);
 const link_out = (text, href) =>
   `<a target='_blank' rel='noopener noreferrer' href='${href}'>${text}</a>`;
 
-export const contact_info = {
+export const main_header = {
   header: "Stephen O'Neil",
   content: `
 ## Full Stack Web App Dev
+**${front_end_years} years frontend** | **${back_end_years} years backend & DevSecOps**  
+(613) 867-7727 | [stephenlevioneil<span style="font-family: Times, serif;">@</span>gmail.com](mailto:stephenlevioneil@gmail.com)
 ${link_out("github.com/Stephen-ONeil", "https://github.com/Stephen-ONeil")}  
-${link_out(
-  "github.com/TBS-EACPD/infobase",
-  "https://github.com/TBS-EACPD/infobase"
-)}  
-[stephen.levi.oneil<span style="font-family: Times, serif;">@</span>gmail.com](mailto:stephen.levi.oneil@gmail.com)  
-(613) 867-7727  
-Ottawa, Ontario
 `,
 };
 
 export const brief = {
-  header: "Brief",
+  header: false,
   content: `
-- **Senior developer, full stack**
-  - **${front_end_years} years frontend**
-  - **${back_end_years} years backend & DevOps**
-
-- Lead developer on **GC InfoBase** (${link_out(
+- Currently **lead developer** & **technical advisor** for a **data services team**, navigating a mandate expansion from serving a sector of ~50 employees to **serving a branch of 600+**
+- Previously **lead developer** on **GC InfoBase** (${link_out(
     "canada.ca/gcinfobase",
     "https://canada.ca/gcinfobase"
-  )}), a **React SPA client** backed by a
-  **serverless GraphQL API**, presenting government data to the public through visualizations and exploration tools
+  )}, ${link_out(
+    "github.com/TBS-EACPD/infobase",
+    "https://github.com/TBS-EACPD/infobase"
+  )}), a **React SPA client** backed by a **serverless GraphQL API**
+`,
+};
+export const currently = {
+  header: "Currently",
+  content: `
 
-- Honours B.Sc. Physics-Mathematics, uOttawa (2017)
+`,
+};
+export const previously = {
+  header: "Previously",
+  content: `
+
 `,
 };
 
 export const languages = {
   header: "Languages",
   content: `
-- JavaScript & TypeScript
-- HTML5
+- TypeScript & JavaScript
+- HTML
 - CSS & Sass
 - sh & Bash
-- Python 3  
+- Python
 `,
 };
 export const libraries = {
   header: "Libraries & Frameworks",
   content: `
 - React
-- GraphQL (E.g. Apollo)
 - Lodash
-- Webpack
-- Jest & React Testing Library
+- GraphQL (Apollo)
+- Jest
+- React Testing Library
 - Cypress
+- Axe-core
+- Webpack
 - Express.js
-- Mongoose
+- NextJS
 - Django
 `,
 };
 export const tools = {
   header: "Tools",
   content: `
-- git
+- POSIX operating systems
+- Git
 - VSCode
-- Docker 
+- Docker
 `,
 };
 export const platforms = {
   header: "Platforms",
   content: `
-- Google Cloud
+- Google Cloud Platform
 - MongoDB Atlas
+- DigitalOcean
 - CircleCI
+`,
+};
+export const education = {
+  header: "Education",
+  content: `
+Honours Bachelor of Science, Physics-Mathematics,
+uOttawa | 2017, Cum Laude
 `,
 };
 
 export const curriculum_vitae = {
   header: "Curriculum Vitae",
   content: `
-**09/2017 - Ongoing** – **Senior Developer**, Expenditure Management Sector (EMS), Treasury Board of Canada Secretariat (TBS)
-  - Lead GC InfoBase developer since Summer 2018, responsible for the project's technical direction, overall design, and developer talent
+**01/2023 - ongoing** | **Lead Developer** & **Technical Advisor**, Science and Parliamentary Infrastructure Branch (SPIB), Public Services and Procurement Canada (PSPC)
 
-    - Iterating on and maintaining the project's large React frontend
+**09/2017 - 12/2022** | **Lead Developer**, Expenditure Management Sector (EMS), Treasury Board of Canada Secretariat (TBS)
+  - Lead the GC InfoBase project since Summer 2018; was responsible for the project's technical direction, overall design, and for the developer talent on the team
+
+    - Iterated on and maintained the project's large React frontend
       - E.g. wrote an accessible typeahead search component capable of displaying mixed local & async results, replacing an unmaintained and less flexible external library  
 
-    - Building backend microservices to support the main application
+    - Built backend microservices to support the main application
       - E.g. built a flexible form template service, used to collect, validate, store, and alert the team across multiple lines of user feedback
 
-    - Architecting and administering infrastructure and operations
+    - Architected and administered infrastructure and operations for the project
       - E.g. transitioned hosting from a static file server administered by an external team to cloud hosting & an internal DevOps culture. Brought the
         deployment process from days to minutes while providing a capable backend + flexible & faster hosting
 
-    - Developing tooling and practices as multipliers on team productivity
+    - Developed tooling and practices as multipliers on team productivity
       - E.g. CI deployments of full, per-branch, development builds for quicker feedback and review cycles
 
-    - Championing code standards, review practices, testing, CI/CD, and working in the open
-      - E.g. convinced colleagues and upper management of the benefits to going open source; awarded in recognition of the impacts one year on
+    - Championed code standards, review practices, testing, CI/CD, and working in the open
+      - E.g. sold colleagues and upper management on the benefits to going open source; awarded in recognition of the positive impacts one year on
 
-    - Hiring, supervising, and mentoring of juniour developers and students 
-      - Supervised 10 students to date, 5 of which have returned for subsequent terms with 2 joining the team upon graduation
+    - Hired, supervised, and mentored of juniour developers and students
+      - Supervised 10+ students, 5 of which returned for subsequent terms with 2 joining full-time upon graduation
 
   - On an emergency placement, built the tool used for centralized tracking of COVID-19 related expenditures across all government departments
     - Quickly learnt Python, Django, an existing internal platform's code & environment, and the business needs; began implementation by day 6
     - Individually developed the new collection tool off the existing platform, with robust user and admin workflows, meeting a tight 3 month target
     - Contributed refinements to the existing platform's testing patterns
   
-**01/2015 - 09/2017** – **Student**, Office of the Chief Human Resources Officer, TBS (alternating full-time CO-OP terms and part-time contracts)
-  - Developed early HR portions of GC InfoBase. Self-taught JS/HTML/CSS, git, and the existing code base to do so
-  
-**09/2012 - 04/2017** – Honours Bachelour of Science in Physics-Mathematics, Cum Laude, University of Ottawa
+**01/2015 - 09/2017** | **Student**, Office of the Chief Human Resources Officer, TBS
+  - Developed early HR portions of GC InfoBase. Self-taught JS, HTML, CSS, and git
 `,
 };

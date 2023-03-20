@@ -1,6 +1,6 @@
 @import "src/common-variables";
 
-// lots of descendant selectors... don't follow my example kids, descendant selectors are evil
+// lots of descendant selectors, would usually avoid but it's a very small page
 
 .resume {
   font-family: "Cabin", sans-serif;
@@ -78,5 +78,43 @@
   }
   & li > ul > li > ul > li:before {
     content: url("/svgs/arrow-empty.svg");
+  }
+
+  & .flex-list {
+    & ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: left;
+
+      & > li {
+        flex: 0 0 100%;
+      }
+    }
+
+    &.flex-list--compact {
+      & ul {
+        padding-left: 0em;
+        justify-content: space-evenly;
+
+        & > li {
+          flex: unset;
+          &:before {
+            scale: 0.6;
+            transform: translate(0.2em, 0.2em);
+          }
+        }
+      }
+    }
+
+    &.flex-list--two-column {
+      & ul {
+        justify-content: space-between;
+
+        & > li {
+          flex: 0 0 47%;
+        }
+      }
+    }
   }
 }

@@ -4,12 +4,13 @@ import React from "react";
 import { ResumeSection } from "src/components/ResumeSection/ResumeSection.js";
 
 import {
-  contact_info,
+  main_header,
   brief,
   languages,
   libraries,
   tools,
   platforms,
+  education,
   curriculum_vitae,
 } from "src/resume_content.js";
 
@@ -19,12 +20,15 @@ import common_styles from "./resume-common.module.scss";
 function PaperResume() {
   return (
     <div
-      className={classNames(common_styles.resume, paper_styles["paper-resume"])}
+      className={classNames(
+        common_styles["resume"],
+        paper_styles["paper-resume"]
+      )}
     >
       <div className={classNames(paper_styles["fcol"])}>
         <div className={classNames(paper_styles["frow"])}>
           <ResumeSection
-            section={contact_info}
+            section={main_header}
             className={classNames(
               paper_styles["fcol"],
               paper_styles["fcol__1-half"],
@@ -33,16 +37,15 @@ function PaperResume() {
             style={{ textAlign: "center" }}
             header_level={1}
           />
-          <ResumeSection
-            section={brief}
+          <div
             className={classNames(
               paper_styles["fcol"],
               paper_styles["fcol__1-half"]
             )}
             style={{ justifyContent: "center" }}
-            show_header={false}
-            enter_from="top"
-          />
+          >
+            <ResumeSection section={brief} enter_from="top" />
+          </div>
         </div>
         <div
           className={classNames(paper_styles["frow"])}
@@ -55,10 +58,39 @@ function PaperResume() {
             )}
             style={{ justifyContent: "center" }}
           >
-            <ResumeSection section={languages} enter_from="bottom" />
-            <ResumeSection section={libraries} enter_from="bottom" />
-            <ResumeSection section={tools} enter_from="bottom" />
-            <ResumeSection section={platforms} enter_from="bottom" />
+            <ResumeSection
+              section={languages}
+              className={classNames(
+                common_styles["flex-list"],
+                common_styles["flex-list--compact"]
+              )}
+              enter_from="bottom"
+            />
+            <ResumeSection
+              section={libraries}
+              className={classNames(
+                common_styles["flex-list"],
+                common_styles["flex-list--compact"]
+              )}
+              enter_from="bottom"
+            />
+            <ResumeSection
+              section={tools}
+              className={classNames(
+                common_styles["flex-list"],
+                common_styles["flex-list--compact"]
+              )}
+              enter_from="bottom"
+            />
+            <ResumeSection
+              section={platforms}
+              className={classNames(
+                common_styles["flex-list"],
+                common_styles["flex-list--compact"]
+              )}
+              enter_from="bottom"
+            />
+            <ResumeSection section={education} enter_from="bottom" />
           </div>
           <div
             className={classNames(

@@ -11,7 +11,6 @@ export const ResumeSection = ({
   className,
   style,
   header_level = 2,
-  show_header = true,
   enter_from = false,
 }) => {
   const { header, content } = section;
@@ -28,9 +27,7 @@ export const ResumeSection = ({
       style={style}
     >
       <HeadingElement
-        style={
-          show_header ? {} : { height: "0em", width: "0em", fontSize: "0em" }
-        }
+        style={header ? {} : { height: "0em", width: "0em", fontSize: "0em" }}
       >
         {header}
       </HeadingElement>
