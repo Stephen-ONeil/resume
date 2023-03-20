@@ -83,6 +83,12 @@ const allow_list = [
   "admin",
   "async",
   "typeahead",
+  "stephenlevioneil",
+  "devsecops",
+  "digitalocean",
+  "wcag",
+  "architected",
+  "nextjs",
 ];
 
 const spelling_mistakes_by_section = _.chain(sections)

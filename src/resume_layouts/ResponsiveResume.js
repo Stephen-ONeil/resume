@@ -9,6 +9,7 @@ import {
   libraries,
   tools,
   platforms,
+  skills,
   education,
   curriculum_vitae,
 } from "../resume_content.js";
@@ -64,13 +65,14 @@ function ResponsiveResume() {
         enter_from="left"
       />
       <ResumeSection
-        section={education}
+        section={skills}
         className={classNames(
           common_styles["flex-list"],
           common_styles["flex-list--two-column"]
         )}
-        enter_from="left"
+        enter_from="right"
       />
+      <ResumeSection section={education} enter_from="left" />
       <ResumeSection section={curriculum_vitae} enter_from="right" />
     </div>
   );

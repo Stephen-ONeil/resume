@@ -4,7 +4,7 @@
   // Hide unless printing or screen width > paper width
   display: none;
   @media print, (min-width: $page_width) {
-    display: grid;
+    display: flex;
   }
 
   /* A4 paper dimensions */

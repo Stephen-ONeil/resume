@@ -10,6 +10,7 @@ import {
   libraries,
   tools,
   platforms,
+  skills,
   education,
   curriculum_vitae,
 } from "src/resume_content.js";
@@ -58,38 +59,17 @@ function PaperResume() {
             )}
             style={{ justifyContent: "center" }}
           >
-            <ResumeSection
-              section={languages}
-              className={classNames(
-                common_styles["flex-list"],
-                common_styles["flex-list--compact"]
-              )}
-              enter_from="bottom"
-            />
-            <ResumeSection
-              section={libraries}
-              className={classNames(
-                common_styles["flex-list"],
-                common_styles["flex-list--compact"]
-              )}
-              enter_from="bottom"
-            />
-            <ResumeSection
-              section={tools}
-              className={classNames(
-                common_styles["flex-list"],
-                common_styles["flex-list--compact"]
-              )}
-              enter_from="bottom"
-            />
-            <ResumeSection
-              section={platforms}
-              className={classNames(
-                common_styles["flex-list"],
-                common_styles["flex-list--compact"]
-              )}
-              enter_from="bottom"
-            />
+            {[languages, libraries, tools, platforms, skills].map(section => (
+              <ResumeSection
+                key={section.header}
+                section={section}
+                className={classNames(
+                  common_styles["flex-list"],
+                  common_styles["flex-list--compact"]
+                )}
+                enter_from="bottom"
+              />
+            ))}
             <ResumeSection section={education} enter_from="bottom" />
           </div>
           <div
@@ -97,7 +77,11 @@ function PaperResume() {
               paper_styles["fcol"],
               paper_styles["fcol__3-4th"]
             )}
-            style={{ flexGrow: 1, paddingRight: "18px" }}
+            style={{
+              justifyContent: "center",
+              flexGrow: 1,
+              paddingRight: "18px",
+            }}
           >
             <ResumeSection section={curriculum_vitae} enter_from="right" />
           </div>

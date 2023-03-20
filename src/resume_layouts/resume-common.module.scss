@@ -43,7 +43,6 @@
     margin: 0.25em 0em 0em 0em;
   }
 
-  & ul,
   & li {
     padding-bottom: 0.27em;
   }
@@ -66,9 +65,9 @@
   }
   & li:before {
     float: left;
-    width: 1em;
-    height: 1em;
-    transform: translate(-0.2em, 0.1em);
+    width: 0em;
+    height: 0em;
+    transform: translate(-1.1em, 0.1em);
   }
   & :not(li) > ul > li:before {
     content: url("/svgs/arrow-full.svg");
@@ -101,6 +100,8 @@
           flex: unset;
           &:before {
             scale: 0.6;
+            width: 1em;
+            height: 1em;
             transform: translate(0.2em, 0.2em);
           }
         }

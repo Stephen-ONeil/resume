@@ -93,6 +93,12 @@ export const platforms = {
 - CircleCI
 `,
 };
+export const skills = {
+  header: "Skills & Competencies",
+  content: `
+- TODO
+`,
+};
 export const education = {
   header: "Education",
   content: `
@@ -104,36 +110,37 @@ uOttawa | 2017, Cum Laude
 export const curriculum_vitae = {
   header: "Curriculum Vitae",
   content: `
-**01/2023 - ongoing** | **Lead Developer** & **Technical Advisor**, Science and Parliamentary Infrastructure Branch (SPIB), Public Services and Procurement Canada (PSPC)
+**01/2023 - ongoing** | **Lead Developer** & **Technical Advisor**, Science and Parliamentary Infrastructure Branch, Public Services and Procurement Canada
+  - TODO
 
-**09/2017 - 12/2022** | **Lead Developer**, Expenditure Management Sector (EMS), Treasury Board of Canada Secretariat (TBS)
+**09/2017 - 12/2022** | **Lead Developer**, Expenditure Management Sector, Treasury Board of Canada Secretariat (TBS)
   - Lead the GC InfoBase project since Summer 2018; was responsible for the project's technical direction, overall design, and for the developer talent on the team
 
     - Iterated on and maintained the project's large React frontend
-      - E.g. wrote an accessible typeahead search component capable of displaying mixed local & async results, replacing an unmaintained and less flexible external library  
+      - E.g. wrote an accessible typeahead search component capable of displaying mixed sync & async results, replacing an unmaintained and less flexible external library  
 
     - Built backend microservices to support the main application
-      - E.g. built a flexible form template service, used to collect, validate, store, and alert the team across multiple lines of user feedback
+      - E.g. built a versatile template based form service, used to collect, validate, store, and alert the team across multiple lines of in-app user feedback
 
     - Architected and administered infrastructure and operations for the project
       - E.g. transitioned hosting from a static file server administered by an external team to cloud hosting & an internal DevOps culture. Brought the
-        deployment process from days to minutes while providing a capable backend + flexible & faster hosting
+        deployment process from days to minutes while obtaining flexible & faster hosting
 
-    - Developed tooling and practices as multipliers on team productivity
-      - E.g. CI deployments of full, per-branch, development builds for quicker feedback and review cycles
+    - Developed tooling to multiply team productivity and reinforce best practices
+      - E.g. implemented end-to-end WCAG 2.1 accessibility testing as part of our CI process
 
     - Championed code standards, review practices, testing, CI/CD, and working in the open
-      - E.g. sold colleagues and upper management on the benefits to going open source; awarded in recognition of the positive impacts one year on
+      - E.g. successfully lobbied colleagues and upper management to take the project open source; was awarded in recognition of the positive impacts one year later
 
-    - Hired, supervised, and mentored of juniour developers and students
-      - Supervised 10+ students, 5 of which returned for subsequent terms with 2 joining full-time upon graduation
+    - Hired, supervised, and mentored juniour developers and CO-OP students
+      - E.g. supervised 10+ students, 5 of which returned for subsequent terms with 2 joining full-time upon graduation
 
-  - On an emergency placement, built the tool used for centralized tracking of COVID-19 related expenditures across all government departments
+  - On an emergency placement, built the data collection tool used for centralized tracking of COVID-19 related expenditures across all government departments
     - Quickly learnt Python, Django, an existing internal platform's code & environment, and the business needs; began implementation by day 6
-    - Individually developed the new collection tool off the existing platform, with robust user and admin workflows, meeting a tight 3 month target
-    - Contributed refinements to the existing platform's testing patterns
+    - Individually developed the new collection tool off the existing platform, with robust user and admin workflows, meeting the ambitious 3 month deadline provided
+    - Contributed lasting refinements to the existing platform's testing patterns along the way
   
 **01/2015 - 09/2017** | **Student**, Office of the Chief Human Resources Officer, TBS
-  - Developed early HR portions of GC InfoBase. Self-taught JS, HTML, CSS, and git
+  - Self-taught JS, HTML, CSS, and Git; developed the early HR data portions of GC InfoBase 
 `,
 };
