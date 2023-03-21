@@ -89,6 +89,9 @@ const allow_list = [
   "wcag",
   "architected",
   "nextjs",
+  "refactors",
+  "mentorship",
+  "rollback",
 ];
 
 const spelling_mistakes_by_section = _.chain(sections)
