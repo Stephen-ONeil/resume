@@ -43,7 +43,7 @@ function PaperResume() {
               paper_styles["fcol"],
               paper_styles["fcol__1-half"]
             )}
-            style={{ justifyContent: "end" }}
+            style={{ justifyContent: "space-around" }}
           >
             <ResumeSection section={brief} enter_from="top" />
           </div>
