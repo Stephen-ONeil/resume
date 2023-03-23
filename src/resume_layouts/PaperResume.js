@@ -63,13 +63,13 @@ function PaperResume() {
                 key={section.header}
                 section={section}
                 className={classNames(common_styles["horizontal-list"])}
-                style={{ paddingRight: "30px" }}
+                style={{ paddingRight: "1.5em" }}
                 enter_from="bottom"
               />
             ))}
             <ResumeSection
               section={education}
-              style={{ paddingRight: "30px" }}
+              style={{ paddingRight: "1.5em" }}
               enter_from="bottom"
             />
           </div>
