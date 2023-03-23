@@ -9,7 +9,7 @@ $border: 0.02in;
   }
 
   position: fixed;
-  width: $icon-dimension;
+  width: $icon-dimension * 1.04;
 
   @media (min-width: $page_width+($icon-dimension*0.45)) {
     background-color: white;
