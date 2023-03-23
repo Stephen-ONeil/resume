@@ -52,7 +52,7 @@ export const libraries = {
   content: `
 - React
 - Lodash
-- GraphQL (Apollo)
+- GraphQL
 - Jest
 - React Testing Library
 - Cypress
@@ -66,7 +66,7 @@ export const libraries = {
 export const tools = {
   header: "Tools",
   content: `
-- POSIX operating systems
+- POSIX environments
 - Git
 - VSCode
 - Docker
@@ -95,8 +95,8 @@ export const skills = {
 export const education = {
   header: "Education",
   content: `
-Honours Bachelor of Science, Physics-Mathematics,
-uOttawa | 2017, Cum Laude
+Honours B.Sc. Physics-Mathematics, uOttawa  
+2017, Cum Laude
 `,
 };
 
@@ -104,11 +104,10 @@ export const curriculum_vitae = {
   header: "Curriculum Vitae",
   content: `
 **01/2023 - ongoing** | **Lead Developer** & **Technical Advisor**, Science and Parliamentary Infrastructure Branch, Public Services and Procurement Canada
-  - Advising on the expansion of the data team's service scope from a sector of ~50 colleagues to a branch of 600+;
-  informing the technical aspects of the new branch-wide data policy
+  - Advising on the technical aspects of the new branch-wide data policy
   - Triaging an inherited portfolio of ~20 applications in various stages from prototype to pilot 
     - Identified 10+ retired or stalled projects to decommission, directly reducing cloud bills, maintenance burden, and potential risks & attack surface  
-    - Maturing the remaining applications and infrastructure (e.g. eliminating manual deploy steps, implementing automated rollback capabilities, hardening configurations) 
+    - Maturing the remaining applications and infrastructure (e.g. eliminating manual deploy steps, implementing automated rollback capabilities, hardening configurations, etc.) 
 
 **09/2017 - 12/2022** | **Lead Developer**, Expenditure Management Sector, Treasury Board of Canada Secretariat (TBS)
   - Lead the GC InfoBase project since Summer 2018; was responsible for the project's technical direction, overall design, and for the team's developer talent
@@ -129,15 +128,14 @@ export const curriculum_vitae = {
       - E.g. implemented automated end-to-end WCAG 2.1 accessibility testing for CI
 
     - Championed code standards, review practices, testing, CI/CD, and working in the open
-      - E.g. successfully lobbied colleagues and upper management to take the project open source; was awarded in recognition of the positive impacts one year later
+      - E.g. pitched stakeholders on open sourcing the project; was awarded in recognition of the positive impacts one year later
 
     - Hired, supervised, and mentored juniour developers and CO-OP students
-      - E.g. supervised 10+ students, 5 of which returned for subsequent terms with 2 joining full-time upon graduation
 
   - Built the data collection tool used for centralized tracking of COVID-19 related expenditures across all government departments
-    - Quickly learnt Python, Django, an existing internal platform's code & environment, and the business needs; began implementation by day 6
-    - Independently developed the new collection tool off of the existing platform, with robust user and admin workflows, meeting the ambitious 3 month deadline provided
-    - Contributed lasting improvements to the existing platform's testing practices while there
+    - Quickly learnt Python, Django, an existing internal platform's code & environment, and the business requirements; met the ambitious 3 month deadline provided for launch
+    - Independently developed the new collection tool off of the existing platform, with robust domain-specific user and admin workflows
+    - Contributed lasting improvements to the existing platform's testing practices
   
 **01/2015 - 09/2017** | **Student**, Office of the Chief Human Resources Officer, TBS
   - Self-taught JS, HTML, CSS, and Git; developed the early HR data portions of GC InfoBase 

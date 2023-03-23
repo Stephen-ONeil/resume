@@ -43,7 +43,6 @@ function PaperResume() {
               paper_styles["fcol"],
               paper_styles["fcol__1-half"]
             )}
-            style={{ justifyContent: "space-around" }}
           >
             <ResumeSection section={brief} enter_from="top" />
           </div>
@@ -57,31 +56,29 @@ function PaperResume() {
               paper_styles["fcol"],
               paper_styles["fcol__1-4th"]
             )}
-            style={{ justifyContent: "center" }}
+            style={{ padding: "2em 0em" }}
           >
             {[languages, libraries, tools, platforms, skills].map(section => (
               <ResumeSection
                 key={section.header}
                 section={section}
-                className={classNames(
-                  common_styles["flex-list"],
-                  common_styles["flex-list--compact"]
-                )}
+                className={classNames(common_styles["horizontal-list"])}
+                style={{ paddingRight: "30px" }}
                 enter_from="bottom"
               />
             ))}
-            <ResumeSection section={education} enter_from="bottom" />
+            <ResumeSection
+              section={education}
+              style={{ paddingRight: "30px" }}
+              enter_from="bottom"
+            />
           </div>
           <div
             className={classNames(
               paper_styles["fcol"],
               paper_styles["fcol__3-4th"]
             )}
-            style={{
-              justifyContent: "center",
-              flexGrow: 1,
-              paddingRight: "18px",
-            }}
+            style={{ paddingRight: "1em" }}
           >
             <ResumeSection section={curriculum_vitae} enter_from="right" />
           </div>

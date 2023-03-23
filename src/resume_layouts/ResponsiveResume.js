@@ -34,42 +34,27 @@ function ResponsiveResume() {
       <ResumeSection section={brief} enter_from="left" />
       <ResumeSection
         section={languages}
-        className={classNames(
-          common_styles["flex-list"],
-          common_styles["flex-list--two-column"]
-        )}
+        className={classNames(common_styles["horizontal-list"])}
         enter_from="right"
       />
       <ResumeSection
         section={libraries}
-        className={classNames(
-          common_styles["flex-list"],
-          common_styles["flex-list--two-column"]
-        )}
+        className={classNames(common_styles["horizontal-list"])}
         enter_from="left"
       />
       <ResumeSection
         section={tools}
-        className={classNames(
-          common_styles["flex-list"],
-          common_styles["flex-list--two-column"]
-        )}
+        className={classNames(common_styles["horizontal-list"])}
         enter_from="right"
       />
       <ResumeSection
         section={platforms}
-        className={classNames(
-          common_styles["flex-list"],
-          common_styles["flex-list--two-column"]
-        )}
+        className={classNames(common_styles["horizontal-list"])}
         enter_from="left"
       />
       <ResumeSection
         section={skills}
-        className={classNames(
-          common_styles["flex-list"],
-          common_styles["flex-list--two-column"]
-        )}
+        className={classNames(common_styles["horizontal-list"])}
         enter_from="right"
       />
       <ResumeSection section={education} enter_from="left" />
