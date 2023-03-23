@@ -92,6 +92,7 @@ const allow_list = [
   "refactors",
   "mentorship",
   "rollback",
+  "etc",
 ];
 
 const spelling_mistakes_by_section = _.chain(sections)
