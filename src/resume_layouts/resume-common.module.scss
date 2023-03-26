@@ -86,11 +86,12 @@
       padding-left: 0em;
 
       & > li {
+        min-width: 43%;
+        padding-left: 6%;
+
         &:before {
           scale: 0.6;
-          width: 1em;
-          height: 1em;
-          transform: translate(0.2em, 0.2em);
+          padding-top: 0.3em;
         }
       }
     }

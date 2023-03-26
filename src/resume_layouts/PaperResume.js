@@ -63,7 +63,7 @@ function PaperResume() {
                 key={section.header}
                 section={section}
                 className={classNames(common_styles["horizontal-list"])}
-                style={{ paddingRight: "1.5em" }}
+                style={{ paddingRight: "0.5em" }}
                 enter_from="bottom"
               />
             ))}
