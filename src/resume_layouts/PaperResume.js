@@ -35,7 +35,6 @@ function PaperResume() {
               paper_styles["fcol__1-half"],
               paper_styles["primary-section"]
             )}
-            style={{ textAlign: "center" }}
             header_level={1}
           />
           <div
@@ -43,6 +42,7 @@ function PaperResume() {
               paper_styles["fcol"],
               paper_styles["fcol__1-half"]
             )}
+            style={{ marginTop: "1em" }}
           >
             <ResumeSection section={brief} enter_from="top" />
           </div>
@@ -51,6 +51,15 @@ function PaperResume() {
           className={classNames(paper_styles["frow"])}
           style={{ flexGrow: 1 }}
         >
+          <div
+            className={classNames(
+              paper_styles["fcol"],
+              paper_styles["fcol__3-4th"]
+            )}
+            style={{ paddingRight: "1em" }}
+          >
+            <ResumeSection section={curriculum_vitae} enter_from="left" />
+          </div>
           <div
             className={classNames(
               paper_styles["fcol"],
@@ -72,15 +81,6 @@ function PaperResume() {
               style={{ paddingRight: "1.5em" }}
               enter_from="bottom"
             />
-          </div>
-          <div
-            className={classNames(
-              paper_styles["fcol"],
-              paper_styles["fcol__3-4th"]
-            )}
-            style={{ paddingRight: "1em" }}
-          >
-            <ResumeSection section={curriculum_vitae} enter_from="right" />
           </div>
         </div>
       </div>

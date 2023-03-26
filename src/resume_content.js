@@ -18,8 +18,11 @@ export const main_header = {
   content: `
 ## Full Stack Web App Dev
 **${front_end_years} years frontend** | **${back_end_years} years backend & DevSecOps**  
-(613) 867-7727 | [stephenlevioneil<span style="font-family: Times, serif;">@</span>gmail.com](mailto:stephenlevioneil@gmail.com)
-${link_out("github.com/Stephen-ONeil", "https://github.com/Stephen-ONeil")}  
+${link_out(
+  "github.com/Stephen-ONeil",
+  "https://github.com/Stephen-ONeil"
+)}  | [stephenlevioneil<span style="font-family: Times, serif;">@</span>gmail.com](mailto:stephenlevioneil@gmail.com)
+ 
 `,
 };
 
@@ -86,10 +89,10 @@ export const skills = {
   content: `
 - Mentorship
 - Automation
-- Strategic leadership
 - Architecture
 - Accessibility
 - Application Security
+- Strategic leadership
 `,
 };
 export const education = {

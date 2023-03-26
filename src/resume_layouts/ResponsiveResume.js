@@ -28,7 +28,6 @@ function ResponsiveResume() {
       <ResumeSection
         section={main_header}
         className={classNames(responsive_styles["primary-section"])}
-        style={{ textAlign: "center" }}
         header_level={1}
       />
       <ResumeSection section={brief} enter_from="left" />
