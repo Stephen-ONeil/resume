@@ -115,7 +115,7 @@ _Science and Parliamentary Infrastructure Branch, Public Services and Procuremen
 
 **Lead Developer** | 09/2017 - 12/2022  
 _Expenditure Management Sector, Treasury Board of Canada Secretariat_
-  - Lead the GC InfoBase project begining in Summer 2018; was responsible for the project's technical direction, overall design, and for the team's developer talent
+  - Lead the GC InfoBase project beginning in Summer 2018; was responsible for the project's technical direction, overall design, and for the team's developer talent
 
     - Iterated on and maintained the project's large React frontend
       - E.g. through gradual refactors of legacy code, brought the average turn around of routine site updates ${link_out(
