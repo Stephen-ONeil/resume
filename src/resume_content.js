@@ -106,14 +106,16 @@ Honours B.Sc. Physics-Mathematics, uOttawa
 export const curriculum_vitae = {
   header: "Curriculum Vitae",
   content: `
-**01/2023 - ongoing** | **Lead Developer** & **Technical Advisor**, Science and Parliamentary Infrastructure Branch, Public Services and Procurement Canada
+**Lead Developer** & **Technical Advisor** | 01/2023 - ongoing  
+_Science and Parliamentary Infrastructure Branch, Public Services and Procurement Canada_
   - Advising on the technical aspects of the new branch-wide data policy
   - Triaging an inherited portfolio of ~20 applications in various stages from prototype to pilot 
     - Identified 10+ retired or stalled projects to decommission, directly reducing cloud bills, maintenance burden, and potential risks & attack surface  
     - Maturing the remaining applications and infrastructure (e.g. eliminating manual deploy steps, implementing automated rollback capabilities, hardening configurations, etc.) 
 
-**09/2017 - 12/2022** | **Lead Developer**, Expenditure Management Sector, Treasury Board of Canada Secretariat (TBS)
-  - Lead the GC InfoBase project since Summer 2018; was responsible for the project's technical direction, overall design, and for the team's developer talent
+**Lead Developer** | 09/2017 - 12/2022  
+_Expenditure Management Sector, Treasury Board of Canada Secretariat_
+  - Lead the GC InfoBase project begining in Summer 2018; was responsible for the project's technical direction, overall design, and for the team's developer talent
 
     - Iterated on and maintained the project's large React frontend
       - E.g. through gradual refactors of legacy code, brought the average turn around of routine site updates ${link_out(
@@ -140,7 +142,8 @@ export const curriculum_vitae = {
     - Independently developed the new collection tool off of the existing platform, with robust domain-specific user and admin workflows
     - Contributed lasting improvements to the existing platform's testing practices
   
-**01/2015 - 09/2017** | **Student**, Office of the Chief Human Resources Officer, TBS
+**CO-OP Student & part-time developer** | 01/2015 - 09/2017  
+_Office of the Chief Human Resources Officer, Treasury Board of Canada Secretariat_
   - Self-taught JS, HTML, CSS, and Git; developed the early HR data portions of GC InfoBase 
 `,
 };
