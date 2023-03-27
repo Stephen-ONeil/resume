@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  check-links:
+  build-and-deploy-to-gh-pages:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

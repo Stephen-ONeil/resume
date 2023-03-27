@@ -93,6 +93,7 @@ const allow_list = [
   "mentorship",
   "rollback",
   "etc",
+  "postgresql",
 ];
 
 const spelling_mistakes_by_section = _.chain(sections)
