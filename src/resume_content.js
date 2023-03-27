@@ -74,13 +74,14 @@ export const tools = {
 - VSCode
 - Linux
 - Docker
+- MongoDB
+- PostgreSQL
 `,
 };
 export const platforms = {
   header: "Platforms",
   content: `
 - Google Cloud Platform
-- MongoDB Atlas
 - DigitalOcean
 - CircleCI
 `,
