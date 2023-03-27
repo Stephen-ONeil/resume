@@ -84,6 +84,7 @@ export const platforms = {
 - Google Cloud Platform
 - DigitalOcean
 - CircleCI
+- GitHub Actions
 `,
 };
 export const skills = {
