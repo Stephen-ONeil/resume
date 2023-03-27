@@ -19,7 +19,7 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ cat ./.node-version }}
+          node-version-file: ".node-version"
           cache: npm
 
       - name: Install
@@ -35,8 +35,8 @@ jobs:
         run: touch out/.nojekyll
 
       - name: Deploy
-        # https://github.com/JamesIves/github-pages-deploy-actio
-        uses: JamesIves/github-pages-deploy-action@4
+        # https://github.com/JamesIves/github-pages-deploy-action
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: out
