@@ -48,6 +48,7 @@ export const languages = {
 - CSS & Sass
 - sh & Bash
 - Python
+- SQL
 `,
 };
 export const libraries = {
@@ -69,9 +70,9 @@ export const libraries = {
 export const tools = {
   header: "Tools",
   content: `
-- POSIX environments
 - Git
 - VSCode
+- Linux
 - Docker
 `,
 };
@@ -118,7 +119,7 @@ _Expenditure Management Sector, Treasury Board of Canada Secretariat_
   - Lead the GC InfoBase project beginning in Summer 2018; was responsible for the project's technical direction, overall design, and for the team's developer talent
 
     - Iterated on and maintained the project's large React frontend
-      - E.g. through gradual refactors of legacy code, brought the average turn around of routine site updates ${link_out(
+      - E.g. through gradual refactors to legacy code, brought the average turn around of routine site updates ${link_out(
         "from a baseline of 5 business days to an average of 0.13",
         "https://www.tbs-sct.canada.ca/ems-sgd/edb-bdd/index-eng.html#infographic/dept/326/results/.-.-(indicator.-.-&#39;PROGRAM-drr21-11350)"
       )}
@@ -137,7 +138,7 @@ _Expenditure Management Sector, Treasury Board of Canada Secretariat_
 
     - Hired, supervised, and mentored juniour developers and CO-OP students
 
-  - Built the data collection tool used for centralized tracking of COVID-19 related expenditures across all government departments
+  - Built the data collection tool used for the centralized tracking of COVID-19 related expenditures across all government departments
     - Quickly learnt Python, Django, an existing internal platform's code & environment, and the business requirements; met the ambitious 3 month deadline provided for launch
     - Independently developed the new collection tool off of the existing platform, with robust domain-specific user and admin workflows
     - Contributed lasting improvements to the existing platform's testing practices
