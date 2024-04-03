@@ -29,7 +29,7 @@
     font-weight: normal;
 
     & ~ h2 {
-      font-size: 1.8em;
+      font-size: 1.6em;
       font-weight: normal;
     }
   }
@@ -51,7 +51,7 @@
     flex-wrap: wrap;
 
     padding-left: 1.5em;
-    margin: 0em 0em 0.35em 0em;
+    margin: 0em 0em 0.15em 0em;
   }
   & li {
     list-style: none;
@@ -60,7 +60,7 @@
       margin: 0em;
     }
 
-    margin-top: 0.35em;
+    margin-top: 0.15em;
   }
   & li:before {
     float: left;

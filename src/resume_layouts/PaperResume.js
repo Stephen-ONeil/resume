@@ -11,6 +11,7 @@ import {
   tools,
   platforms,
   skills,
+  certs,
   education,
   curriculum_vitae,
 } from "src/resume_content.js";
@@ -77,8 +78,13 @@ function PaperResume() {
               />
             ))}
             <ResumeSection
+              section={certs}
+              style={{ paddingRight: "0.5em" }}
+              enter_from="bottom"
+            />
+            <ResumeSection
               section={education}
-              style={{ paddingRight: "1.5em" }}
+              style={{ paddingRight: "0.5em" }}
               enter_from="bottom"
             />
           </div>

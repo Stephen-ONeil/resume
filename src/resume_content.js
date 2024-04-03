@@ -16,7 +16,7 @@ const link_out = (text, href) =>
 export const main_header = {
   header: "Stephen O'Neil",
   content: `
-## Full Stack Web App Dev
+## Full Stack Web Application Developer
 **${front_end_years} years frontend** | **${back_end_years} years backend & DevSecOps**  
 ${link_out(
   "github.com/Stephen-ONeil",
@@ -29,7 +29,7 @@ ${link_out(
 export const brief = {
   header: false,
   content: `
-- Currently **lead developer** & **technical advisor** for a **data services team**, serving a branch of **600+** employees
+- A **lead developer** & **senior technical advisor**, modernizing Canada's public health **data platforms** & **infrastructure**
 - Previously **lead developer** on **GC InfoBase** (${link_out(
     "canada.ca/gcinfobase",
     "https://canada.ca/gcinfobase"
@@ -46,36 +46,37 @@ export const languages = {
 - TypeScript & JavaScript
 - HTML
 - CSS & Sass
-- sh & Bash
 - Python
 - SQL
+- sh / Bash / POSIX shells
 `,
 };
 export const libraries = {
   header: "Libraries & Frameworks",
   content: `
 - React
-- Lodash
 - GraphQL
+- Lodash
 - Jest
 - React Testing Library
-- Cypress
 - Axe-core
 - Webpack
-- Express.js
 - NextJS
 - Django
+- OpenTelemetry
 `,
 };
 export const tools = {
-  header: "Tools",
+  header: "Tools & Software",
   content: `
 - Git
 - VSCode
 - Linux
 - Docker
-- MongoDB
+- Kubernetes
+- Kustomize
 - PostgreSQL
+- MongoDB
 `,
 };
 export const platforms = {
@@ -90,12 +91,23 @@ export const platforms = {
 export const skills = {
   header: "Other Skills & Competencies",
   content: `
-- Mentorship
-- Automation
 - Architecture
+- Automation
+- Application security
 - Accessibility
-- Application Security
+- Mentorship
 - Strategic leadership
+`,
+};
+export const certs = {
+  header: "Certifications",
+  content: `
+Google Cloud Certified -  
+Professional Cloud Architect
+${link_out(
+  "(tinyurl.com/oneil-gcp-cert)",
+  "https://google.accredible.com/7a7d8247-96e8-4118-9242-1476f6abe2be"
+)}
 `,
 };
 export const education = {
@@ -109,16 +121,23 @@ Honours B.Sc. Physics-Mathematics, uOttawa
 export const curriculum_vitae = {
   header: "Curriculum Vitae",
   content: `
-**Lead Developer** & **Technical Advisor** | 01/2023 - ongoing  
+**Lead Developer** & **Senior Technical Advisor** (acting) | 06/2023 - ongoing  
+_Data, Surveillance and Foresight Branch, Public Health Agency of Canada_
+  - Contributed logging utilities to the branch's internal Django library, enabling standardized, enriched, and security policy compliant logs in both Google Cloud & Azure environments
+  - Lead infrastructure and security architecture design and implementation for the branch's first Kubernetes-based Django application deployment
+    - Coordinated with project managers, application developers, and IT security to collect and track business and technical requirements, designing a corresponding architecture
+    - Achieved a production-ready deployment and provided lessons-learned for future kubernetes use within the organization 
+
+**Lead Developer** & **Technical Advisor** | 01/2023 - 06/2023  
 _Science and Parliamentary Infrastructure Branch, Public Services and Procurement Canada_
-  - Advising on the technical aspects of the new branch-wide data policy
-  - Triaging an inherited portfolio of ~20 applications in various stages from prototype to pilot 
+  - Advised on technical aspects of a branch-wide data policy refresh
+  - Triaged an inherited portfolio of ~20 projects in various stages from prototype to pilot 
     - Identified 10+ retired or stalled projects to decommission, directly reducing cloud bills, maintenance burden, and potential risks & attack surface  
-    - Maturing the remaining applications and infrastructure (e.g. eliminating manual deploy steps, implementing automated rollback capabilities, hardening configurations, etc.) 
+    - Matured the remaining applications and infrastructure by eliminating manual deploy steps, implementing automated rollback capabilities, hardening configurations, etc.
 
 **Lead Developer** | 09/2017 - 12/2022  
 _Expenditure Management Sector, Treasury Board of Canada Secretariat_
-  - Lead the GC InfoBase project beginning in Summer 2018; was responsible for the project's technical direction, overall design, and for the team's developer talent
+  - Lead the GC InfoBase project beginning in Summer 2018; held responsibility for the project's technical direction, overall design, and for the team's developer talent
 
     - Iterated on and maintained the project's large React frontend
       - E.g. through gradual refactors to legacy code, brought the average turn around of routine site updates ${link_out(
@@ -130,19 +149,18 @@ _Expenditure Management Sector, Treasury Board of Canada Secretariat_
       - E.g. built a versatile template based form service, used to collect, validate, store, and alert the team across multiple lines of in-app user feedback
 
     - Architected and administered infrastructure and operations for the project
-      - E.g. transitioned hosting from tenancy in an external team's servers to cloud platforms & an in-house DevOps culture, taking deploying from days to minutes
+      - E.g. transitioned hosting from tenancy in an external team's servers to cloud platforms & an in-house DevOps culture, taking deploy times from days to minutes
 
     - Developed tooling to multiply team productivity and reinforce best practices
       - E.g. implemented automated end-to-end WCAG 2.1 accessibility testing for CI
 
     - Championed code standards, review practices, testing, CI/CD, and working in the open
-      - E.g. pitched stakeholders on open sourcing the project; was awarded in recognition of the positive impacts one year later
+      - E.g. sold stakeholders on open sourcing the project; was awarded in recognition of the direct positive impacts one year later
 
-    - Hired, supervised, and mentored juniour developers and CO-OP students
+    - Hired, supervised, and mentored junior developers and CO-OP students
 
   - Built the data collection tool used for the centralized tracking of COVID-19 related expenditures across all government departments
     - Quickly learnt Python, Django, an existing internal platform's code & environment, and the business requirements; met the ambitious 3 month deadline provided for launch
-    - Independently developed the new collection tool off of the existing platform, with robust domain-specific user and admin workflows
     - Contributed lasting improvements to the existing platform's testing practices
   
 **CO-OP Student & part-time developer** | 01/2015 - 09/2017  

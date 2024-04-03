@@ -94,6 +94,11 @@ const allow_list = [
   "rollback",
   "etc",
   "postgresql",
+  "tinyurl",
+  "gcp",
+  "kubernetes",
+  "kustomize",
+  "opentelemetry",
 ];
 
 const spelling_mistakes_by_section = _.chain(sections)

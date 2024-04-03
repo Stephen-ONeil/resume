@@ -5,6 +5,7 @@ import { ResumeSection } from "../components/ResumeSection/ResumeSection.js";
 import {
   main_header,
   brief,
+  certs,
   languages,
   libraries,
   tools,
@@ -32,32 +33,37 @@ function ResponsiveResume() {
       />
       <ResumeSection section={brief} enter_from="left" />
       <ResumeSection
-        section={languages}
+        section={certs}
         className={classNames(common_styles["horizontal-list"])}
         enter_from="right"
+      />
+      <ResumeSection
+        section={languages}
+        className={classNames(common_styles["horizontal-list"])}
+        enter_from="left"
       />
       <ResumeSection
         section={libraries}
         className={classNames(common_styles["horizontal-list"])}
-        enter_from="left"
+        enter_from="right"
       />
       <ResumeSection
         section={tools}
         className={classNames(common_styles["horizontal-list"])}
-        enter_from="right"
+        enter_from="left"
       />
       <ResumeSection
         section={platforms}
         className={classNames(common_styles["horizontal-list"])}
-        enter_from="left"
+        enter_from="right"
       />
       <ResumeSection
         section={skills}
         className={classNames(common_styles["horizontal-list"])}
-        enter_from="right"
+        enter_from="left"
       />
-      <ResumeSection section={education} enter_from="left" />
-      <ResumeSection section={curriculum_vitae} enter_from="right" />
+      <ResumeSection section={education} enter_from="right" />
+      <ResumeSection section={curriculum_vitae} enter_from="left" />
     </div>
   );
 }
