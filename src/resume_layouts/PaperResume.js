@@ -68,6 +68,11 @@ function PaperResume() {
             )}
             style={{ padding: "2em 0em" }}
           >
+            <ResumeSection
+              section={certs}
+              style={{ paddingRight: "0.5em" }}
+              enter_from="bottom"
+            />
             {[languages, libraries, tools, platforms, skills].map(section => (
               <ResumeSection
                 key={section.header}
@@ -77,11 +82,6 @@ function PaperResume() {
                 enter_from="bottom"
               />
             ))}
-            <ResumeSection
-              section={certs}
-              style={{ paddingRight: "0.5em" }}
-              enter_from="bottom"
-            />
             <ResumeSection
               section={education}
               style={{ paddingRight: "0.5em" }}
