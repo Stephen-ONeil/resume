@@ -24,13 +24,6 @@
       "src": ["./src/"]
     }
   },
-  "include": [
-    "./src/",
-    "./scripts/",
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts"
-  ],
+  "include": ["./src/", "./scripts/", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
