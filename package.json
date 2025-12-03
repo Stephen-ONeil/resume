@@ -23,12 +23,12 @@
     ]
   },
   "devDependencies": {
-    "@astrojs/ts-plugin": "^1.10.6",
+    "@astrojs/ts-plugin": "1.10.6",
     "@types/node": "18.15.3",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
-    "@typescript-eslint/eslint-plugin": "5.55.0",
-    "@typescript-eslint/parser": "5.55.0",
+    "@typescript-eslint/eslint-plugin": "8.48.1",
+    "@typescript-eslint/parser": "8.48.1",
     "astro": "5.16.4",
     "classnames": "2.3.2",
     "eslint": "8.57.0",
@@ -52,6 +52,6 @@
     "remove-markdown": "0.3.0",
     "serve-handler": "6.1.5",
     "simple-spellchecker": "1.0.0",
-    "typescript": "4.9.5"
+    "typescript": "5.9.3"
   }
 }
