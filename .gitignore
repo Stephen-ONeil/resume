@@ -4,10 +4,6 @@
 # testing
 /coverage
 
-# next.js
-/.next/
-/out/
-
 # misc
 .DS_Store
 .env.local
@@ -21,4 +17,3 @@ npm-debug.log*
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
