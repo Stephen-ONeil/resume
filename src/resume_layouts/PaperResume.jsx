@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import React from "react";
 
-import { ResumeSection } from "src/components/ResumeSection/ResumeSection.js";
+import { ResumeSection } from "src/components/ResumeSection/ResumeSection.jsx";
 
 import {
   main_header,
