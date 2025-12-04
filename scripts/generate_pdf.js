@@ -28,6 +28,10 @@ const get_resume_pdf = async () => {
     // see https://github.com/puppeteer/puppeteer/issues/4039
     // TODO: this fix is system dependent, find something more portable later
     executablePath: "/usr/bin/chromium",
+    // Ubuntu 23.10+ disables unpriviledged user namespaces, preventing chrome from creating a sandbox
+    // can consider the pages visited here to be trusted, so running without a sandbox is acceptable if not ideal
+    // TODO: reconsider this workaround if switching CI runtime image
+    args: ["--no-sandbox"],
   });
   const page = await browser.newPage();
   await page.goto(`http://localhost:${free_port}/`);
