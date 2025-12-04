@@ -7,4 +7,13 @@ export default defineConfig({
   trailingSlash: "always",
   integrations: [react()],
   output: "static",
+  build: {
+    inlineStylesheets: "always",
+  },
+  vite: {
+    build: {
+      cssCodeSplit: false,
+      cssMinify: true,
+    },
+  },
 });
