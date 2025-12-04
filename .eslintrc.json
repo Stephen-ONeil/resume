@@ -67,6 +67,9 @@
         "extensions": [".js", ".jsx", ".ts", ".tsx"],
         "moduleDirectory": ["./src/", "node_modules/"]
       }
+    },
+    "react": {
+      "version": "detect"
     }
   }
 }
