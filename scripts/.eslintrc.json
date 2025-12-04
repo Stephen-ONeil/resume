@@ -1,36 +1,19 @@
 {
+  "env": {
+    "node": true
+  },
   "extends": [
     "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:jsx-a11y/recommended",
-    "plugin:astro/jsx-a11y-recommended",
-    "plugin:astro/recommended",
-    "plugin:@typescript-eslint/recommended",
     "plugin:import/warnings",
     "plugin:import/errors",
-    "plugin:import/typescript",
     "plugin:prettier/recommended",
     "prettier"
   ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "sourceType": "module"
-  },
-  "plugins": ["@typescript-eslint"],
   "rules": {
     "no-case-declarations": "off",
     "no-undef": "error",
     "no-debugger": "warn",
     "prefer-const": "warn",
-    "react/no-find-dom-node": "warn",
-    "react/prop-types": "off",
-    "react/react-in-jsx-scope": "off",
-    "react/jsx-key": ["warn"],
-    "@typescript-eslint/explicit-module-boundary-types": ["off"],
-    "@typescript-eslint/no-empty-interface": ["off"],
     "import/order": [
       "warn",
       {
@@ -49,20 +32,12 @@
         // We can group imports further by adding rules here, the order they're defined in breaks ties when group and position are equal
         "pathGroups": [
           {
-            "pattern": "src/**/*.(js|jsx|ts|tsx)",
+            "pattern": "scripts/**/*.js",
             "group": "internal",
             "position": "before"
           }
         ]
       }
     ]
-  },
-  "settings": {
-    "import/resolver": {
-      "typescript": {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"],
-        "moduleDirectory": ["./src/", "node_modules/"]
-      }
-    }
   }
 }
