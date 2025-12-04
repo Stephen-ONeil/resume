@@ -1,8 +1,9 @@
 import moment from "moment";
+import type { MomentInput } from "moment";
 
 const now = moment();
-const approx_time_since_in_years = date =>
-  `${Math.floor(moment.duration(now.diff(moment(date))).asYears())}+`; // eslint-disable-line import/no-named-as-default-member
+const approx_time_since_in_years = (date: MomentInput) =>
+  `${Math.floor(moment.duration(now.diff(moment(date))).asYears())}+`;
 
 // roughly since start of first CO-OP term
 const front_end_years = approx_time_since_in_years([2015, 0, 1]);
@@ -10,7 +11,7 @@ const front_end_years = approx_time_since_in_years([2015, 0, 1]);
 // roughly since when I first set up CI for real, we were starting to experiment with GCloud/GraphQl and the InfoBase API
 const back_end_years = approx_time_since_in_years([2018, 2, 15]);
 
-const link_out = (text, href) =>
+const link_out = (text: string, href: string) =>
   `<a target='_blank' rel='noopener noreferrer' href='${href}'>${text}</a>`;
 
 export const main_header = {
