@@ -102,7 +102,7 @@ const allow_list = [
 ];
 
 const spelling_mistakes_by_section = _.chain(sections)
-  .mapValues((section, section_key) =>
+  .mapValues((section, _section_key) =>
     _.chain(section)
       .thru(({ header, content }) => `${header} ${content}`)
       .thru(remove_markdown)
@@ -114,7 +114,7 @@ const spelling_mistakes_by_section = _.chain(sections)
       .filter()
       .value()
   )
-  .pickBy((spelling_errors, section_key) => !_.isEmpty(spelling_errors))
+  .pickBy((spelling_errors, _section_key) => !_.isEmpty(spelling_errors))
   .value();
 
 if (!_.isEmpty(spelling_mistakes_by_section)) {
