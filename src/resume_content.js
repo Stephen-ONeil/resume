@@ -2,7 +2,7 @@ import moment from "moment";
 
 const now = moment();
 const approx_time_since_in_years = date =>
-  `${Math.floor(moment.duration(now.diff(moment(date))).asYears())}+`;
+  `${Math.floor(moment.duration(now.diff(moment(date))).asYears())}+`; // eslint-disable-line import/no-named-as-default-member
 
 // roughly since start of first CO-OP term
 const front_end_years = approx_time_since_in_years([2015, 0, 1]);
