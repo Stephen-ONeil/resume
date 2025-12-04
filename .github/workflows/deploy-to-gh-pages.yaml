@@ -32,11 +32,11 @@ jobs:
         run: npm run build
 
       - name: Add .nojekyll so gh-pages action can see _-prefixed files
-        run: touch out/.nojekyll
+        run: touch dir/.nojekyll
 
       - name: Deploy
         # https://github.com/JamesIves/github-pages-deploy-action
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: out
+          folder: dir
