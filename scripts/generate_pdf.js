@@ -1,5 +1,6 @@
 import fs from "fs";
 import http from "http";
+import { setTimeout } from "timers/promises";
 
 import getPort from "get-port";
 import puppeteer from "puppeteer";
@@ -39,7 +40,7 @@ const get_resume_pdf = async () => {
   // Some uncertain timing issue causes pdf generation to be flaky, waiting here before continuing seems to smooth it over
   // ... page.goto waits for the load event to fire, so it shouldn't be missing styles
   // The transitions are disabled by a media query so it shouldn't be those either... well, half a second is inconsequential, just want good pdfs to be spat out!
-  await page.waitFor(500);
+  await setTimeout(500);
 
   const pdf = await page.pdf();
 
