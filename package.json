@@ -7,7 +7,7 @@
     "dev": "astro dev",
     "build": "astro build && node scripts/generate_pdf.js && node scripts/test_pdf_page_count.js",
     "preprod": "npm run build",
-    "prod": "http-server out -c-1 -a 127.0.0.1 -p 3000 -s",
+    "prod": "http-server dist -c-1 -a 127.0.0.1 -p 3000 -s",
     "spellcheck": "node scripts/spellcheck_content.js"
   },
   "browserslist": {
