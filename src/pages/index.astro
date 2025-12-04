@@ -1,0 +1,30 @@
+---
+import { IconTray } from "src/components/IconTray/IconTray.jsx";
+import { PaperResume } from "src/resume_layouts/PaperResume.jsx";
+import { ResponsiveResume } from "src/resume_layouts/ResponsiveResume.jsx";
+import "src/styles/global.scss";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+  </head>
+  <body>
+    <head>
+      <title>{"Resume - Stephen O'Neil"}</title>
+      <meta
+        name="description"
+        content="Resume and personal site of Stephen O'Neil, full-stack developer"
+      />
+    </head>
+    <main>
+      <PaperResume />
+      <ResponsiveResume />
+      <IconTray />
+    </main>
+  </body>
+</html>
