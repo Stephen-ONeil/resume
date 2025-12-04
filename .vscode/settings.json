@@ -13,7 +13,5 @@
   },
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "cSpell.enableFiletypes": [
-    "javascript"
-  ]
+  "cSpell.enableFiletypes": ["javascript"]
 }
