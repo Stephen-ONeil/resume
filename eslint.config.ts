@@ -1,49 +1,27 @@
-import path from "node:path";
-import { fileURLToPath } from "node:url";
-
-import { fixupConfigRules, fixupPluginRules } from "@eslint/compat";
-import { FlatCompat } from "@eslint/eslintrc";
 import js from "@eslint/js";
-
-import typescriptEslint from "@typescript-eslint/eslint-plugin";
 import tsParser from "@typescript-eslint/parser";
-
 import { defineConfig, globalIgnores } from "eslint/config";
-
+import { configs as astroConfigs } from "eslint-plugin-astro";
+import importPlugin from "eslint-plugin-import";
+import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
+import prettierPluginRecommended from "eslint-plugin-prettier/recommended";
+import reactPlugin from "eslint-plugin-react";
 import globals from "globals";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-  recommendedConfig: js.configs.recommended,
-  allConfig: js.configs.all,
-});
+import { configs as tsConfigs } from "typescript-eslint";
 
 export default defineConfig([
   globalIgnores(["node_modules", "dist", ".astro"]),
   {
-    files: ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"], //"**/*.astro"
+    files: ["**/*.{js,jsx,ts,tsx}"],
 
-    extends: fixupConfigRules(
-      compat.extends(
-        "eslint:recommended",
-        "plugin:react/recommended",
-        "plugin:jsx-a11y/recommended",
-        //"plugin:astro/jsx-a11y-recommended",
-        //"plugin:astro/recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:import/warnings",
-        "plugin:import/errors",
-        "plugin:import/typescript",
-        "plugin:prettier/recommended",
-        "prettier"
-      )
-    ),
-
-    plugins: {
-      "@typescript-eslint": fixupPluginRules(typescriptEslint as any), // eslint-disable-line @typescript-eslint/no-explicit-any
-    },
+    extends: [
+      js.configs.recommended,
+      tsConfigs.recommended,
+      reactPlugin.configs.flat.recommended,
+      jsxA11yPlugin.flatConfigs.recommended,
+      importPlugin.flatConfigs.recommended,
+      importPlugin.flatConfigs.typescript,
+    ],
 
     languageOptions: {
       parser: tsParser,
@@ -121,7 +99,7 @@ export default defineConfig([
     },
   },
   {
-    files: ["scripts/**"],
+    files: ["scripts/**.js"],
 
     languageOptions: {
       globals: {
@@ -129,4 +107,7 @@ export default defineConfig([
       },
     },
   },
+  astroConfigs["flat/recommended"],
+  //astroConfigs["jsx-a11y-recommended"], // see https://github.com/ota-meshi/eslint-plugin-astro/pull/496
+  prettierPluginRecommended,
 ]);
