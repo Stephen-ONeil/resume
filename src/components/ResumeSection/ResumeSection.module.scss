@@ -1,23 +1,23 @@
-@import "src/common-variables";
+@use "src/common";
 
 .resume-section {
-  margin: $gutter;
-  padding: $gutter;
+  margin: common.$gutter;
+  padding: common.$gutter;
 
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 
   &.enter-from-left {
-    @include slide-in-from-left;
+    @include common.slide-in-from-left;
   }
   &.enter-from-right {
-    @include slide-in-from-right;
+    @include common.slide-in-from-right;
   }
   &.enter-from-top {
-    @include slide-in-from-top;
+    @include common.slide-in-from-top;
   }
   &.enter-from-bottom {
-    @include slide-in-from-bottom;
+    @include common.slide-in-from-bottom;
   }
 }

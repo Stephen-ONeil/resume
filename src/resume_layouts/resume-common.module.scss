@@ -1,4 +1,4 @@
-@import "src/common-variables";
+@use "src/common";
 
 // lots of descendant selectors, would usually avoid but it's a very small page
 
@@ -12,10 +12,10 @@
   margin-left: auto;
   margin-bottom: 0px;
 
-  padding: $gutter;
+  padding: common.$gutter;
 
-  background-color: $background_color;
-  color: $text_color;
+  background-color: common.$background_color;
+  color: common.$text_color;
 
   @media not print {
     // specifically to keep the animations contained to the "paper", overflowing outside of that would be a content/styling error

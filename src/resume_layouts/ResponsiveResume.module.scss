@@ -1,8 +1,8 @@
-@import "src/common-variables";
+@use "src/common";
 
 .responsive-resume {
   // Hide if printing or screen width < paper width
-  @media print, (min-width: $page_width) {
+  @media print, (min-width: common.$page_width) {
     display: none;
   }
 }

@@ -1,15 +1,15 @@
-@import "src/common-variables";
+@use "src/common";
 
 .paper-resume {
   // Hide unless printing or screen width > paper width
   display: none;
-  @media print, (min-width: $page_width) {
+  @media print, (min-width: common.$page_width) {
     display: flex;
   }
 
   /* A4 paper dimensions */
-  width: $page_width;
-  height: $page_height;
+  width: common.$page_width;
+  height: common.$page_height;
 }
 
 .fcol {
