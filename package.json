@@ -5,10 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node scripts/generate_pdf.js && node scripts/test_pdf_page_count.js",
-    "prelocalprod": "npm run build",
-    "localprod": "http-server dist -c-1 -a 127.0.0.1 -p 3000 -s",
-    "spellcheck": "node scripts/spellcheck_content.js"
+    "spellcheck": "node scripts/spellcheck_content.js",
+    "build": "astro build && node scripts/generate_pdf.js",
+    "test-pdf-length": "node scripts/test_pdf_page_count.js",
+    "prelocal-prod": "npm run build && npm run testpdflength",
+    "local-prod": "http-server dist -c-1 -a 127.0.0.1 -p 3000 -s"
   },
   "browserslist": {
     "production": [
