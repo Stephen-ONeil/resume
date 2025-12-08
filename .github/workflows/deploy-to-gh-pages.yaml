@@ -1,9 +1,6 @@
-name: Deploy GitHub Page
+name: Test, Deploy GitHub Page If Master
 
-on:
-  push:
-    branches:
-      - master
+on: push
 
 concurrency:
   group: "${{ github.workflow }} @ ${{ github.event.pull_request.head.label || github.head_ref || github.ref }}"
@@ -28,13 +25,18 @@ jobs:
       - name: Spellcheck
         run: npm run spellcheck
 
-      - name: Build
+      - name: Build Site And PDF
         run: npm run build
 
+      - name: Test PDF Length
+        run: npm run test-pdf-length
+
       - name: Add .nojekyll so gh-pages action can see _-prefixed files
+        if: ${{ github.ref_name == 'master' }}
         run: touch dist/.nojekyll
 
       - name: Deploy
+        if: ${{ github.ref_name == 'master' }}
         # https://github.com/JamesIves/github-pages-deploy-action
         uses: JamesIves/github-pages-deploy-action@v4
         with:
