@@ -11,17 +11,17 @@ $border: 0.02in;
   position: fixed;
   width: $icon-dimension * 1.04;
 
-  @media (min-width: common.$page_width+($icon-dimension*0.45)) {
+  @media (min-width: (common.$page_width + ($icon-dimension*0.45))) {
     background-color: white;
     border: $border solid black;
     outline: common.$gutter * 2 solid white;
   }
-  @media (min-width: common.$page_width+($icon-dimension*2)+$icon-dimension) {
+  @media (min-width: (common.$page_width + ($icon-dimension*2) + $icon-dimension)) {
     left: 50%;
-    margin-left: common.$page_width/2 + ($icon-dimension * 0.19);
+    margin-left: calc(common.$page_width / 2) + ($icon-dimension * 0.19);
     top: $icon-dimension;
   }
-  @media (max-width: common.$page_width+($icon-dimension*2)+$icon-dimension) {
+  @media (max-width: (common.$page_width + ($icon-dimension*2) + $icon-dimension)) {
     right: common.$gutter + $border;
     top: common.$gutter + $border;
   }
