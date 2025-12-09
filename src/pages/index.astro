@@ -1,29 +1,16 @@
 ---
+import Base from "src/layouts/Base.astro";
+
 import { IconTray } from "src/components/IconTray/IconTray.jsx";
 import { PaperResume } from "src/components/resume_layouts/PaperResume.jsx";
 import { ResponsiveResume } from "src/components/resume_layouts/ResponsiveResume.jsx";
-
-import "src/styles/global.scss";
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <title>{"Resume - Stephen O'Neil"}</title>
-    <meta
-      name="description"
-      content="Resume and personal site of Stephen O'Neil, full-stack developer"
-    />
-  </head>
-  <body>
-    <main>
-      <PaperResume />
-      <ResponsiveResume />
-      <IconTray />
-    </main>
-  </body>
-</html>
+<Base
+  title="Resume - Stephen O'Neil"
+  description="Resume and personal site of Stephen O'Neil, full-stack developer"
+>
+  <PaperResume />
+  <ResponsiveResume />
+  <IconTray />
+</Base>
