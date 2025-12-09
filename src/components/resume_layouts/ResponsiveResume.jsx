@@ -1,6 +1,6 @@
 import classNames from "classnames";
 
-import { ResumeSection } from "../components/ResumeSection/ResumeSection.jsx";
+import { ResumeSection } from "src/components/ResumeSection/ResumeSection.jsx";
 import {
   main_header,
   brief,
@@ -12,7 +12,7 @@ import {
   skills,
   education,
   curriculum_vitae,
-} from "../resume_content.js";
+} from "src/resume_content.js";
 
 import responsive_styles from "./ResponsiveResume.module.scss";
 import common_styles from "./resume-common.module.scss";
