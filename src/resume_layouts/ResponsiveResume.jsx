@@ -1,5 +1,4 @@
 import classNames from "classnames";
-import React from "react";
 
 import { ResumeSection } from "../components/ResumeSection/ResumeSection.jsx";
 import {
