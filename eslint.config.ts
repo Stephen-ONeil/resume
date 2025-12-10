@@ -88,5 +88,14 @@ export default defineConfig([
       },
     },
   },
+  {
+    files: ["src/**.{js,jsx,ts,tsx,astro}"],
+
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+      },
+    },
+  },
   prettierPluginRecommended,
 ]);
