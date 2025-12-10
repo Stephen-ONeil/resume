@@ -20,55 +20,66 @@ import paper_styles from "./PaperResume.module.scss";
 import common_styles from "./resume-common.module.scss";
 ---
 
-<div class={classNames(common_styles["resume"], paper_styles["paper-resume"])}>
-  <div class={classNames(paper_styles["fcol"])}>
-    <div class={classNames(paper_styles["frow"])}>
+<div
+  class:list={classNames(common_styles["resume"], paper_styles["paper-resume"])}
+>
+  <div class:list={classNames(paper_styles["fcol"])}>
+    <div class:list={classNames(paper_styles["frow"])}>
       <ResumeSection
-        section={main_header}
         className={classNames(
           paper_styles["fcol"],
           paper_styles["fcol__1-half"],
           paper_styles["primary-section"]
         )}
         headerLevel={1}
+        section={main_header}
       />
       <div
-        class={classNames(paper_styles["fcol"], paper_styles["fcol__1-half"])}
+        class:list={classNames(
+          paper_styles["fcol"],
+          paper_styles["fcol__1-half"]
+        )}
         style={{ marginTop: "1em" }}
       >
-        <ResumeSection section={brief} enterFrom="top" />
+        <ResumeSection enterFrom="top" section={brief} />
       </div>
     </div>
-    <div class={classNames(paper_styles["frow"])} style={{ flexGrow: 1 }}>
+    <div class:list={classNames(paper_styles["frow"])} style={{ flexGrow: 1 }}>
       <div
-        class={classNames(paper_styles["fcol"], paper_styles["fcol__3-4th"])}
+        class:list={classNames(
+          paper_styles["fcol"],
+          paper_styles["fcol__3-4th"]
+        )}
         style={{ paddingRight: "1em" }}
       >
-        <ResumeSection section={curriculum_vitae} enterFrom="left" />
+        <ResumeSection enterFrom="left" section={curriculum_vitae} />
       </div>
       <div
-        class={classNames(paper_styles["fcol"], paper_styles["fcol__1-4th"])}
+        class:list={classNames(
+          paper_styles["fcol"],
+          paper_styles["fcol__1-4th"]
+        )}
         style={{ padding: "2em 0em" }}
       >
         <ResumeSection
+          enterFrom="bottom"
           section={certs}
           style={{ paddingRight: "0.5em" }}
-          enterFrom="bottom"
         />
         {
           [languages, libraries, tools, platforms, skills].map(section => (
             <ResumeSection
-              section={section}
               className={classNames(common_styles["horizontal-list"])}
-              style={{ paddingRight: "0.5em" }}
               enterFrom="bottom"
+              section={section}
+              style={{ paddingRight: "0.5em" }}
             />
           ))
         }
         <ResumeSection
+          enterFrom="bottom"
           section={education}
           style={{ paddingRight: "0.5em" }}
-          enterFrom="bottom"
         />
       </div>
     </div>

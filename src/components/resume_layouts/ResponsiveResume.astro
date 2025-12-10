@@ -20,47 +20,47 @@ import common_styles from "./resume-common.module.scss";
 ---
 
 <div
-  class={classNames(
+  class:list={classNames(
     common_styles.resume,
     responsive_styles["responsive-resume"]
   )}
 >
   <ResumeSection
-    section={main_header}
     className={classNames(responsive_styles["primary-section"])}
     headerLevel={1}
+    section={main_header}
   />
-  <ResumeSection section={brief} enterFrom="left" />
+  <ResumeSection enterFrom="left" section={brief} />
   <ResumeSection
+    className={classNames(common_styles["horizontal-list"])}
+    enterFrom="right"
     section={certs}
-    className={classNames(common_styles["horizontal-list"])}
-    enterFrom="right"
   />
   <ResumeSection
+    className={classNames(common_styles["horizontal-list"])}
+    enterFrom="left"
     section={languages}
-    className={classNames(common_styles["horizontal-list"])}
-    enterFrom="left"
   />
   <ResumeSection
+    className={classNames(common_styles["horizontal-list"])}
+    enterFrom="right"
     section={libraries}
-    className={classNames(common_styles["horizontal-list"])}
-    enterFrom="right"
   />
   <ResumeSection
+    className={classNames(common_styles["horizontal-list"])}
+    enterFrom="left"
     section={tools}
-    className={classNames(common_styles["horizontal-list"])}
-    enterFrom="left"
   />
   <ResumeSection
-    section={platforms}
     className={classNames(common_styles["horizontal-list"])}
     enterFrom="right"
+    section={platforms}
   />
   <ResumeSection
-    section={skills}
     className={classNames(common_styles["horizontal-list"])}
     enterFrom="left"
+    section={skills}
   />
-  <ResumeSection section={education} enterFrom="right" />
-  <ResumeSection section={curriculum_vitae} enterFrom="left" />
+  <ResumeSection enterFrom="right" section={education} />
+  <ResumeSection enterFrom="left" section={curriculum_vitae} />
 </div>
