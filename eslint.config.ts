@@ -1,5 +1,4 @@
 import js from "@eslint/js";
-import tsParser from "@typescript-eslint/parser";
 import { defineConfig, globalIgnores } from "eslint/config";
 import { configs as astroConfigs } from "eslint-plugin-astro";
 import importPlugin from "eslint-plugin-import";
@@ -9,32 +8,20 @@ import { configs as tsConfigs } from "typescript-eslint";
 
 export default defineConfig([
   globalIgnores(["node_modules", "dist", ".astro"]),
+  js.configs.recommended,
+  ...tsConfigs.recommended,
+  ...astroConfigs.all,
+  importPlugin.flatConfigs.recommended,
+  importPlugin.flatConfigs.typescript,
   {
-    files: ["**/*.{js,ts}"],
-
-    extends: [
-      js.configs.recommended,
-      tsConfigs.recommended,
-      importPlugin.flatConfigs.recommended,
-      importPlugin.flatConfigs.typescript,
-    ],
-
-    languageOptions: {
-      parser: tsParser,
-      ecmaVersion: 5,
-      sourceType: "module",
-
-      parserOptions: {
-        ecmaFeatures: {
-          jsx: true,
-        },
-      },
-    },
-
     settings: {
+      "import/parsers": {
+        "@typescript-eslint/parser": [".js", ".jsx", ".ts", ".tsx"],
+        "astro-eslint-parser": [".astro"],
+      },
       "import/resolver": {
         typescript: {
-          extensions: [".js", ".jsx", ".ts", ".tsx"],
+          extensions: [".js", ".jsx", ".ts", ".tsx", ".astro"],
           moduleDirectory: ["./src/", "node_modules/"],
         },
       },
@@ -76,7 +63,7 @@ export default defineConfig([
 
           pathGroups: [
             {
-              pattern: "(scripts|src)/**/*.(js|jsx|ts|tsx)",
+              pattern: "(scripts|src)/**/*",
               group: "internal",
               position: "before",
             },
@@ -86,7 +73,14 @@ export default defineConfig([
     },
   },
   {
-    files: ["scripts/**.js"],
+    files: ["**/*.astro"],
+
+    rules: {
+      "import/default": "off",
+    },
+  },
+  {
+    files: ["scripts/**.{js,ts}"],
 
     languageOptions: {
       globals: {
@@ -94,7 +88,5 @@ export default defineConfig([
       },
     },
   },
-  astroConfigs["flat/recommended"],
-  astroConfigs["jsx-a11y-recommended"],
   prettierPluginRecommended,
 ]);
