@@ -1,7 +1,7 @@
 ---
 import classNames from "classnames";
 
-import { ResumeSection } from "src/components/ResumeSection/ResumeSection.jsx";
+import ResumeSection from "src/components/ResumeSection/ResumeSection.astro";
 
 import {
   main_header,
@@ -30,13 +30,13 @@ import common_styles from "./resume-common.module.scss";
           paper_styles["fcol__1-half"],
           paper_styles["primary-section"]
         )}
-        header_level={1}
+        headerLevel={1}
       />
       <div
         class={classNames(paper_styles["fcol"], paper_styles["fcol__1-half"])}
         style={{ marginTop: "1em" }}
       >
-        <ResumeSection section={brief} enter_from="top" />
+        <ResumeSection section={brief} enterFrom="top" />
       </div>
     </div>
     <div class={classNames(paper_styles["frow"])} style={{ flexGrow: 1 }}>
@@ -44,7 +44,7 @@ import common_styles from "./resume-common.module.scss";
         class={classNames(paper_styles["fcol"], paper_styles["fcol__3-4th"])}
         style={{ paddingRight: "1em" }}
       >
-        <ResumeSection section={curriculum_vitae} enter_from="left" />
+        <ResumeSection section={curriculum_vitae} enterFrom="left" />
       </div>
       <div
         class={classNames(paper_styles["fcol"], paper_styles["fcol__1-4th"])}
@@ -53,23 +53,22 @@ import common_styles from "./resume-common.module.scss";
         <ResumeSection
           section={certs}
           style={{ paddingRight: "0.5em" }}
-          enter_from="bottom"
+          enterFrom="bottom"
         />
         {
           [languages, libraries, tools, platforms, skills].map(section => (
             <ResumeSection
-              key={section.header}
               section={section}
               className={classNames(common_styles["horizontal-list"])}
               style={{ paddingRight: "0.5em" }}
-              enter_from="bottom"
+              enterFrom="bottom"
             />
           ))
         }
         <ResumeSection
           section={education}
           style={{ paddingRight: "0.5em" }}
-          enter_from="bottom"
+          enterFrom="bottom"
         />
       </div>
     </div>

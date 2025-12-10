@@ -1,7 +1,7 @@
 ---
 import classNames from "classnames";
 
-import { ResumeSection } from "src/components/ResumeSection/ResumeSection.jsx";
+import ResumeSection from "src/components/ResumeSection/ResumeSection.astro";
 import {
   main_header,
   brief,
@@ -28,39 +28,39 @@ import common_styles from "./resume-common.module.scss";
   <ResumeSection
     section={main_header}
     className={classNames(responsive_styles["primary-section"])}
-    header_level={1}
+    headerLevel={1}
   />
-  <ResumeSection section={brief} enter_from="left" />
+  <ResumeSection section={brief} enterFrom="left" />
   <ResumeSection
     section={certs}
     className={classNames(common_styles["horizontal-list"])}
-    enter_from="right"
+    enterFrom="right"
   />
   <ResumeSection
     section={languages}
     className={classNames(common_styles["horizontal-list"])}
-    enter_from="left"
+    enterFrom="left"
   />
   <ResumeSection
     section={libraries}
     className={classNames(common_styles["horizontal-list"])}
-    enter_from="right"
+    enterFrom="right"
   />
   <ResumeSection
     section={tools}
     className={classNames(common_styles["horizontal-list"])}
-    enter_from="left"
+    enterFrom="left"
   />
   <ResumeSection
     section={platforms}
     className={classNames(common_styles["horizontal-list"])}
-    enter_from="right"
+    enterFrom="right"
   />
   <ResumeSection
     section={skills}
     className={classNames(common_styles["horizontal-list"])}
-    enter_from="left"
+    enterFrom="left"
   />
-  <ResumeSection section={education} enter_from="right" />
-  <ResumeSection section={curriculum_vitae} enter_from="left" />
+  <ResumeSection section={education} enterFrom="right" />
+  <ResumeSection section={curriculum_vitae} enterFrom="left" />
 </div>
