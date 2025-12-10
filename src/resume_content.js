@@ -27,7 +27,6 @@ ${link_out(
 };
 
 export const brief = {
-  header: false,
   content: `
 - A **lead developer** & **senior technical advisor**, modernizing Canada's public health **data platforms** & **infrastructure**
 - Previously **lead developer** on **GC InfoBase** (${link_out(
