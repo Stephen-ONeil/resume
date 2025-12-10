@@ -8,11 +8,10 @@
     "typescriptreact",
     "astro"
   ],
-  "eslint.workingDirectories": ["./src/"],
+  "eslint.workingDirectories": ["./src/", "./scripts"],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "cSpell.enableFiletypes": ["javascript"]
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
