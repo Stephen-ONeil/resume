@@ -22,7 +22,7 @@ export default defineConfig([
       "import/resolver": {
         typescript: {
           extensions: [".js", ".jsx", ".ts", ".tsx", ".astro"],
-          moduleDirectory: ["./src/", "node_modules/"],
+          moduleDirectory: ["src/", "node_modules/"],
         },
       },
     },
