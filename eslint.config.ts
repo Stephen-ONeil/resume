@@ -22,7 +22,10 @@ export default defineConfig([
       "import/resolver": {
         typescript: {
           extensions: [".js", ".jsx", ".ts", ".tsx", ".astro"],
-          moduleDirectory: ["src/", "node_modules/"],
+          // TODO: when rebooting VSCode, import/resolver stops working for src/... modules,
+          // until I swap the declaration below between "./src/" and "src/" (or other equivalent paths).
+          // ESlint CLI is fine, something with VSCode caching?
+          moduleDirectory: ["./src/", "node_modules/"],
         },
       },
     },
@@ -67,6 +70,15 @@ export default defineConfig([
               group: "internal",
               position: "before",
             },
+          ],
+        },
+      ],
+      "import/no-unresolved": [
+        "error",
+        {
+          ignore: [
+            // ignore unresolved module on astro modules with nonstandard declarations
+            "astro:content",
           ],
         },
       ],
