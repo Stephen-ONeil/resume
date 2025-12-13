@@ -1,0 +1,19 @@
+---
+import moment from "moment";
+import type { MomentInput } from "moment";
+
+const now = moment();
+const calculate_approx_years_since = (date: MomentInput) =>
+  `${Math.floor(moment.duration(now.diff(moment(date))).asYears())}+`;
+
+type Props = {
+  year: number;
+  month: number;
+  day: number;
+};
+const { year, month, day } = Astro.props;
+
+const approx_years_since = calculate_approx_years_since([year, month, day]);
+---
+
+{approx_years_since}

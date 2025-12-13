@@ -1,30 +1,5 @@
-import moment from "moment";
-
-const now = moment();
-const approx_time_since_in_years = date =>
-  `${Math.floor(moment.duration(now.diff(moment(date))).asYears())}+`;
-
-// roughly since start of first CO-OP term
-const front_end_years = approx_time_since_in_years([2015, 0, 1]);
-
-// roughly since when I first set up CI for real, we were starting to experiment with GCloud/GraphQl and the InfoBase API
-const back_end_years = approx_time_since_in_years([2018, 2, 15]);
-
 const link_out = (text, href) =>
   `<a target='_blank' rel='noopener noreferrer' href='${href}'>${text}</a>`;
-
-export const main_header = {
-  header: "Stephen O'Neil",
-  content: `
-## Full Stack Web Application Developer
-**${front_end_years} years frontend** | **${back_end_years} years backend & DevSecOps**  
-${link_out(
-  "github.com/Stephen-ONeil",
-  "https://github.com/Stephen-ONeil"
-)}  | [stephenlevioneil<span style="font-family: Times, serif;">@</span>gmail.com](mailto:stephenlevioneil@gmail.com)
- 
-`,
-};
 
 export const brief = {
   content: `
