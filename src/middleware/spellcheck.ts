@@ -1,31 +1,15 @@
-import { readFileSync } from "node:fs";
 import { console } from "node:inspector";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
 
 import { defineMiddleware } from "astro:middleware";
+
+import en_ca_aff from "hunspell-dict-en-ca/en-ca.aff?raw";
+import en_ca_dic from "hunspell-dict-en-ca/en-ca.dic?raw";
 
 import _ from "lodash";
 import { stripHtml } from "string-strip-html";
 import Typo from "typo-js";
 
-const __dirname = fileURLToPath(new URL(".", import.meta.url));
-const dict_path = path.resolve(
-  __dirname,
-  "../../node_modules/hunspell-dict-en-ca"
-);
-
-const dict_name = "en-ca";
-const aff_data = readFileSync(
-  path.resolve(`${dict_path}/${dict_name}.aff`),
-  "utf8"
-);
-const word_data = readFileSync(
-  path.resolve(`${dict_path}/${dict_name}.dic`),
-  "utf8"
-);
-
-const dictionary = new Typo("en-ca", aff_data, word_data);
+const dictionary = new Typo("en-ca", en_ca_aff, en_ca_dic);
 
 const allow_list = [
   "Architected",
