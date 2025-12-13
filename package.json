@@ -25,6 +25,7 @@
     ]
   },
   "devDependencies": {
+    "@astrojs/markdoc": "0.15.10",
     "@astrojs/ts-plugin": "1.10.6",
     "@eslint/js": "9.39.1",
     "@types/eslint-plugin-jsx-a11y": "6.10.1",
