@@ -21,7 +21,15 @@ export default defineConfig({
   },
   integrations: [
     markdoc({ allowHTML: true }),
-    pdf({ pages: { "/": "stephen-oneil-resume.pdf" } }),
+    pdf({
+      launch: {
+        // Ubuntu 23.10+ disables unpriviledged user namespaces, preventing chrome from creating a sandbox
+        // can consider the pages visited here to be trusted, so running without a sandbox is acceptable if not ideal
+        // TODO: reconsider this workaround if switching CI runtime image
+        args: ["--no-sandbox"],
+      },
+      pages: { "/": "stephen-oneil-resume.pdf" },
+    }),
     {
       name: "test-pdf-page-count",
       hooks: {
