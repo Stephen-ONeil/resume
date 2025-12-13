@@ -1,24 +1,30 @@
 ---
 import type { HTMLAttributes } from "astro/types";
+import { getEntry, render } from "astro:content";
 
 import classNames from "classnames";
-import _ from "lodash";
-import { marked } from "marked";
 
 import styles from "./ResumeSection.module.scss";
 
+const collection_name = "resume_sections";
+
 type Props = {
-  section: { header?: string; content: string };
+  resume_section_id: string;
   className?: string;
-  headerLevel?: 1 | 2 | 3 | 4 | 5 | 6;
   enterFrom?: "left" | "right" | "top" | "bottom";
   style?: HTMLAttributes<"section">["style"];
 };
-const { section, className, style, headerLevel = 2, enterFrom } = Astro.props;
+const { resume_section_id, className, style, enterFrom } = Astro.props;
 
-const { header, content } = section;
+const resume_section = await getEntry(collection_name, resume_section_id);
 
-const HeadingElement = `h${_.clamp(headerLevel, 1, 6)}`;
+if (resume_section === undefined) {
+  throw new Error(
+    `No content with ID "${resume_section_id}" in collection "${collection_name}"`
+  );
+}
+
+const { Content } = await render(resume_section);
 ---
 
 <section
@@ -29,7 +35,5 @@ const HeadingElement = `h${_.clamp(headerLevel, 1, 6)}`;
   )}
   style={style}
 >
-  {header && <HeadingElement>{header}</HeadingElement>}
-  {/* eslint-disable-next-line astro/no-set-html-directive */}
-  <div set:html={marked.parse(content)} />
+  <Content />
 </section>
