@@ -15,5 +15,22 @@ export default defineMarkdocConfig({
         },
       },
     },
+    "years-since": {
+      render: component("./src/components/ApproxYearsSince.astro"),
+      attributes: {
+        year: {
+          type: Number,
+          required: true,
+        },
+        month: {
+          type: Number,
+          required: true,
+        },
+        day: {
+          type: Number,
+          required: true,
+        },
+      },
+    },
   },
 });
