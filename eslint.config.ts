@@ -25,7 +25,7 @@ export default defineConfig([
           // TODO: when rebooting VSCode, import/resolver stops working for src/... modules,
           // until I swap the declaration below between "./src/" and "src/" (or other equivalent paths).
           // ESlint CLI is fine, something with VSCode caching?
-          moduleDirectory: ["./src/", "node_modules/"],
+          moduleDirectory: ["src/", "node_modules/"],
         },
       },
     },
@@ -78,7 +78,14 @@ export default defineConfig([
         {
           ignore: [
             // ignore unresolved module on astro modules with nonstandard declarations
+            "astro:actions",
+            "astro:assets",
+            "astro:config",
             "astro:content",
+            "astro:env",
+            "astro:i18n",
+            "astro:middleware",
+            "astro:transitions",
           ],
         },
       ],
