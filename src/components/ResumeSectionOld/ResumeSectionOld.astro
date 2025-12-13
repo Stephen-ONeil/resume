@@ -1,0 +1,35 @@
+---
+import type { HTMLAttributes } from "astro/types";
+
+import classNames from "classnames";
+import _ from "lodash";
+import { marked } from "marked";
+
+import styles from "../ResumeSection/ResumeSection.module.scss";
+
+type Props = {
+  section: { header?: string; content: string };
+  className?: string;
+  headerLevel?: 1 | 2 | 3 | 4 | 5 | 6;
+  enterFrom?: "left" | "right" | "top" | "bottom";
+  style?: HTMLAttributes<"section">["style"];
+};
+const { section, className, style, headerLevel = 2, enterFrom } = Astro.props;
+
+const { header, content } = section;
+
+const HeadingElement = `h${_.clamp(headerLevel, 1, 6)}`;
+---
+
+<section
+  class:list={classNames(
+    className,
+    styles["resume-section"],
+    enterFrom && styles[`enter-from-${enterFrom}`]
+  )}
+  style={style}
+>
+  {header && <HeadingElement>{header}</HeadingElement>}
+  {/* eslint-disable-next-line astro/no-set-html-directive */}
+  <div set:html={marked.parse(content)} />
+</section>
