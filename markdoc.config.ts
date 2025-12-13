@@ -1,3 +1,19 @@
-import { defineMarkdocConfig } from "@astrojs/markdoc/config";
+import { defineMarkdocConfig, component } from "@astrojs/markdoc/config";
 
-export default defineMarkdocConfig({});
+export default defineMarkdocConfig({
+  tags: {
+    "link-out": {
+      render: component("./src/components/LinkOut.astro"),
+      attributes: {
+        href: {
+          type: String,
+          required: true,
+        },
+        text: {
+          type: String,
+          required: true,
+        },
+      },
+    },
+  },
+});
