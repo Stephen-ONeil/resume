@@ -16,4 +16,7 @@ export default defineConfig({
     },
   },
   integrations: [markdoc({ allowHTML: true })],
+  experimental: {
+    contentIntellisense: true,
+  },
 });
