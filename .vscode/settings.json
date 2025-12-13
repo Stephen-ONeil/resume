@@ -8,7 +8,7 @@
     "typescriptreact",
     "astro"
   ],
-  "eslint.workingDirectories": ["./src/", "./scripts"],
+  "eslint.workingDirectories": ["./src/"],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },

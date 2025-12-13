@@ -66,7 +66,7 @@ export default defineConfig([
 
           pathGroups: [
             {
-              pattern: "(scripts|src)/**/*",
+              pattern: "src/**/*",
               group: "internal",
               position: "before",
             },
@@ -99,7 +99,7 @@ export default defineConfig([
     },
   },
   {
-    files: ["scripts/**.{js,ts}"],
+    files: ["src/{middleware,scripts}/**.{js,ts}"],
 
     languageOptions: {
       globals: {

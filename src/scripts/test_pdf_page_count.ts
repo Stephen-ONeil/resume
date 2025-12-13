@@ -7,7 +7,7 @@ const EXPECTED_PAGE_COUNT = 1;
 const pdf = fs.readFileSync(pdf_path);
 
 // from https://stackoverflow.com/a/39222676, has caveats but seems totally reasonable for my use case
-const pdf_page_count = pdf.toString().match(/\/Type[\s]*\/Page[^s]/g).length;
+const pdf_page_count = pdf.toString().match(/\/Type[\s]*\/Page[^s]/g)?.length;
 
 if (pdf_page_count !== EXPECTED_PAGE_COUNT) {
   console.log(

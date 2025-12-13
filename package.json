@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node scripts/generate_pdf.js",
-    "build:debug": "node --inspect-brk node_modules/astro/astro.js build && node --inspect-brk scripts/generate_pdf.js",
-    "test-pdf-length": "node scripts/test_pdf_page_count.js",
+    "build": "astro build && jiti src/scripts/generate_pdf.ts",
+    "build:debug": "node --inspect-brk node_modules/astro/astro.js build && jiti --inspect-brk src/scripts/generate_pdf.ts",
+    "test-pdf-length": "jiti src/scripts/test_pdf_page_count.ts",
     "prelocal-prod": "npm run build && npm run test-pdf-length",
     "local-prod": "http-server dist -c-1 -a 127.0.0.1 -p 3000 -s"
   },
@@ -30,6 +30,7 @@
     "@types/eslint-plugin-jsx-a11y": "6.10.1",
     "@types/lodash": "4.17.21",
     "@types/node": "24.10.1",
+    "@types/serve-handler": "6.1.4",
     "@types/typo-js": "1.2.2",
     "astro": "5.16.4",
     "classnames": "2.5.1",
