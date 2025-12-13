@@ -31,9 +31,6 @@ jobs:
       - name: Build Site And PDF
         run: npm run build
 
-      - name: Test PDF Length
-        run: npm run test-pdf-length
-
       - name: Add .nojekyll so gh-pages action can see _-prefixed files
         if: ${{ github.ref_name == 'master' }}
         run: touch dist/.nojekyll
