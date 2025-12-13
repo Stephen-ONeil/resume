@@ -7,7 +7,6 @@
     "dev": "astro dev",
     "build": "astro build",
     "build:debug": "node --inspect-brk node_modules/astro/astro.js build",
-    "test-pdf-length": "jiti src/scripts/test_pdf_page_count.ts",
     "prelocal-prod": "npm run build && npm run test-pdf-length",
     "local-prod": "http-server dist -c-1 -a 127.0.0.1 -p 3000 -s"
   },

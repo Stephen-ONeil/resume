@@ -99,7 +99,7 @@ export default defineConfig([
     },
   },
   {
-    files: ["src/{middleware,scripts}/**.{js,ts}"],
+    files: ["src/{middleware,hooks}/**.{js,ts}"],
 
     languageOptions: {
       globals: {
