@@ -1,0 +1,9 @@
+---
+type Props = {
+  href: string;
+  text: string;
+};
+const { href, text } = Astro.props;
+---
+
+<a href={href} rel="noopener noreferrer" target="_blank">{text}</a>
