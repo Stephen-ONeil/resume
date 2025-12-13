@@ -14,6 +14,7 @@ const dictionary = new Typo("en-ca", en_ca_aff, en_ca_dic);
 const allow_list = [
   "Architected",
   "architected",
+  "Astro",
   "COVID",
   "Dev",
   "EACPD",
