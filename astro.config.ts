@@ -1,3 +1,4 @@
+import markdoc from "@astrojs/markdoc";
 import { defineConfig } from "astro/config";
 
 export default defineConfig({
@@ -14,4 +15,5 @@ export default defineConfig({
       cssMinify: true,
     },
   },
+  integrations: [markdoc({ allowHTML: true })],
 });
