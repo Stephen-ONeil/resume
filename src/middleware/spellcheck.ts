@@ -1,6 +1,7 @@
 import { readFileSync } from "node:fs";
 import { console } from "node:inspector";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 import { defineMiddleware } from "astro:middleware";
 
@@ -8,10 +9,13 @@ import _ from "lodash";
 import { stripHtml } from "string-strip-html";
 import Typo from "typo-js";
 
-// TODO could be a lot more defensive about this
-const dict_name = "en-ca";
-const dict_path = "node_modules/hunspell-dict-en-ca";
+const __dirname = fileURLToPath(new URL(".", import.meta.url));
+const dict_path = path.resolve(
+  __dirname,
+  "../../node_modules/hunspell-dict-en-ca"
+);
 
+const dict_name = "en-ca";
 const aff_data = readFileSync(
   path.resolve(`${dict_path}/${dict_name}.aff`),
   "utf8"
