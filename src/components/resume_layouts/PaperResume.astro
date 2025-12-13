@@ -2,19 +2,6 @@
 import classNames from "classnames";
 
 import ResumeSection from "src/components/ResumeSection/ResumeSection.astro";
-import ResumeSectionOld from "src/components/ResumeSectionOld/ResumeSectionOld.astro";
-
-import {
-  brief,
-  languages,
-  libraries,
-  tools,
-  platforms,
-  skills,
-  certs,
-  education,
-  curriculum_vitae,
-} from "src/resume_content.js";
 
 import paper_styles from "./PaperResume.module.scss";
 import common_styles from "./resume-common.module.scss";
@@ -31,7 +18,7 @@ import common_styles from "./resume-common.module.scss";
           paper_styles["fcol__1-half"],
           paper_styles["primary-section"]
         )}
-        resume_section_id={"main_header"}
+        resume_section_id="main_header"
       />
       <div
         class:list={classNames(
@@ -40,7 +27,7 @@ import common_styles from "./resume-common.module.scss";
         )}
         style={{ marginTop: "1em" }}
       >
-        <ResumeSectionOld enterFrom="top" section={brief} />
+        <ResumeSection enterFrom="top" resume_section_id="brief" />
       </div>
     </div>
     <div class:list={classNames(paper_styles["frow"])} style={{ flexGrow: 1 }}>
@@ -51,7 +38,7 @@ import common_styles from "./resume-common.module.scss";
         )}
         style={{ paddingRight: "1em" }}
       >
-        <ResumeSectionOld enterFrom="left" section={curriculum_vitae} />
+        <ResumeSection enterFrom="left" resume_section_id="resume" />
       </div>
       <div
         class:list={classNames(
@@ -60,24 +47,26 @@ import common_styles from "./resume-common.module.scss";
         )}
         style={{ padding: "2em 0em" }}
       >
-        <ResumeSectionOld
+        <ResumeSection
           enterFrom="bottom"
-          section={certs}
+          resume_section_id="certs"
           style={{ paddingRight: "0.5em" }}
         />
         {
-          [languages, libraries, tools, platforms, skills].map(section => (
-            <ResumeSectionOld
-              className={classNames(common_styles["horizontal-list"])}
-              enterFrom="bottom"
-              section={section}
-              style={{ paddingRight: "0.5em" }}
-            />
-          ))
+          ["languages", "libraries", "tools", "platforms", "skills"].map(
+            resume_section_id => (
+              <ResumeSection
+                className={classNames(common_styles["horizontal-list"])}
+                enterFrom="bottom"
+                resume_section_id={resume_section_id}
+                style={{ paddingRight: "0.5em" }}
+              />
+            )
+          )
         }
-        <ResumeSectionOld
+        <ResumeSection
           enterFrom="bottom"
-          section={education}
+          resume_section_id="education"
           style={{ paddingRight: "0.5em" }}
         />
       </div>
