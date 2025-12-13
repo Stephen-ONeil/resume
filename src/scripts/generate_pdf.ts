@@ -8,7 +8,7 @@ import handler from "serve-handler";
 
 import { build_dir, pdf_path } from "./script_consts.js";
 
-const serve_build_dir = async port =>
+const serve_build_dir = async (port: number) =>
   http
     .createServer((request, response) =>
       handler(request, response, { public: build_dir })
