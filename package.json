@@ -30,7 +30,7 @@
     "@types/lodash": "4.17.21",
     "@types/node": "24.10.1",
     "@types/typo-js": "1.2.2",
-    "astro": "5.16.4",
+    "astro": "5.18.1",
     "astro-pdf": "^1.7.2",
     "classnames": "2.5.1",
     "eslint": "9.39.1",
