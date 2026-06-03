@@ -35,6 +35,7 @@ const allow_list = [
   "frontend",
   "gcinfobase",
   "gcp",
+  "gc",
   "github",
   "gmail",
   "infobase",
