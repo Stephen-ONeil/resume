@@ -32,5 +32,26 @@ export default defineMarkdocConfig({
         },
       },
     },
+    "work-location": {
+      render: component("./src/components/WorkLocation/WorkLocation.astro"),
+      attributes: {
+        tag: {
+          type: String,
+          required: false,
+        },
+        location: {
+          type: String,
+          required: true,
+        },
+        from: {
+          type: String,
+          required: false,
+        },
+        to: {
+          type: String,
+          required: false,
+        },
+      },
+    },
   },
 });

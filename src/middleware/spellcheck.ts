@@ -45,6 +45,7 @@ const allow_list = [
   "serverless",
   "stephenlevioneil",
   "tinyurl",
+  "FHIR",
 ];
 
 export const spellcheck_prerendered_pages = defineMiddleware(

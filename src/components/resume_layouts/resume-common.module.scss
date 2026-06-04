@@ -33,9 +33,17 @@
       font-weight: normal;
     }
   }
+  & h3 {
+    font-size: 1.1em;
+  }
+  & h4,
+  & h5 {
+    font-size: 0.8em;
+  }
   & h2,
   & h3,
-  & h3 {
+  & h4,
+  & h5 {
     font-weight: bold;
     margin: 0px;
   }

@@ -1,0 +1,29 @@
+---
+import styles from "./WorkLocation.module.scss";
+
+type Props = {
+  tag?: string;
+  location: string;
+  from?: string;
+  to?: string;
+};
+const { tag, location, from, to } = Astro.props;
+
+const ContainerTag = tag || "span";
+---
+
+<ContainerTag class:list={styles["work-location"]}>
+  <span class:list={styles["work-location__name"]}>{location}</span>
+  {
+    from && (
+      <>
+        <span class:list={styles["work-location__separator"]} />
+        <sup class:list={styles["work-location__range"]}>
+          {from}&nbsp;-
+          <br />
+          {to || "Present"}
+        </sup>
+      </>
+    )
+  }
+</ContainerTag>
