@@ -15,12 +15,6 @@
   background-color: common.$background_color;
   color: common.$text_color;
 
-  @media not print {
-    // specifically to keep the animations contained to the "paper", overflowing outside of that would be a content/styling error
-    // but still let print overflow so the test_pdf_page_count.js script can detect when the output is overflowing (spills on to and prints > 1 page)
-    overflow: hidden;
-  }
-
   & h1 {
     font-size: 2.8em;
     margin: 0px;
