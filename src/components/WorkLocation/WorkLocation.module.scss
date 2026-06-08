@@ -21,11 +21,13 @@
   }
 
   & > .work-location__range {
+    font-style: italic;
+
     @media print, (min-width: common.$page_width) {
       height: 0px;
-      margin-top: -0.4rem;
+      margin-top: -0.6rem;
 
-      font-size: 0.7rem;
+      font-size: 0.8rem;
     }
   }
 }
