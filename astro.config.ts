@@ -2,8 +2,16 @@ import markdoc from "@astrojs/markdoc";
 import { defineConfig } from "astro/config";
 
 import pdf from "astro-pdf";
+import type { PagesEntry } from "astro-pdf";
+
+import _ from "lodash";
 
 import { test_pdf_page_count } from "./src/hooks/test_pdf_page_count.ts";
+
+const PAGE_COUNT = 2;
+
+const get_test_page_name = (page_number: number) =>
+  `page-${page_number}-test.pdf`;
 
 export default defineConfig({
   site: "https://resume.oneil.online/",
@@ -29,14 +37,36 @@ export default defineConfig({
         args: ["--no-sandbox"],
       },
       pages: {
-        "/": "stephen-oneil-resume.pdf",
+        "/": [
+          { path: "stephen-oneil-resume.pdf" },
+          ..._.chain(PAGE_COUNT)
+            .range()
+            .map(
+              (index): PagesEntry => ({
+                path: get_test_page_name(index + 1),
+                callback: async page => {
+                  await page.addStyleTag({
+                    content: `[id^="page-"]:not(#page-${index + 1}) { display: none !important; }`,
+                  });
+                },
+              })
+            )
+            .value(),
+        ],
       },
     }),
     {
       name: "test-pdf-page-count",
       hooks: {
         "astro:build:done": () =>
-          test_pdf_page_count({ "dist/stephen-oneil-resume.pdf": 1 }),
+          test_pdf_page_count({
+            "dist/stephen-oneil-resume.pdf": PAGE_COUNT,
+            ..._.chain(PAGE_COUNT)
+              .range()
+              .map(index => [`dist/${get_test_page_name(index + 1)}`, 1])
+              .fromPairs()
+              .value(),
+          }),
       },
     },
   ],
