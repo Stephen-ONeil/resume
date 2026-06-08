@@ -15,6 +15,7 @@
   justify-self: center;
 
   height: common.$page_height;
+  padding: 0.25in;
 
   margin-top: 2em;
   &:last-of-type {
@@ -57,4 +58,19 @@
 .frow {
   display: flex;
   flex-direction: row;
+}
+
+.header {
+  border-bottom: common.$border-style;
+}
+.header-brief {
+  border-left: common.$border-style;
+  & p {
+    padding-left: common.$gutter;
+  }
+}
+.sidebar {
+  border-left: common.$border-style;
+  padding: common.$gutter 0em common.$gutter common.$gutter * 0.5;
+  margin-left: common.$gutter * 0.5;
 }

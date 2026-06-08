@@ -21,27 +21,29 @@
     font-weight: normal;
 
     & ~ h2 {
-      font-size: 1.6em;
       font-weight: normal;
     }
   }
+  & h2 {
+    font-size: 1.6em;
+  }
   & h3 {
-    font-size: 1.1em;
+    font-size: 1.3em;
   }
   & h4,
   & h5 {
-    font-size: 0.8em;
+    font-size: 1em;
   }
   & h2,
   & h3,
   & h4,
   & h5 {
     font-weight: bold;
-    margin: 0px;
+    margin: common.$gutter 0em;
   }
 
   & p {
-    margin: 0em;
+    margin: 0.5em 0em;
   }
 
   & ul {
@@ -50,8 +52,8 @@
     flex-grow: 1;
     flex-wrap: wrap;
 
-    padding-left: 1.5em;
-    margin: 0em 0em 0.15em 0em;
+    padding-left: common.$gutter * 4;
+    margin: 0em 0em common.$gutter 0em;
   }
   & li {
     list-style: none;
@@ -60,7 +62,7 @@
       margin: 0em;
     }
 
-    margin-top: 0.15em;
+    margin: common.$gutter 0em;
   }
   & li:before {
     float: left;
@@ -78,18 +80,22 @@
   & li > ul > li > ul > li:before {
     content: url("/svgs/arrow-empty.svg");
   }
+}
 
-  & .horizontal-list {
-    & ul {
-      flex-direction: row;
-      justify-content: space-between;
+.horizontal-list {
+  & ul {
+    flex-direction: row;
+    justify-content: space-between;
 
-      padding-left: 0em;
+    padding-left: 0em;
 
-      & > li {
-        min-width: 43%;
-        padding-left: 6%;
-      }
+    & > li {
+      min-width: 43%;
+      padding-left: 6%;
     }
   }
+}
+
+.header-content {
+  text-align: center;
 }
