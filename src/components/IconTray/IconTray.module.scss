@@ -1,5 +1,7 @@
 @use "src/styles/common";
 
+// TODO: horrible file full of numbers I must have hand tuned, oof, needs to be a better way to calculate these magic factors
+
 $icon-dimension: 0.35in;
 $border: 0.02in;
 
@@ -11,15 +13,13 @@ $border: 0.02in;
   position: fixed;
   width: $icon-dimension * 1.04;
 
-  @media (min-width: (common.$page_width + ($icon-dimension*0.45))) {
+  @media (min-width: (common.$page_width + ($icon-dimension*2) + $icon-dimension)) {
     background-color: white;
     border: $border solid black;
     outline: common.$gutter * 2 solid white;
-  }
-  @media (min-width: (common.$page_width + ($icon-dimension*2) + $icon-dimension)) {
     left: 50%;
     margin-left: calc(common.$page_width / 2) + ($icon-dimension * 0.19);
-    top: $icon-dimension;
+    top: calc(2em + common.$gutter * 1.4);
   }
   @media (max-width: (common.$page_width + ($icon-dimension*2) + $icon-dimension)) {
     right: common.$gutter + $border;
