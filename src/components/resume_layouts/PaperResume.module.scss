@@ -4,12 +4,27 @@
   // Hide unless printing or screen width > paper width
   display: none;
   @media print, (min-width: common.$page_width) {
-    display: flex;
+    display: block;
   }
 
-  /* A4 paper dimensions */
   width: common.$page_width;
+}
+
+.page {
+  display: flex;
+  justify-self: center;
+
   height: common.$page_height;
+
+  margin-top: 2em;
+  &:last-of-type {
+    margin-bottom: 2em;
+  }
+  @media print {
+    margin: 0em;
+  }
+
+  background-color: common.$page_color;
 }
 
 .fcol {
