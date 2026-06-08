@@ -35,6 +35,10 @@ jobs:
         if: ${{ github.ref_name == 'master' }}
         run: touch dist/.nojekyll
 
+      - name: Delete dist/build_artifacts dir before deploying /dist
+        if: ${{ github.ref_name == 'master' }}
+        run: rm -rf dist/build_artifacts
+
       - name: Deploy
         if: ${{ github.ref_name == 'master' }}
         # https://github.com/JamesIves/github-pages-deploy-action

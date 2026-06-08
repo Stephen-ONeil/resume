@@ -10,8 +10,8 @@ import { test_pdf_page_count } from "./src/hooks/test_pdf_page_count.ts";
 
 const PAGE_COUNT = 2;
 
-const get_test_page_name = (page_number: number) =>
-  `_test-page-${page_number}.pdf`;
+const get_test_page_path = (page_number: number) =>
+  `build_artifacts/_test-page-${page_number}.pdf`;
 
 export default defineConfig({
   site: "https://resume.oneil.online/",
@@ -43,7 +43,7 @@ export default defineConfig({
             .range()
             .map(
               (index): PagesEntry => ({
-                path: get_test_page_name(index + 1),
+                path: get_test_page_path(index + 1),
                 callback: async page => {
                   await page.addStyleTag({
                     content: `[id^="page-"]:not(#page-${index + 1}) { display: none !important; }`,
@@ -63,7 +63,7 @@ export default defineConfig({
             "dist/stephen-oneil-resume.pdf": PAGE_COUNT,
             ..._.chain(PAGE_COUNT)
               .range()
-              .map(index => [`dist/${get_test_page_name(index + 1)}`, 1])
+              .map(index => [`dist/${get_test_page_path(index + 1)}`, 1])
               .fromPairs()
               .value(),
           }),
