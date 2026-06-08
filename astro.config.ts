@@ -11,7 +11,7 @@ import { test_pdf_page_count } from "./src/hooks/test_pdf_page_count.ts";
 const PAGE_COUNT = 2;
 
 const get_test_page_name = (page_number: number) =>
-  `page-${page_number}-test.pdf`;
+  `_test-page-${page_number}.pdf`;
 
 export default defineConfig({
   site: "https://resume.oneil.online/",
