@@ -28,13 +28,15 @@ export default defineConfig({
         // TODO: reconsider this workaround if switching CI runtime image
         args: ["--no-sandbox"],
       },
-      pages: { "/": "stephen-oneil-resume.pdf" },
+      pages: {
+        "/": "stephen-oneil-resume.pdf",
+      },
     }),
     {
       name: "test-pdf-page-count",
       hooks: {
         "astro:build:done": () =>
-          test_pdf_page_count("dist/stephen-oneil-resume.pdf", 2),
+          test_pdf_page_count({ "dist/stephen-oneil-resume.pdf": 1 }),
       },
     },
   ],

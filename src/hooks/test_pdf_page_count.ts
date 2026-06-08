@@ -1,20 +1,34 @@
 import fs from "fs";
 
+type PdfPath = string;
+type ExpectedPageCount = number;
+
 export const test_pdf_page_count = (
-  pdf_path: string,
-  expected_page_count: number
+  config: Record<PdfPath, ExpectedPageCount>
 ) => {
-  const pdf = fs.readFileSync(pdf_path);
+  const should_error_exit = Object.entries(config).reduce(
+    (exit_code, [pdf_path, expected_page_count]) => {
+      const pdf = fs.readFileSync(pdf_path);
 
-  // from https://stackoverflow.com/a/39222676, has caveats but seems totally reasonable for my use case
-  const pdf_page_count = pdf.toString().match(/\/Type[\s]*\/Page[^s]/g)?.length;
+      // from https://stackoverflow.com/a/39222676, has caveats but seems totally reasonable for my use case
+      const pdf_page_count = pdf
+        .toString()
+        .match(/\/Type[\s]*\/Page[^s]/g)?.length;
 
-  if (pdf_page_count !== expected_page_count) {
-    console.log(
-      `Page count failed: PDF page count of ${pdf_page_count}, expected ${expected_page_count}`
-    );
+      if (pdf_page_count !== expected_page_count) {
+        console.log(
+          `Page count failed for ${pdf_path}: PDF page count of ${pdf_page_count}, expected ${expected_page_count}`
+        );
+        return true;
+      }
+
+      console.log(`PDF page count as expected (${expected_page_count})`);
+      return exit_code;
+    },
+    false
+  );
+
+  if (should_error_exit) {
     process.exit(1);
   }
-
-  console.log(`PDF page count as expected (${expected_page_count})`);
 };
