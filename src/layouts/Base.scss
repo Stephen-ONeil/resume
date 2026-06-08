@@ -1,3 +1,5 @@
+@use "src/styles/common";
+
 @font-face {
   font-family: "Cabin";
   font-style: normal;
@@ -15,5 +17,5 @@
 
 body {
   margin: 0;
-  background-color: #f0ead6;
+  background-color: common.$background_color;
 }
