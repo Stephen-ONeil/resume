@@ -8,12 +8,13 @@
 
   & > .work-location__name {
     font-size: 0.8rem;
+    width: max-content;
   }
 
   & > .work-location__separator {
     flex-grow: 1;
     @media print, (min-width: common.$page_width) {
-      border-bottom-style: dotted;
+      border-bottom: solid 1px;
       height: 0.4rem;
       margin: 0 0.5rem 0 0.5rem;
     }
@@ -22,7 +23,7 @@
   & > .work-location__range {
     @media print, (min-width: common.$page_width) {
       height: 0px;
-      margin-top: -0.3rem;
+      margin-top: -0.4rem;
 
       font-size: 0.7rem;
     }
