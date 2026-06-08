@@ -16,14 +16,16 @@ export const test_pdf_page_count = (
         .match(/\/Type[\s]*\/Page[^s]/g)?.length;
 
       if (pdf_page_count !== expected_page_count) {
-        console.log(
-          `Page count failed for ${pdf_path}: PDF page count of ${pdf_page_count}, expected ${expected_page_count}`
+        console.error(
+          `${pdf_path}:page count failed, has ${pdf_page_count}, expected ${expected_page_count}`
         );
         return true;
+      } else {
+        console.log(
+          `${pdf_path}: page count passed (${expected_page_count} pages)`
+        );
+        return exit_code;
       }
-
-      console.log(`PDF page count as expected (${expected_page_count})`);
-      return exit_code;
     },
     false
   );
