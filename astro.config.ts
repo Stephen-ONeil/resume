@@ -34,7 +34,7 @@ export default defineConfig({
       name: "test-pdf-page-count",
       hooks: {
         "astro:build:done": () =>
-          test_pdf_page_count("dist/stephen-oneil-resume.pdf", 1),
+          test_pdf_page_count("dist/stephen-oneil-resume.pdf", 2),
       },
     },
   ],
