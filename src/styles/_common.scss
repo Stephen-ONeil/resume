@@ -1,11 +1,12 @@
 $page_width: 8.5in;
 $page_height: 11in;
 
-$gutter: 0.025in;
+$gutter: 0.05in;
 
 $background_color: #f0ead6;
 $page_color: white;
 $text_color: black;
+$border-style: #80808050 solid 2px;
 
 @media (min-width: $page_width) {
   @keyframes slide-in-from-right-frames {

@@ -14,7 +14,7 @@ import common_styles from "./resume-common.module.scss";
   )}
 >
   <ResumeSection
-    className={classNames(responsive_styles["primary-section"])}
+    className={classNames(common_styles["header-content"])}
     resume_section_id={"main_header"}
   />
   <ResumeSection enterFrom="left" resume_section_id="brief" />
@@ -50,5 +50,9 @@ import common_styles from "./resume-common.module.scss";
     resume_section_id="skills"
   />
   <ResumeSection enterFrom="left" resume_section_id="resume_page_1" />
-  <ResumeSection enterFrom="right" resume_section_id="resume_page_2" />
+  <ResumeSection
+    className={classNames(responsive_styles["no-h2"])}
+    enterFrom="right"
+    resume_section_id="resume_page_2"
+  />
 </div>
