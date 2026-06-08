@@ -55,7 +55,7 @@ import common_styles from "./resume-common.module.scss";
           <ResumeSection enterFrom="bottom" resume_section_id="education" />
           <ResumeSection enterFrom="bottom" resume_section_id="certs" />
           {
-            ["languages", "libraries", "tools"].map(resume_section_id => (
+            ["languages", "libraries"].map(resume_section_id => (
               <ResumeSection
                 className={classNames(common_styles["horizontal-list"])}
                 enterFrom="bottom"
@@ -89,7 +89,7 @@ import common_styles from "./resume-common.module.scss";
           )}
         >
           {
-            ["platforms", "skills"].map(resume_section_id => (
+            ["tools", "platforms", "skills"].map(resume_section_id => (
               <ResumeSection
                 className={classNames(common_styles["horizontal-list"])}
                 enterFrom="bottom"

@@ -10,12 +10,14 @@
   width: common.$page_width;
 }
 
+$page-padding: 0.25in;
+
 .page {
   display: flex;
   justify-self: center;
 
-  height: common.$page_height;
-  padding: 0.25in;
+  padding: $page-padding;
+  height: common.$page_height - ($page-padding * 2);
 
   margin-top: 2em;
   &:last-of-type {
