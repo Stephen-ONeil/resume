@@ -71,8 +71,13 @@ $page-padding: 0.25in;
     padding-left: common.$gutter;
   }
 }
-.sidebar {
+.sidebar__right {
   border-left: common.$border-style;
   padding: common.$gutter 0em common.$gutter common.$gutter * 0.5;
   margin-left: common.$gutter * 0.5;
+}
+.sidebar__left {
+  border-right: common.$border-style;
+  padding: common.$gutter common.$gutter * 0.5 common.$gutter 0em;
+  margin-right: common.$gutter * 0.5;
 }
