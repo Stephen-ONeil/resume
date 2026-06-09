@@ -48,6 +48,7 @@ const allow_list = [
   "FHIR",
   "js",
   "Vite",
+  "CIO",
 ];
 
 export const spellcheck_prerendered_pages = defineMiddleware(
