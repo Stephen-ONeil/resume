@@ -13,7 +13,8 @@ const ContainerTag = tag || "span";
 ---
 
 <ContainerTag class:list={styles["work-location"]}>
-  <span class:list={styles["work-location__name"]}>{location}</span>
+  {/* eslint-disable-next-line astro/no-set-html-directive */}
+  <span class:list={styles["work-location__name"]} set:html={location} />
   {
     from && (
       <>
