@@ -63,6 +63,13 @@
     }
 
     margin: common.$gutter 0em;
+
+    & ul {
+      margin: 0em;
+    }
+    & li:last-of-type {
+      margin-bottom: 0em;
+    }
   }
   & li:before {
     float: left;
