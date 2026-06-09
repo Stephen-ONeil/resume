@@ -33,6 +33,7 @@ import common_styles from "./resume-common.module.scss";
           <ResumeSection enterFrom="top" resume_section_id="brief" />
         </div>
       </div>
+
       <div
         class:list={classNames(paper_styles["frow"])}
         style={{ flexGrow: 1 }}
@@ -40,16 +41,8 @@ import common_styles from "./resume-common.module.scss";
         <div
           class:list={classNames(
             paper_styles["fcol"],
-            paper_styles["fcol__3-4th"]
-          )}
-        >
-          <ResumeSection enterFrom="left" resume_section_id="resume_page_1" />
-        </div>
-        <div
-          class:list={classNames(
-            paper_styles["fcol"],
             paper_styles["fcol__1-4th"],
-            paper_styles["sidebar"]
+            paper_styles["sidebar__left"]
           )}
         >
           <ResumeSection enterFrom="bottom" resume_section_id="education" />
@@ -64,6 +57,14 @@ import common_styles from "./resume-common.module.scss";
             ))
           }
         </div>
+        <div
+          class:list={classNames(
+            paper_styles["fcol"],
+            paper_styles["fcol__3-4th"]
+          )}
+        >
+          <ResumeSection enterFrom="right" resume_section_id="resume_page_1" />
+        </div>
       </div>
     </div>
   </div>
@@ -76,16 +77,8 @@ import common_styles from "./resume-common.module.scss";
         <div
           class:list={classNames(
             paper_styles["fcol"],
-            paper_styles["fcol__3-4th"]
-          )}
-        >
-          <ResumeSection enterFrom="left" resume_section_id="resume_page_2" />
-        </div>
-        <div
-          class:list={classNames(
-            paper_styles["fcol"],
             paper_styles["fcol__1-4th"],
-            paper_styles["sidebar"]
+            paper_styles["sidebar__left"]
           )}
         >
           {
@@ -97,6 +90,14 @@ import common_styles from "./resume-common.module.scss";
               />
             ))
           }
+        </div>
+        <div
+          class:list={classNames(
+            paper_styles["fcol"],
+            paper_styles["fcol__3-4th"]
+          )}
+        >
+          <ResumeSection enterFrom="right" resume_section_id="resume_page_2" />
         </div>
       </div>
     </div>
