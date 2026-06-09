@@ -46,6 +46,8 @@ const allow_list = [
   "stephenlevioneil",
   "tinyurl",
   "FHIR",
+  "js",
+  "Vite",
 ];
 
 export const spellcheck_prerendered_pages = defineMiddleware(
