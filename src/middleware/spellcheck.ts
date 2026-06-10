@@ -11,6 +11,7 @@ import Typo from "typo-js";
 
 const dictionary = new Typo("en-ca", en_ca_aff, en_ca_dic);
 
+// TODO it would be nice to have basic pattern substitution syntax here, maybe straight regex, to capture capitalization, pluralization, etc
 const allow_list = [
   "Architected",
   "architected",
@@ -40,7 +41,9 @@ const allow_list = [
   "gmail",
   "infobase",
   "kubernetes",
+  "Microservices",
   "microservices",
+  "microservice",
   "oneil",
   "serverless",
   "stephenlevioneil",
