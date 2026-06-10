@@ -52,6 +52,11 @@ const allow_list = [
   "js",
   "Vite",
   "CIO",
+  "schemas",
+  "datasets",
+  "authn",
+  "authz",
+  "UI",
 ];
 
 export const spellcheck_prerendered_pages = defineMiddleware(
