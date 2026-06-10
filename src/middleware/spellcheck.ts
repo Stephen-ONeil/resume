@@ -57,6 +57,7 @@ const allow_list = [
   "authn",
   "authz",
   "UI",
+  "pytest",
 ];
 
 export const spellcheck_prerendered_pages = defineMiddleware(
