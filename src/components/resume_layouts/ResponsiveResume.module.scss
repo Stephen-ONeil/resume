@@ -1,13 +1,16 @@
 @use "src/styles/common";
 
 .responsive-resume {
-  padding: common.$gutter;
-
-  background-color: common.$page_color;
-
   // Hide if printing or screen width < paper width
   @media print, (min-width: common.$page_width) {
     display: none;
+  }
+
+  padding: common.$gutter * 3;
+  background-color: common.$page_color;
+
+  & li {
+    margin-top: common.$gutter * 3;
   }
 }
 
