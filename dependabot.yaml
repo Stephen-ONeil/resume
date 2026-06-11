@@ -1,0 +1,6 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    # Should Configure dependabot to bump pinned versions in package.json, not just in package-lock.json
+    versioning-strategy: increase 
